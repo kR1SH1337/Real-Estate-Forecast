@@ -353,10 +353,11 @@ def make_charts(data, train, model, history, output):
 
 
 def main():
+    project_root = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--cash', type=Path, default=Path('data/ряд кеш.xlsx'))
-    parser.add_argument('--macro', type=Path, default=Path('data/Продажи - Extended_new_07 (1).xlsx'))
-    parser.add_argument('--prices', type=Path, default=Path('data/analytics_3901335506.xlsx'))
+    parser.add_argument('--cash', type=Path, default=project_root / Path('data/ряд кеш.xlsx'))
+    parser.add_argument('--macro', type=Path, default=project_root / Path('data/Продажи - Extended_new_07 (1).xlsx'))
+    parser.add_argument('--prices', type=Path, default=project_root / Path('data/analytics_3901335506.xlsx'))
     parser.add_argument('--scope', choices=['expanding', 'rolling'], default='expanding',
                         help='Primary default: all available history; rolling is optional')
     parser.add_argument('--window', type=int, default=24,
@@ -368,7 +369,7 @@ def main():
                         help='Actual January-2023 market price, RUB/m²; default 282700')
     parser.add_argument('--bootstrap', type=int, default=1000)
     parser.add_argument('--seed', type=int, default=20261009)
-    parser.add_argument('--output', type=Path, default=Path('results'))
+    parser.add_argument('--output', type=Path, default=project_root / 'results')
     parser.add_argument('--no-charts', action='store_true')
     args = parser.parse_args()
     if args.window < 12 or (args.horizon is not None and args.horizon < 1) or args.bootstrap < 0:
