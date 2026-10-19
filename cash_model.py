@@ -355,9 +355,9 @@ def make_charts(data, train, model, history, output):
 def main():
     project_root = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--cash', type=Path, default=project_root / Path('data/ряд кеш.xlsx'))
-    parser.add_argument('--macro', type=Path, default=project_root / Path('data/Продажи - Extended_new_07 (1).xlsx'))
-    parser.add_argument('--prices', type=Path, default=project_root / Path('data/analytics_3901335506.xlsx'))
+    parser.add_argument('--cash', type=Path, default=project_root / Path('data/cash_sales.xlsx'))
+    parser.add_argument('--macro', type=Path, default=project_root / Path('data/macro_scenario.xlsx'))
+    parser.add_argument('--prices', type=Path, default=project_root / Path('data/price_index.xlsx'))
     parser.add_argument('--scope', choices=['expanding', 'rolling'], default='expanding',
                         help='Primary default: all available history; rolling is optional')
     parser.add_argument('--window', type=int, default=24,
