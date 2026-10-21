@@ -28,8 +28,12 @@ ax.set_ylim(bottom=0)
 ax.grid(axis='y', alpha=.2)
 ax.spines[['top', 'right']].set_visible(False)
 ax.legend(loc='upper right', frameon=False, fontsize=9)
-fig.supxlabel('История дефлирована к январю 2023; базовая цена — 282 700 руб./м².\nПрогноз условен на сценарий КС; пропуски истории не интерполированы.', fontsize=9, color='#526171')
+footer = 'История дефлирована к январю 2023; базовая цена — 282 700 руб./м².\nПрогноз условен на сценарий КС; пропуски истории не интерполированы.'
+if 'price_index_assumed' in history and history['price_index_assumed'].astype(str).str.lower().eq('true').any():
+    footer += '\nПредварительно: индекс сентября 2026 принят равным августовскому.'
+fig.supxlabel(footer, fontsize=9, color='#526171')
 output = ROOT / 'docs/images/sales_area.png'
 output.parent.mkdir(parents=True, exist_ok=True)
 fig.savefig(output, dpi=170)
 print(output)
+

@@ -1,0 +1,28 @@
+{
+  "updated_on": "2026-10-21",
+  "cash_sales": {
+    "file": "cash_sales.csv",
+    "source_filename": "Продажи и ипотека (1).xlsx",
+    "source_sha256": "d24a7b0fe2ba7a19eb3e8a34c32068d3ad28cda591b060ec751207eeb7231542",
+    "sheet": "ДДУ-Продажи",
+    "date_row": 2,
+    "value_row": 13,
+    "units": "nominal RUB billion",
+    "last_actual_month": "2026-09-01",
+    "nonpositive_values": "censored/missing, not true zero sales"
+  },
+  "price_index": {
+    "file": "price_index.xlsx",
+    "selection": [
+      "Город Москва",
+      "Общий",
+      "Все"
+    ],
+    "last_actual_month": "2026-08-01",
+    "base": "2023-01-01",
+    "historical_values_match_new_workbook": true
+  },
+  "price_assumptions": "price_assumptions.csv; applied only when actual index is missing",
+  "macro_scenario": "macro_scenario.xlsx; unchanged from previous published run",
+  "base_price_rub_m2": 282700
+}

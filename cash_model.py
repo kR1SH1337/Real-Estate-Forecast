@@ -10,6 +10,7 @@ from __future__ import annotations
 import argparse
 from io import BytesIO
 import json
+import warnings
 from pathlib import Path
 
 import numpy as np
@@ -33,22 +34,96 @@ def monthly_series(values: dict, label: str) -> pd.Series:
     return result
 
 
-def read_sources(cash_path: Path, macro_path: Path, price_path: Path,
-                 as_of: str | None = None) -> tuple[pd.DataFrame, pd.Series]:
-    """Read actual cash row, Moscow KS and Moscow/general/all-rooms price index."""
-    sheet = openpyxl.load_workbook(cash_path, data_only=True).worksheets[0]
+def read_cash_series(path: Path) -> pd.Series:
+    """Read nominal RUB billion from CSV, the new DDU workbook or the legacy layout."""
+    path = Path(path)
     values = {}
-    for col in range(2, sheet.max_column + 1):
-        date = sheet.cell(1, col).value
-        if date is None:
-            continue
-        date = pd.Timestamp(date)
-        if date in values:
-            raise ValueError('Duplicate month in cash workbook')
-        value = sheet.cell(2, col).value
-        values[date] = np.nan if value is None else float(value)
+    if path.suffix.lower() == '.csv':
+        table = pd.read_csv(path)
+        if not {'date', 'nominal_bln_rub'}.issubset(table.columns):
+            raise ValueError('Cash CSV requires date,nominal_bln_rub columns')
+        dates = pd.to_datetime(table['date'])
+        if dates.duplicated().any():
+            raise ValueError('Duplicate month in cash CSV')
+        amounts = pd.to_numeric(table['nominal_bln_rub'], errors='raise')
+        values = dict(zip(dates, amounts))
+    else:
+        workbook = openpyxl.load_workbook(path, data_only=True, read_only=True)
+        try:
+            if 'ДДУ-Продажи' in workbook.sheetnames:
+                rows = list(workbook['ДДУ-Продажи'].iter_rows(max_row=20, values_only=True))
+                groups = [i for i, row in enumerate(rows)
+                          if row and str(row[0]).strip() == 'Продажи, млрд руб.']
+                if not groups:
+                    raise ValueError('Missing nominal-sales group in ДДУ-Продажи')
+                group = groups[0]
+                candidates = [i for i in range(group + 1, min(group + 4, len(rows)))
+                              if str(rows[i][0]).strip() == 'Кеш/рассрочки']
+                if len(candidates) != 1:
+                    raise ValueError('Expected one Кеш/рассрочки row in the RUB-billion group')
+                dates, amounts = rows[1], rows[candidates[0]]
+            else:
+                rows = list(workbook.worksheets[0].iter_rows(max_row=2, values_only=True))
+                dates, amounts = rows[0], rows[1]
+            for col in range(1, min(len(dates), len(amounts))):
+                date, value = dates[col], amounts[col]
+                if date is None:
+                    continue
+                date = pd.Timestamp(date)
+                if date in values:
+                    raise ValueError('Duplicate month in cash workbook')
+                values[date] = np.nan if value is None else float(value)
+        finally:
+            workbook.close()
     cash = monthly_series(values, 'cash')
-    cash = cash.reindex(pd.date_range(cash.index.min(), cash.index.max(), freq='MS'))
+    last = cash.last_valid_index()
+    if last is None:
+        raise ValueError('No observed cash sales')
+    cash = cash.loc[:last]  # Do not treat blank future spreadsheet columns as actuals.
+    return cash.reindex(pd.date_range(cash.index.min(), cash.index.max(), freq='MS'))
+
+
+def apply_price_assumptions(prices: pd.Series, dates: pd.DatetimeIndex,
+                            assumption_path: Path | None) -> tuple[pd.Series, pd.Series, list]:
+    """Only explicitly listed missing months may use an earlier actual index.
+
+    Actual target values always win. There is no blanket forward-fill, interpolation
+    or chained carry-forward; other missing months still fail validation.
+    """
+    aligned = prices.reindex(dates).copy()
+    assumed = pd.Series(False, index=dates)
+    applied = []
+    if assumption_path is None:
+        return aligned, assumed, applied
+    table = pd.read_csv(assumption_path)
+    required = {'date', 'source_date', 'method', 'reason'}
+    if not required.issubset(table.columns):
+        raise ValueError('Price assumptions require date,source_date,method,reason')
+    table['date'] = pd.to_datetime(table['date'])
+    table['source_date'] = pd.to_datetime(table['source_date'])
+    if table['date'].duplicated().any():
+        raise ValueError('Duplicate target month in price assumptions')
+    for row in table.itertuples(index=False):
+        target, source = row.date, row.source_date
+        if target.day != 1 or source.day != 1 or row.method != 'carry_forward' or source >= target:
+            raise ValueError('Carry-forward must use an earlier first-of-month actual index')
+        if target not in aligned.index or np.isfinite(aligned.loc[target]):
+            continue
+        if source not in prices.index or not np.isfinite(prices.loc[source]) or prices.loc[source] <= 0:
+            raise ValueError(f'Unavailable actual price index for {source.date()}')
+        aligned.loc[target] = prices.loc[source]
+        assumed.loc[target] = True
+        applied.append({'date': str(target.date()), 'source_date': str(source.date()),
+                        'method': row.method, 'index_value': float(prices.loc[source]),
+                        'reason': str(row.reason)})
+    return aligned, assumed, applied
+
+
+def read_sources(cash_path: Path, macro_path: Path, price_path: Path,
+                 as_of: str | None = None,
+                 price_assumptions: Path | None = None) -> tuple[pd.DataFrame, pd.Series]:
+    """Read cash sales, supplied KS scenario and Moscow/general/all-rooms prices."""
+    cash = read_cash_series(cash_path)
     if as_of:
         cutoff = pd.Timestamp(as_of)
         if cutoff.day != 1:
@@ -56,52 +131,63 @@ def read_sources(cash_path: Path, macro_path: Path, price_path: Path,
         cash = cash.loc[:cutoff]
     if cash.empty or not np.isfinite(cash.iloc[-1]):
         raise ValueError('The last cash observation must exist')
-
-    sheet = openpyxl.load_workbook(macro_path, data_only=True)['Москва']
+    workbook = openpyxl.load_workbook(macro_path, data_only=True, read_only=True)
     values = {}
-    for row in range(2, sheet.max_row + 1):
-        date, value = sheet.cell(row, 1).value, sheet.cell(row, 2).value
-        if date is None:
-            continue
-        date = pd.Timestamp(date)
-        if date in values:
-            raise ValueError('Duplicate month in KS workbook')
-        values[date] = np.nan if value is None else float(value)
+    try:
+        for date, value in workbook['Москва'].iter_rows(min_row=2, max_col=2, values_only=True):
+            if date is None:
+                continue
+            date = pd.Timestamp(date)
+            if date in values:
+                raise ValueError('Duplicate month in KS workbook')
+            values[date] = np.nan if value is None else float(value)
+    finally:
+        workbook.close()
     rates = monthly_series(values, 'KS')
     rates = rates.reindex(pd.date_range(rates.index.min(), rates.index.max(), freq='MS'))
-
-    sheet = openpyxl.load_workbook(price_path, data_only=True).worksheets[0]
-    rows = [r for r in range(2, sheet.max_row + 1)
-            if [sheet.cell(r, c).value for c in (1, 2, 3)]
-            == ['Город Москва', 'Общий', 'Все']]
-    if len(rows) != 1:
+    workbook = openpyxl.load_workbook(price_path, data_only=True, read_only=True)
+    try:
+        sheet = workbook['индекс'] if 'индекс' in workbook.sheetnames else workbook.worksheets[0]
+        rows = sheet.iter_rows(values_only=True)
+        header = next(rows)
+        matches = [row for row in rows if list(row[:3]) == ['Город Москва', 'Общий', 'Все']]
+    finally:
+        workbook.close()
+    if len(matches) != 1:
         raise ValueError('Expected exactly one Moscow / Общий / Все price row')
     values = {}
-    for col in range(4, sheet.max_column + 1):
-        header = sheet.cell(1, col).value
-        if header is None:
+    for label, value in zip(header[3:], matches[0][3:]):
+        if label is None or value is None:
             continue
-        month, year = str(header).split()
-        date = pd.Timestamp(int(year), MONTHS_RU.index(month) + 1, 1)
+        if isinstance(label, str):
+            month, year = label.split()
+            date = pd.Timestamp(int(year), MONTHS_RU.index(month) + 1, 1)
+        else:
+            date = pd.Timestamp(label)
         if date in values:
             raise ValueError('Duplicate month in price index')
-        values[date] = float(sheet.cell(rows[0], col).value)
+        values[date] = float(value)
     prices = monthly_series(values, 'price index')
     base = prices.loc[pd.Timestamp('2023-01-01')]
     if not np.isfinite(base) or base <= 0:
         raise ValueError('Invalid January-2023 price-index base')
+    aligned, assumed, applied = apply_price_assumptions(prices, cash.index, price_assumptions)
     data = pd.DataFrame(index=cash.index)
     data.index.name = 'date'
     data['nominal_source'] = cash
-    # Non-positive reconstructed residuals are censored/missing, not true zero sales.
     data['nominal'] = cash.mask(cash <= 0)
-    data['price_factor'] = prices.reindex(data.index) / base
+    data['price_factor'] = aligned / base
+    data['price_index_assumed'] = assumed
     data['ks_avg3'] = rates.shift(1).rolling(3, min_periods=3).mean().reindex(data.index)
     if not np.isfinite(data[['price_factor', 'ks_avg3']].to_numpy()).all():
-        raise ValueError('Missing prices or previous three KS observations; no imputation')
+        raise ValueError('Missing prices or previous three KS observations; only explicit price assumptions are allowed')
     if (data['price_factor'] <= 0).any():
         raise ValueError('Price-index values must be positive')
     data['real'] = data['nominal'] / data['price_factor']
+    data.attrs['price_assumptions_applied'] = applied
+    if applied:
+        warnings.warn('Provisional price index: ' + ', '.join(
+            item['date'] + ' uses ' + item['source_date'] for item in applied), UserWarning)
     return data, rates
 
 
@@ -315,7 +401,8 @@ def forecasts(data, rates, model, horizon, base_price_rub_m2=282700.0):
             status += '_partial_year'
         annual.append({'year': year, 'real_bln_rub': total_real,
                        'area_mln_m2': total_real * 1e3 / base_price_rub_m2,
-                       'status': status, 'actual_months': len(available),
+                       'status': status, 'provisional': bool(data.attrs.get('price_assumptions_applied')),
+                       'actual_months': len(available),
                        'forecast_months': len(group), 'months_covered': len(months),
                        'full_year': full_year,
                        'actual_real_bln_rub': actual_real,
@@ -355,9 +442,13 @@ def make_charts(data, train, model, history, output):
 def main():
     project_root = Path(__file__).resolve().parent
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--cash', type=Path, default=project_root / Path('data/cash_sales.xlsx'))
+    parser.add_argument('--cash', type=Path, default=project_root / Path('data/cash_sales.csv'))
     parser.add_argument('--macro', type=Path, default=project_root / Path('data/macro_scenario.xlsx'))
     parser.add_argument('--prices', type=Path, default=project_root / Path('data/price_index.xlsx'))
+    parser.add_argument('--price-assumptions', type=Path, default=project_root / 'data/price_assumptions.csv',
+                        help='Explicit provisional historical price-index assumptions')
+    parser.add_argument('--no-price-assumptions', action='store_true',
+                        help='Require actual prices for every observed sales month')
     parser.add_argument('--scope', choices=['expanding', 'rolling'], default='expanding',
                         help='Primary default: all available history; rolling is optional')
     parser.add_argument('--window', type=int, default=24,
@@ -376,7 +467,8 @@ def main():
         parser.error('window >= 12, horizon >= 1, bootstrap >= 0 required')
     if not np.isfinite(args.base_price_rub_m2) or args.base_price_rub_m2 <= 0:
         parser.error('--base-price-rub-m2 must be positive RUB/m²')
-    data, rates = read_sources(args.cash, args.macro, args.prices, args.as_of)
+    data, rates = read_sources(args.cash, args.macro, args.prices, args.as_of,
+                               None if args.no_price_assumptions else args.price_assumptions)
     horizon = args.horizon if args.horizon is not None else (
         (args.end_year - data.index[-1].year) * 12 + 12 - data.index[-1].month)
     if horizon < 1:
@@ -407,6 +499,11 @@ def main():
                 'rolling_comparison_window': args.window,
                 'window_start': str(train.index[0].date()), 'price_base': '2023-01-01',
                 'diagnostics': diag, 'validation': summary,
+                'price_assumptions_applied': data.attrs.get('price_assumptions_applied', []),
+                'provisional': bool(data.attrs.get('price_assumptions_applied')),
+                'sources': {'cash': str(args.cash.relative_to(project_root)) if args.cash.is_relative_to(project_root) else str(args.cash),
+                            'macro': str(args.macro.relative_to(project_root)) if args.macro.is_relative_to(project_root) else str(args.macro),
+                            'prices': str(args.prices.relative_to(project_root)) if args.prices.is_relative_to(project_root) else str(args.prices)},
                 'base_price_rub_m2': args.base_price_rub_m2,
                 'forecast_end': str(monthly.index[-1].date()),
                 'primary_output': 'forecast_annual.csv: real_bln_rub, area_mln_m2',
@@ -417,6 +514,8 @@ def main():
                                                           indent=2, allow_nan=False), encoding='utf-8')
     if not args.no_charts: make_charts(data, train, model, history, args.output)
     print(f'Huber {args.scope}: real = {model["coef"][0]:.6f} + {model["coef"][1]:.6f} * KS_avg3')
+    if data.attrs.get('price_assumptions_applied'):
+        print('PROVISIONAL: explicitly assumed historical price index; see diagnostics.json')
     print('Annual result: real_bln_rub in January-2023 prices; area_mln_m2 in million m²')
     print(annual[['year', 'real_bln_rub', 'area_mln_m2', 'status']].to_string(index=False, float_format=lambda v: f'{v:.6f}'))
     print(f'Results: {args.output.resolve()}')
@@ -424,3 +523,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
