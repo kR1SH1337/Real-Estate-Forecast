@@ -33,25 +33,25 @@ class UpdatedModelTests(unittest.TestCase):
         self.assertTrue(np.isnan(self.data.loc['2023-02-01', 'real']))
 
     def test_updated_coefficients(self):
-        np.testing.assert_allclose(self.fitted['coef'], [-4.1541475366038085, 2.8297871803309227], atol=1e-8)
+        np.testing.assert_allclose(self.fitted['coef'], [-4.163516894009227, 2.830075324593157], atol=1e-8)
 
     def test_annual_forecast_and_units(self):
         monthly, annual = model.forecasts(self.data, self.rates, self.fitted, 51, 282700)
         self.assertEqual(monthly.index[-1], pd.Timestamp('2030-12-01'))
         np.testing.assert_allclose(annual.real_bln_rub,
-                                  [382.83092346327817, 387.73802152952356,
-                                   319.86717084670363, 289.72469120046503, 289.72469120046503])
+                                  [382.4475499077576, 387.67014680044826, 319.79238513989355, 289.64683622306814, 289.64683622306814])
         np.testing.assert_allclose(annual.area_mln_m2, annual.real_bln_rub / 282.7)
         self.assertEqual(annual.actual_months.iloc[0], 9)
         self.assertEqual(annual.forecast_months.iloc[0], 3)
-        self.assertTrue(annual.provisional.all())
+        self.assertFalse(annual.provisional.any())
 
-    def test_price_assumption_is_explicit_and_only_september(self):
-        self.assertEqual(self.data.index[self.data.price_index_assumed].tolist(),
-                         [pd.Timestamp('2026-09-01')])
-        applied = self.data.attrs['price_assumptions_applied']
-        self.assertEqual(applied[0]['source_date'], '2026-08-01')
-        self.assertAlmostEqual(applied[0]['index_value'], 236.78928)
+    def test_actual_september_index_and_no_assumptions(self):
+        self.assertFalse(self.data.price_index_assumed.any())
+        self.assertEqual(self.data.attrs['price_assumptions_applied'], [])
+        self.assertAlmostEqual(self.data.loc['2026-09-01', 'price_factor'], 241.72054 / 140.23915)
+        strict, _ = model.read_sources(ROOT / 'data/cash_sales.csv',
+            ROOT / 'data/macro_scenario.xlsx', ROOT / 'data/price_index.xlsx')
+        np.testing.assert_allclose(strict.real, self.data.real, equal_nan=True)
 
     def test_actual_price_replaces_assumption(self):
         dates = pd.to_datetime(['2026-08-01', '2026-09-01'])
@@ -73,7 +73,7 @@ class UpdatedModelTests(unittest.TestCase):
     def test_strict_mode_rejects_missing_september_price(self):
         with self.assertRaisesRegex(ValueError, 'Missing prices'):
             model.read_sources(ROOT / 'data/cash_sales.csv', ROOT / 'data/macro_scenario.xlsx',
-                               ROOT / 'data/price_index.xlsx')
+                               ROOT / 'archive/price_index_2026-08.xlsx')
 
     def test_as_of_august_does_not_use_september(self):
         data, _ = model.read_sources(

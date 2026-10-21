@@ -18,11 +18,16 @@
       "Общий",
       "Все"
     ],
-    "last_actual_month": "2026-08-01",
+    "last_actual_month": "2026-09-01",
     "base": "2023-01-01",
-    "historical_values_match_new_workbook": true
+    "historical_values_match_new_workbook": true,
+    "source_filename": "analytics_2699287266.xlsx",
+    "source_url": "https://xn--d1aqf.xn--p1ai/upload/tmp/priceindex/analytics_2699287266.xlsx",
+    "source_sha256": "f2e534766fdaa9995c3b16789da853d7e95f41dfe2b1070c113e54246dfe35ec",
+    "september_index": 241.72054,
+    "historical_values_match_previous_export": true
   },
-  "price_assumptions": "price_assumptions.csv; applied only when actual index is missing",
+  "price_assumptions": "price_assumptions.csv retained for historical replay; no assumptions applied to current data",
   "macro_scenario": "macro_scenario.xlsx; unchanged from previous published run",
   "base_price_rub_m2": 282700
 }
