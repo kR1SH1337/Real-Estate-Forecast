@@ -1,0 +1,6199 @@
+{
+  "statsmodels_version": "0.14.6",
+  "primary_sample": "latest continuous observed segment",
+  "missing_sales_dates": [
+    "2023-02-01"
+  ],
+  "future_scenario_excluded": true,
+  "tests": {
+    "real_sales": {
+      "n": 43,
+      "start": "2023-03-01",
+      "end": "2026-09-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -1.6077942120055815,
+          "p": 0.47967713723083016,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8408843754105242
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 0,
+          "stat": -3.5124102563768718,
+          "p": 0.007674034298055297,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.17991680275001554
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -3.5124102563768718,
+          "p": 0.007674034298055297,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.17991680275001554
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.187650755784767,
+          "p": 0.21075801146945788,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.4464436598586816
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.6077942120055815,
+          "p": 0.47967713723083016,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8408843754105242
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.8484285967795524,
+          "p": 0.3566968625622522,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7234897015739252
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.5874148309704714,
+          "p": 0.4899123268965848,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7519043199395513
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.8628775620763731,
+          "p": 0.3497210281741372,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9914059835894826
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -1.4356380079504591,
+          "p": 0.5650766493677208,
+          "nobs": 36,
+          "critical": {
+            "1%": -3.626651907578875,
+            "5%": -2.9459512825788754,
+            "10%": -2.6116707716049383
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9990997219356899
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -1.2077182024690123,
+          "p": 0.9089093869313996,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7918226781362571
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -1.2077182024690123,
+          "p": 0.9089093869313996,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7918226781362571
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -3.5969062382503476,
+          "p": 0.030108658784935387,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.17966024011481446
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -1.9574609391631024,
+          "p": 0.6244013368566536,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.4402759601053686
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.2077182024690123,
+          "p": 0.9089093869313996,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7918226781362571
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.3014401734372492,
+          "p": 0.8875723734716436,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.5536191605692458
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.0163525413900267,
+          "p": 0.9418731317770704,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.5845547131479911
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.3045610284887423,
+          "p": 0.8867963952557255,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8613380366108684
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -0.8720759883372377,
+          "p": 0.9590486539185937,
+          "nobs": 36,
+          "critical": {
+            "1%": -4.235055592421125,
+            "5%": -3.540390300068587,
+            "10%": -3.2023804526748973
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9711670306517308
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 3,
+          "stat": 0.3132273150546145,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.7614323491129446,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.5079085151788031,
+          "p": 0.03988546955432363,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.3876683757993402,
+          "p": 0.08247052767269819,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.3132273150546145,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.2694458952068493,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.21838369289652015,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 3,
+          "stat": 0.22899631266650672,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.5253448980475821,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.3617804121126718,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.28094163172839776,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.22899631266650672,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.19844036649633942,
+          "p": 0.016584862563872718,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.16284098664868793,
+          "p": 0.035965844459426716,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -3.2326928701017312,
+          "p": 0.8258985504868213,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 2,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -3.2326928701017312,
+          "p": 0.8258985504868213,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 2,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -4.73596898540174,
+          "p": 0.12537089279620986,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 2,
+          "break_date": "2024-10-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -4.73596898540174,
+          "p": 0.12537089279620986,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 2,
+          "break_date": "2024-10-01"
+        }
+      ]
+    },
+    "real_sales_diff": {
+      "n": 42,
+      "start": "2023-04-01",
+      "end": "2026-09-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -7.495459650127198,
+          "p": 4.3917686008788636e-11,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8196493047459017
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -7.495459650127198,
+          "p": 4.3917686008788636e-11,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8196493047459017
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -10.566523581106729,
+          "p": 7.492284591172328e-19,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.22706185969545067
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -7.495459650127198,
+          "p": 4.3917686008788636e-11,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8196493047459017
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -4.712087639672564,
+          "p": 7.986124950857057e-05,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7587534240865065
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -3.9840953857870405,
+          "p": 0.0014961208656112943,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7878771376978572
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -2.762331914036495,
+          "p": 0.06385908936372704,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9536680948812771
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -2.755929047437291,
+          "p": 0.06484995274369051,
+          "nobs": 36,
+          "critical": {
+            "1%": -3.626651907578875,
+            "5%": -2.9459512825788754,
+            "10%": -2.6116707716049383
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9991607842314842
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -2.5683964984074406,
+          "p": 0.09970655456491223,
+          "nobs": 35,
+          "critical": {
+            "1%": -3.6327426647230316,
+            "5%": -2.9485102040816327,
+            "10%": -2.6130173469387756
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9997009517571915
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -7.614796571118424,
+          "p": 5.54425024805194e-10,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6035059177259836
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -7.614796571118424,
+          "p": 5.54425024805194e-10,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6035059177259836
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -10.547697102681726,
+          "p": 1.7054794139788645e-16,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.16073527298179577
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -7.614796571118424,
+          "p": 5.54425024805194e-10,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6035059177259836
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -5.006255904857772,
+          "p": 0.0002004165112248397,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.33811868181048466
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -4.356574682631753,
+          "p": 0.0025660120153194435,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.4160635529715831
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -3.1935629381444315,
+          "p": 0.08569201563005302,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.492935162564921
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -3.1591165744526073,
+          "p": 0.09286029377418742,
+          "nobs": 36,
+          "critical": {
+            "1%": -4.235055592421125,
+            "5%": -3.540390300068587,
+            "10%": -3.2023804526748973
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9226712431778988
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -3.063615757682503,
+          "p": 0.11515434654907175,
+          "nobs": 35,
+          "critical": {
+            "1%": -4.243765510204081,
+            "5%": -3.5443646122448977,
+            "10%": -3.2046503498542274
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.992812122565485
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 37,
+          "stat": 0.42738509635271205,
+          "p": 0.06535125157210689,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.03903856203041625,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.06836117373115014,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.09934168243131677,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.09639563355854017,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.11943703870124979,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.1356615485662315,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 41,
+          "stat": 0.49999999999999817,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.03310365785344158,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.058262944870856134,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.08525451523330803,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.08309749119510211,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.1040373496662493,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.12031058177622747,
+          "p": 0.09757299671068986,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -8.46677760011178,
+          "p": 1e-05,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 1,
+          "break_date": "2024-12-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -8.46677760011178,
+          "p": 1e-05,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 1,
+          "break_date": "2024-12-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -8.553952038286983,
+          "p": 0.0009337997967707708,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 1,
+          "break_date": "2024-12-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -8.553952038286983,
+          "p": 0.0009337997967707708,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 1,
+          "break_date": "2024-12-01"
+        }
+      ]
+    },
+    "ks_avg3": {
+      "n": 43,
+      "start": "2023-03-01",
+      "end": "2026-09-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -3.126534899485694,
+          "p": 0.024650796350345262,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7028887384620154
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -2.796969204445022,
+          "p": 0.05870800152037665,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.05623441190794199
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -2.3187747244916195,
+          "p": 0.16598422501069432,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 5.438682068486261e-10
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.796969204445022,
+          "p": 0.05870800152037665,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.05623441190794199
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -2.626994504966288,
+          "p": 0.08754540334920019,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.11091089795637578
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -2.6049216319142543,
+          "p": 0.09198432669637308,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.5659836224867141
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -3.126534899485694,
+          "p": 0.024650796350345262,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7028887384620154
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -3.0041555950953622,
+          "p": 0.03450813821439853,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7833422124113967
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -1.3193205049064267,
+          "p": 0.6202874623487613,
+          "nobs": 36,
+          "critical": {
+            "1%": -3.626651907578875,
+            "5%": -2.9459512825788754,
+            "10%": -2.6116707716049383
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8315913578585212
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 3,
+          "stat": -1.0909860518460759,
+          "p": 0.9305600202722483,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.48989055854372665
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 3,
+          "stat": -1.0909860518460759,
+          "p": 0.9305600202722483,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.48989055854372665
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -0.018268910088844362,
+          "p": 0.9940434864056443,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 3.778029100132443e-10
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.141754984522737,
+          "p": 0.5226500213011506,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.04294182228401462
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.679310494864572,
+          "p": 0.7598575460496573,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.06355018001675253
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.0909860518460759,
+          "p": 0.9305600202722483,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.48989055854372665
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.848693504850092,
+          "p": 0.6808190827408037,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7620136774425181
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -2.0314274837105213,
+          "p": 0.5842151279832583,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7161288079930797
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -0.7098759947344266,
+          "p": 0.9724906834254009,
+          "nobs": 36,
+          "critical": {
+            "1%": -4.235055592421125,
+            "5%": -3.540390300068587,
+            "10%": -3.2023804526748973
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8004871781848703
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.4673054038280113,
+          "p": 0.04903031445315062,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 2.0512317263020545,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 1.0570623052578676,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.7261147660879596,
+          "p": 0.011171384901094586,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.5629738915228407,
+          "p": 0.02748335776512596,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.4673054038280113,
+          "p": 0.04903031445315062,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.3632784467412682,
+          "p": 0.0929834281287637,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.23486707274175733,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 1.0122058730209653,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.523064810125081,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.360749916206908,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.2811746049193603,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.23486707274175733,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.18531120909965726,
+          "p": 0.021508296587628525,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -2.403918296839807,
+          "p": 0.9898050282040467,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 3,
+          "break_date": "2025-06-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -2.403918296839807,
+          "p": 0.9898050282040467,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 3,
+          "break_date": "2025-06-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -3.410351764490915,
+          "p": 0.8523969536874277,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 3,
+          "break_date": "2025-02-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -3.410351764490915,
+          "p": 0.8523969536874277,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 3,
+          "break_date": "2025-02-01"
+        }
+      ]
+    },
+    "ks_avg3_diff": {
+      "n": 42,
+      "start": "2023-04-01",
+      "end": "2026-09-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 3,
+          "stat": -1.7741830780132712,
+          "p": 0.3933522934676496,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8580812812424412
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 3,
+          "stat": -1.7741830780132712,
+          "p": 0.3933522934676496,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8580812812424412
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -1.6868108983020451,
+          "p": 0.437920389445499,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.05940830401198099
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.06345505663866,
+          "p": 0.2594610364895306,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.08230657097884742
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -2.8371627962512695,
+          "p": 0.05315827268198314,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.5510102090170155
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.7741830780132712,
+          "p": 0.3933522934676496,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8580812812424412
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.5495588012455124,
+          "p": 0.508868573129052,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8008294480203081
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -2.2146728664229,
+          "p": 0.20096321808613887,
+          "nobs": 36,
+          "critical": {
+            "1%": -3.626651907578875,
+            "5%": -2.9459512825788754,
+            "10%": -2.6116707716049383
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7608159472319731
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -1.752672593296165,
+          "p": 0.40419843757935314,
+          "nobs": 35,
+          "critical": {
+            "1%": -3.6327426647230316,
+            "5%": -2.9485102040816327,
+            "10%": -2.6130173469387756
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9045566088562511
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -4.632112538348529,
+          "p": 0.0009105137176232223,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.5491541744377075
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -4.632112538348529,
+          "p": 0.0009105137176232223,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.5491541744377075
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -2.386254255194265,
+          "p": 0.38695168758791965,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.01582762692896966
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -3.019773742559449,
+          "p": 0.12663635622167774,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.030662605782656813
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -4.632112538348529,
+          "p": 0.0009105137176232223,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.5491541744377075
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -3.7677371390162637,
+          "p": 0.01826652790532922,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8464467089192306
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -3.6030367269896786,
+          "p": 0.02959039418672821,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7504064892444462
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -3.2003804576491297,
+          "p": 0.08432591811876744,
+          "nobs": 36,
+          "critical": {
+            "1%": -4.235055592421125,
+            "5%": -3.540390300068587,
+            "10%": -3.2023804526748973
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7698415758924951
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -2.193142781440234,
+          "p": 0.4937107280666152,
+          "nobs": 35,
+          "critical": {
+            "1%": -4.243765510204081,
+            "5%": -3.5443646122448977,
+            "10%": -3.2046503498542274
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8599185573971203
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.48644782404562115,
+          "p": 0.04471895854828353,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 1.7512131056856954,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.9427557827721315,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.6762810334860426,
+          "p": 0.015701724228541578,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.5541132801424897,
+          "p": 0.029478990958898704,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.48644782404562115,
+          "p": 0.04471895854828353,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.41812091501610993,
+          "p": 0.06934443318271125,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 3,
+          "stat": 0.07167131981543937,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.18676007472542216,
+          "p": 0.020964971977966686,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.10618937817287905,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.08081653900507484,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.07167131981543937,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.06941155317155627,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.07669582334911414,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -5.285606549985325,
+          "p": 0.009654092453383957,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 2,
+          "break_date": "2025-04-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -5.285606549985325,
+          "p": 0.009654092453383957,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 2,
+          "break_date": "2025-04-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -5.613490928857864,
+          "p": 0.008803943320871331,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 2,
+          "break_date": "2025-06-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -5.613490928857864,
+          "p": 0.008803943320871331,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 2,
+          "break_date": "2025-06-01"
+        }
+      ]
+    },
+    "ks_raw": {
+      "n": 42,
+      "start": "2023-03-01",
+      "end": "2026-08-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -2.791716790266311,
+          "p": 0.0594667416923206,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.919601372875911
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -2.791716790266311,
+          "p": 0.0594667416923206,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.919601372875911
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -2.3381189612314786,
+          "p": 0.15996832677381534,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.08948203004164908
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.387626283929501,
+          "p": 0.14525929791703357,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8050435750900853
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -2.791716790266311,
+          "p": 0.0594667416923206,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.919601372875911
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -3.235558046312659,
+          "p": 0.018016520799434017,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9713819664474116
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -2.8547101341143053,
+          "p": 0.05087376599615282,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9584618394911936
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.1957083387980427,
+          "p": 0.675439146079396,
+          "nobs": 36,
+          "critical": {
+            "1%": -3.626651907578875,
+            "5%": -2.9459512825788754,
+            "10%": -2.6116707716049383
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8113999554025367
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -1.101495195638384,
+          "p": 0.7144752702193927,
+          "nobs": 35,
+          "critical": {
+            "1%": -3.6327426647230316,
+            "5%": -2.9485102040816327,
+            "10%": -2.6130173469387756
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8348884404625719
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 0,
+          "stat": -0.9908792940813763,
+          "p": 0.9453299091705052,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.24523046353780495
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 0,
+          "stat": -0.9908792940813763,
+          "p": 0.9453299091705052,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.24523046353780495
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -0.9908792940813763,
+          "p": 0.9453299091705052,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.24523046353780495
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -1.4726805294345482,
+          "p": 0.8382998787584333,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8964271112099296
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -2.107677745496596,
+          "p": 0.5417947335857247,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.91655269351082
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -2.643569162751876,
+          "p": 0.2602510308498021,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.858785090327117
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -2.514691614813035,
+          "p": 0.32065636885370336,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7130935422314946
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.087645521044166,
+          "p": 0.9311061351130033,
+          "nobs": 36,
+          "critical": {
+            "1%": -4.235055592421125,
+            "5%": -3.540390300068587,
+            "10%": -3.2023804526748973
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8756451628494637
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -0.9702203031438268,
+          "p": 0.9479919908235186,
+          "nobs": 35,
+          "critical": {
+            "1%": -4.243765510204081,
+            "5%": -3.5443646122448977,
+            "10%": -3.2046503498542274
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8709667259593605
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.36789712514542566,
+          "p": 0.09099261847179928,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 1.5345742844681989,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.8022426277535474,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.5574669384304539,
+          "p": 0.028723662515663526,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.43741030485071364,
+          "p": 0.06103004101262344,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.36789712514542566,
+          "p": 0.09099261847179928,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.2934986079664781,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.2309665903562563,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.9620870078630994,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.5026104516631624,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.3493293019150712,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.2743037794324975,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.2309665903562563,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.18497652581336438,
+          "p": 0.021633802819988356,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -2.5525100807249967,
+          "p": 0.9814758923360428,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 0,
+          "break_date": "2025-05-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -2.5525100807249967,
+          "p": 0.9814758923360428,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 0,
+          "break_date": "2025-05-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -3.0846218592652135,
+          "p": 0.9505400705394801,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 0,
+          "break_date": "2024-08-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -3.0846218592652135,
+          "p": 0.9505400705394801,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 0,
+          "break_date": "2024-08-01"
+        }
+      ]
+    },
+    "ks_raw_diff": {
+      "n": 41,
+      "start": "2023-04-01",
+      "end": "2026-08-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -2.4520360838890163,
+          "p": 0.12758471833737078,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9855674672728684
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -2.4520360838890163,
+          "p": 0.12758471833737078,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9855674672728684
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -4.150036878828726,
+          "p": 0.0007996522255940662,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6555177298249424
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.4520360838890163,
+          "p": 0.12758471833737078,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9855674672728684
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -2.0909196353665993,
+          "p": 0.24818150318174587,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9890810686719477
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -2.1412208687704455,
+          "p": 0.22826561920887561,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.976502439085412
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -2.8034655832239754,
+          "p": 0.057780436843023114,
+          "nobs": 36,
+          "critical": {
+            "1%": -3.626651907578875,
+            "5%": -2.9459512825788754,
+            "10%": -2.6116707716049383
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7672529548643335
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -2.502306093952218,
+          "p": 0.11491423500757442,
+          "nobs": 35,
+          "critical": {
+            "1%": -3.6327426647230316,
+            "5%": -2.9485102040816327,
+            "10%": -2.6130173469387756
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8555590795973164
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -2.190561681282588,
+          "p": 0.2096888387136709,
+          "nobs": 34,
+          "critical": {
+            "1%": -3.639224104416853,
+            "5%": -2.9512301791166293,
+            "10%": -2.614446989619377
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8866092168290929
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -3.4672769994432433,
+          "p": 0.043026874483450016,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8867978336021791
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -3.4672769994432433,
+          "p": 0.043026874483450016,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8867978336021791
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -5.2246251006590505,
+          "p": 7.867700772249518e-05,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8235143133523337
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -3.4672769994432433,
+          "p": 0.043026874483450016,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8867978336021791
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -3.361695261831259,
+          "p": 0.05672000424335636,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.717417642203309
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -3.502502218472815,
+          "p": 0.039123988302368205,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7876441433353959
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -3.0010789860106177,
+          "p": 0.13177957546019486,
+          "nobs": 36,
+          "critical": {
+            "1%": -4.235055592421125,
+            "5%": -3.540390300068587,
+            "10%": -3.2023804526748973
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8546518994313179
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -2.8276129189383385,
+          "p": 0.1869874650297219,
+          "nobs": 35,
+          "critical": {
+            "1%": -4.243765510204081,
+            "5%": -3.5443646122448977,
+            "10%": -3.2046503498542274
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8784517313939252
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -2.1776284615920956,
+          "p": 0.5024482780309577,
+          "nobs": 34,
+          "critical": {
+            "1%": -4.253042608385915,
+            "5%": -3.5485904579686545,
+            "10%": -3.2070617952371263
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8947974409985886
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 3,
+          "stat": 0.5519343495964768,
+          "p": 0.029969741081874588,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 1.152973709608429,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.837928526963096,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.6527357216653134,
+          "p": 0.01784220712133515,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.5519343495964768,
+          "p": 0.029969741081874588,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.49584114063119694,
+          "p": 0.04260334670468538,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.43677178510021597,
+          "p": 0.061305265043010364,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 2,
+          "stat": 0.06457991268932817,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.08580223156254758,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.07397307497927007,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.06457991268932817,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.061345022179147196,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.06331588304709393,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.07429937237631137,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -3.776456818240508,
+          "p": 0.4956318801588203,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 1,
+          "break_date": "2023-10-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -3.776456818240508,
+          "p": 0.4956318801588203,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 1,
+          "break_date": "2023-10-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -4.100803145533084,
+          "p": 0.4370149758287711,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 1,
+          "break_date": "2025-05-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -4.100803145533084,
+          "p": 0.4370149758287711,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 1,
+          "break_date": "2025-05-01"
+        }
+      ]
+    },
+    "nominal_sales": {
+      "n": 43,
+      "start": "2023-03-01",
+      "end": "2026-09-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -1.7331264613823356,
+          "p": 0.4141305857413422,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7243173772617204
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 0,
+          "stat": -3.238920587127378,
+          "p": 0.017839482325640678,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.1538675259147866
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -3.238920587127378,
+          "p": 0.017839482325640678,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.1538675259147866
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.2062806861910897,
+          "p": 0.20397383256019191,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.40963027230337995
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.7331264613823356,
+          "p": 0.4141305857413422,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7243173772617204
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.956265710070679,
+          "p": 0.3060719311985881,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.564455029596864
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.7617163932983746,
+          "p": 0.3996271533338501,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.640089423250362
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -2.018095559890422,
+          "p": 0.27869562001880605,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9348628806091935
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -1.5839713255941883,
+          "p": 0.49164005977742553,
+          "nobs": 36,
+          "critical": {
+            "1%": -3.626651907578875,
+            "5%": -2.9459512825788754,
+            "10%": -2.6116707716049383
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9976714169178297
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -1.208172984467198,
+          "p": 0.9088147435809923,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6931732783988434
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 0,
+          "stat": -3.6058502638678274,
+          "p": 0.029355115081538135,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.20119181150117177
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -3.6058502638678274,
+          "p": 0.029355115081538135,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.20119181150117177
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.0036183674691506,
+          "p": 0.599461284403354,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.44652320872667406
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.208172984467198,
+          "p": 0.9088147435809923,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6931732783988434
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.2443013961914284,
+          "p": 0.9010246592879538,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.4801897247859531
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -0.9424925860188424,
+          "p": 0.9513742128067795,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.50377072587298
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.3017750288016166,
+          "p": 0.8874893222162434,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8479396945933262
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -0.752006782695983,
+          "p": 0.9694967679559698,
+          "nobs": 36,
+          "critical": {
+            "1%": -4.235055592421125,
+            "5%": -3.540390300068587,
+            "10%": -3.2023804526748973
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9779283125926433
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.43424143708691126,
+          "p": 0.06239593229012446,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 1.3298899352194415,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.8501979300177936,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.6370160807877178,
+          "p": 0.019271265382934746,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.509918314442411,
+          "p": 0.03943281206252005,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.43424143708691126,
+          "p": 0.06239593229012446,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.34628011066883485,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 3,
+          "stat": 0.22715630149569432,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.4988989956252817,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.3501255070810902,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.27642424736772425,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.22715630149569432,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.19789622105267174,
+          "p": 0.016788917105248095,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.16411787721089885,
+          "p": 0.03490176899091762,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -3.154209809348839,
+          "p": 0.8588205863214902,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 2,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -5.843159070988062,
+          "p": 0.0009883184459021724,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 0,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -4.494086033877895,
+          "p": 0.21497131456216537,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 2,
+          "break_date": "2024-10-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -7.352090132263193,
+          "p": 0.0009712787998417309,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 0,
+          "break_date": "2024-09-01"
+        }
+      ]
+    },
+    "price_factor": {
+      "n": 43,
+      "start": "2023-03-01",
+      "end": "2026-09-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": 0.022867820805664137,
+          "p": 0.9603828733546892,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9630763895557297
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": 0.08748680195846861,
+          "p": 0.9651963023623816,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7006032771950079
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": 0.6112806250665045,
+          "p": 0.9878904018464911,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.0082765016539604
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": 0.08748680195846861,
+          "p": 0.9651963023623816,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7006032771950079
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": 0.022867820805664137,
+          "p": 0.9603828733546892,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9630763895557297
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": 0.26206045510070186,
+          "p": 0.9755352956910601,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9277885085927176
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": 0.43247547156578947,
+          "p": 0.9826696167756692,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9909499556454809
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": 0.9575382511595869,
+          "p": 0.9937970964894358,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9974661428042377
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": 1.1272496904626275,
+          "p": 0.9954426073252617,
+          "nobs": 36,
+          "critical": {
+            "1%": -3.626651907578875,
+            "5%": -2.9459512825788754,
+            "10%": -2.6116707716049383
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9990803046379872
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -2.137875753755755,
+          "p": 0.5248326040952734,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9807519242363756
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -2.137875753755755,
+          "p": 0.5248326040952734,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9807519242363756
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -1.1225216436099923,
+          "p": 0.9252109830915656,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.014489117068614795
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.137875753755755,
+          "p": 0.5248326040952734,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9807519242363756
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.6620948786163676,
+          "p": 0.7671831732090203,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9853519256243348
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.5923894454420031,
+          "p": 0.7953984566930281,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9955319883667444
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.252566980392071,
+          "p": 0.8991657864931908,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9986965247242985
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -0.9256989475263403,
+          "p": 0.9533204531212713,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9978679702439921
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -0.9164115347745131,
+          "p": 0.9543647292087049,
+          "nobs": 36,
+          "critical": {
+            "1%": -4.235055592421125,
+            "5%": -3.540390300068587,
+            "10%": -3.2023804526748973
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9988111631249885
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.9438849272630144,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 4.118552251427828,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 2.143857626072275,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 1.4765667727447198,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 1.1430033504275838,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.9438849272630144,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.7190274716227767,
+          "p": 0.01181568439792939,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.15057124214822631,
+          "p": 0.04619063154314473,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.5730791052227201,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.30399419919591153,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.2165678824493499,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.17452381985637427,
+          "p": 0.0262301501196881,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.15057124214822631,
+          "p": 0.04619063154314473,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.12536178917205928,
+          "p": 0.08821890894063095,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -4.314716327880921,
+          "p": 0.18568442339393948,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 1,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -4.314716327880921,
+          "p": 0.18568442339393948,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 1,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -4.242138920394767,
+          "p": 0.34757158989454945,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 1,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -4.242138920394767,
+          "p": 0.34757158989454945,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 1,
+          "break_date": "2024-06-01"
+        }
+      ]
+    },
+    "ks_avg3_full": {
+      "n": 45,
+      "start": "2023-01-01",
+      "end": "2026-09-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -2.510048742792883,
+          "p": 0.11304846232953064,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7349319715670019
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -2.5259476493116235,
+          "p": 0.10928794076566567,
+          "nobs": 43,
+          "critical": {
+            "1%": -3.5925042342183704,
+            "5%": -2.931549768951162,
+            "10%": -2.60406594375338
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.023973233998699085
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -2.037061842651193,
+          "p": 0.27056282279298416,
+          "nobs": 44,
+          "critical": {
+            "1%": -3.5885733964124715,
+            "5%": -2.929885661157025,
+            "10%": -2.6031845661157025
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 3.32687592475431e-11
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.5259476493116235,
+          "p": 0.10928794076566567,
+          "nobs": 43,
+          "critical": {
+            "1%": -3.5925042342183704,
+            "5%": -2.931549768951162,
+            "10%": -2.60406594375338
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.023973233998699085
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -2.2975593640600365,
+          "p": 0.1727563334902154,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.055156344192305744
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -2.1685915212367872,
+          "p": 0.217841717560863,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.32378300470082466
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -2.510048742792883,
+          "p": 0.11304846232953064,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7349319715670019
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -2.778810658956767,
+          "p": 0.061364841155540716,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6966121522289299
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -2.9408193123936273,
+          "p": 0.04080302411032017,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8019909315434919
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.1751916789137742,
+          "p": 0.9154638160525985,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6215130938069582
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 3,
+          "stat": -0.5818157101736472,
+          "p": 0.9798556077745468,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.26846843664355696
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": 0.3737230670533844,
+          "p": 0.996536731706288,
+          "nobs": 44,
+          "critical": {
+            "1%": -4.1807810419797145,
+            "5%": -3.5154718322689704,
+            "10%": -3.1881037377911348
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 5.055528334634929e-10
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -1.9609974952363962,
+          "p": 0.6225085583474534,
+          "nobs": 43,
+          "critical": {
+            "1%": -4.186369342196285,
+            "5%": -3.518049983397688,
+            "10%": -3.189584486271649
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.026315276246858435
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.3941928127133458,
+          "p": 0.8626093181677972,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.035849912382887664
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -0.5818157101736472,
+          "p": 0.9798556077745468,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.26846843664355696
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.1751916789137742,
+          "p": 0.9154638160525985,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6215130938069582
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.3233431920651986,
+          "p": 0.8820340017738413,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.569983739656174
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -0.970863855151401,
+          "p": 0.9479109254416056,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7825918921496039
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.5401141133243053,
+          "p": 0.032631956458489805,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 2.4341065455301676,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 1.2464721074930862,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.8510786692964225,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.6555115990721181,
+          "p": 0.017589854629807444,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.5401141133243053,
+          "p": 0.032631956458489805,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.41269336894142566,
+          "p": 0.07168389269766136,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.23997034257398708,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 1.0493059673492808,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.5403994913261462,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.3714857767292887,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.28848524391601627,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.23997034257398708,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.18743287781194623,
+          "p": 0.02071267082052016,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -2.384033810709597,
+          "p": 0.9902888865699124,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 4,
+          "break_date": "2024-07-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -2.1924863197789386,
+          "p": 0.9936617293825121,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 3,
+          "break_date": "2023-08-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -4.1484741247749275,
+          "p": 0.40617921330116297,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 4,
+          "break_date": "2025-02-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -3.6061835336234114,
+          "p": 0.7565850679922006,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 3,
+          "break_date": "2025-02-01"
+        }
+      ]
+    },
+    "ks_raw_full": {
+      "n": 44,
+      "start": "2023-01-01",
+      "end": "2026-08-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -2.354590597309972,
+          "p": 0.154965000028642,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.982237029992151
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -2.354590597309972,
+          "p": 0.154965000028642,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.982237029992151
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -2.0273472647441575,
+          "p": 0.2747124750770486,
+          "nobs": 43,
+          "critical": {
+            "1%": -3.5925042342183704,
+            "5%": -2.931549768951162,
+            "10%": -2.60406594375338
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.027814639435274013
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.0560649625296192,
+          "p": 0.26254390273383077,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.710495937914102
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -2.354590597309972,
+          "p": 0.154965000028642,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.982237029992151
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -2.591103930030659,
+          "p": 0.09484987899318237,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9991435203778356
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -2.72014289353078,
+          "p": 0.07061705600850349,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9985462504496759
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -3.0250433174955207,
+          "p": 0.032620937172031954,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9719477569142116
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -2.7546893661025518,
+          "p": 0.06504321530446515,
+          "nobs": 37,
+          "critical": {
+            "1%": -3.6209175221605827,
+            "5%": -2.9435394610388332,
+            "10%": -2.6104002410518627
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9533444852772939
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 0,
+          "stat": -0.5108632710796281,
+          "p": 0.9830016929233988,
+          "nobs": 43,
+          "critical": {
+            "1%": -4.186369342196285,
+            "5%": -3.518049983397688,
+            "10%": -3.189584486271649
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.049361813214789246
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 0,
+          "stat": -0.5108632710796281,
+          "p": 0.9830016929233988,
+          "nobs": 43,
+          "critical": {
+            "1%": -4.186369342196285,
+            "5%": -3.518049983397688,
+            "10%": -3.189584486271649
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.049361813214789246
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -0.5108632710796281,
+          "p": 0.9830016929233988,
+          "nobs": 43,
+          "critical": {
+            "1%": -4.186369342196285,
+            "5%": -3.518049983397688,
+            "10%": -3.189584486271649
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.049361813214789246
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -0.9886328785588493,
+          "p": 0.9456254179425732,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.5604431011089142
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.531908889099668,
+          "p": 0.8179580971462896,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9179641216177062
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.7505420751542606,
+          "p": 0.7281038446626171,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9860430617536284
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.7009869094086203,
+          "p": 0.750437608041225,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9401660010659295
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.9350934181220067,
+          "p": 0.6362957514197043,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9666922142180532
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -2.006503824591342,
+          "p": 0.597886381774262,
+          "nobs": 37,
+          "critical": {
+            "1%": -4.226862411110892,
+            "5%": -3.536645678834422,
+            "10%": -3.200239967030581
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9344253457699992
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.4427933600908947,
+          "p": 0.05870975858151091,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 1.929114736834834,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.9979008597514811,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.6866253394825695,
+          "p": 0.014761332774311858,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.5329482673088052,
+          "p": 0.03424588574126009,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.4427933600908947,
+          "p": 0.05870975858151091,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.3447656736846827,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 4,
+          "stat": 0.238369015915327,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 1.023487998833057,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.5307776392628615,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.3663934621847808,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.2855406334289355,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.238369015915327,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.1877125045008122,
+          "p": 0.020607810812195423,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -3.1439707868350615,
+          "p": 0.8625664788047627,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 0,
+          "break_date": "2023-07-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -3.1439707868350615,
+          "p": 0.8625664788047627,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 0,
+          "break_date": "2023-07-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -3.2771024705724177,
+          "p": 0.9023195301112071,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 0,
+          "break_date": "2024-08-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -3.2771024705724177,
+          "p": 0.9023195301112071,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 0,
+          "break_date": "2024-08-01"
+        }
+      ]
+    },
+    "real_sales_interpolated_sensitivity": {
+      "n": 45,
+      "start": "2023-01-01",
+      "end": "2026-09-01",
+      "adf": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -1.5173279883936783,
+          "p": 0.5249226813679122,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.880741647341667
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -2.2410803214745973,
+          "p": 0.1916747990325356,
+          "nobs": 43,
+          "critical": {
+            "1%": -3.5925042342183704,
+            "5%": -2.931549768951162,
+            "10%": -2.60406594375338
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.616392588496004
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -3.598556349805595,
+          "p": 0.005788687298299984,
+          "nobs": 44,
+          "critical": {
+            "1%": -3.5885733964124715,
+            "5%": -2.929885661157025,
+            "10%": -2.6031845661157025
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.2053400548219455
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.2410803214745973,
+          "p": 0.1916747990325356,
+          "nobs": 43,
+          "critical": {
+            "1%": -3.5925042342183704,
+            "5%": -2.931549768951162,
+            "10%": -2.60406594375338
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.616392588496004
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.5173279883936783,
+          "p": 0.5249226813679122,
+          "nobs": 42,
+          "critical": {
+            "1%": -3.596635636000432,
+            "5%": -2.933297331821618,
+            "10%": -2.6049909750566895
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.880741647341667
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.6440308705539466,
+          "p": 0.4601553310865376,
+          "nobs": 41,
+          "critical": {
+            "1%": -3.60098336718852,
+            "5%": -2.9351348158036012,
+            "10%": -2.6059629803688282
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8371422090160631
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.4889097383180308,
+          "p": 0.5389902253371255,
+          "nobs": 40,
+          "critical": {
+            "1%": -3.6055648906249997,
+            "5%": -2.937069375,
+            "10%": -2.606985625
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.8333280774277297
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.9353870102554174,
+          "p": 0.31560136308675746,
+          "nobs": 39,
+          "critical": {
+            "1%": -3.610399601308181,
+            "5%": -2.939108945868946,
+            "10%": -2.6080629651545038
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.990945272187895
+        },
+        {
+          "deterministic": "c",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -1.5825074667722276,
+          "p": 0.492374356845593,
+          "nobs": 38,
+          "critical": {
+            "1%": -3.6155091011809297,
+            "5%": -2.941262357486514,
+            "10%": -2.6091995013850418
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9998347746659008
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "maxlag": 4,
+          "lag": 2,
+          "stat": -1.4671060352528755,
+          "p": 0.8401253945194392,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.875621028457285
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "maxlag": 4,
+          "lag": 1,
+          "stat": -2.1781465281563075,
+          "p": 0.5021564551948852,
+          "nobs": 43,
+          "critical": {
+            "1%": -4.186369342196285,
+            "5%": -3.518049983397688,
+            "10%": -3.189584486271649
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6124689185634751
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 0,
+          "lag": 0,
+          "stat": -3.583379284551191,
+          "p": 0.03127979400748677,
+          "nobs": 44,
+          "critical": {
+            "1%": -4.1807810419797145,
+            "5%": -3.5154718322689704,
+            "10%": -3.1881037377911348
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.22934646349125576
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 1,
+          "lag": 1,
+          "stat": -2.1781465281563075,
+          "p": 0.5021564551948852,
+          "nobs": 43,
+          "critical": {
+            "1%": -4.186369342196285,
+            "5%": -3.518049983397688,
+            "10%": -3.189584486271649
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.6124689185634751
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 2,
+          "lag": 2,
+          "stat": -1.4671060352528755,
+          "p": 0.8401253945194392,
+          "nobs": 42,
+          "critical": {
+            "1%": -4.1922463983371125,
+            "5%": -3.520758216175359,
+            "10%": -3.1911390346614836
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.875621028457285
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 3,
+          "lag": 3,
+          "stat": -1.3603687091882661,
+          "p": 0.8721746277023525,
+          "nobs": 41,
+          "critical": {
+            "1%": -4.198435183325837,
+            "5%": -3.5236066465953773,
+            "10%": -3.1927730539313126
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.826163913266296
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 4,
+          "lag": 4,
+          "stat": -1.0257524998012992,
+          "p": 0.9405473619027086,
+          "nobs": 40,
+          "critical": {
+            "1%": -4.2049611718749995,
+            "5%": -3.52660646875,
+            "10%": -3.1944928125
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.7920477697584518
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 5,
+          "lag": 5,
+          "stat": -1.3288464844684413,
+          "p": 0.8806083620609959,
+          "nobs": 39,
+          "critical": {
+            "1%": -4.211852690200441,
+            "5%": -3.5297701024966703,
+            "10%": -3.196305257168867
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9204713405539859
+        },
+        {
+          "deterministic": "ct",
+          "selection": "fixed",
+          "maxlag": 6,
+          "lag": 6,
+          "stat": -0.8990894090145696,
+          "p": 0.9562530457524792,
+          "nobs": 38,
+          "critical": {
+            "1%": -4.219141325995043,
+            "5%": -3.5331113660883506,
+            "10%": -3.1982181075958596
+          },
+          "auxiliary_ljung_box_6_p_descriptive": 0.9840430260400949
+        }
+      ],
+      "kpss": [
+        {
+          "deterministic": "c",
+          "selection": "auto",
+          "lag": 3,
+          "stat": 0.3098022954234876,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.751170939440826,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.5013796127076291,
+          "p": 0.04135594308386732,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.38388906192656075,
+          "p": 0.08409954227303416,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "c",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.3098022954234876,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.26614246452169255,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "c",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.215008923217049,
+          "p": 0.1,
+          "critical": {
+            "10%": 0.347,
+            "5%": 0.463,
+            "2.5%": 0.574,
+            "1%": 0.739
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "auto",
+          "lag": 3,
+          "stat": 0.2111677141372003,
+          "p": 0.011812107198549882,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "0",
+          "lag": 0,
+          "stat": 0.4836786920007599,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "1",
+          "lag": 1,
+          "stat": 0.3308426505037508,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "2",
+          "lag": 2,
+          "stat": 0.2580688878840142,
+          "p": 0.01,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is smaller than the p-value returned.\n"
+          ]
+        },
+        {
+          "deterministic": "ct",
+          "selection": "3",
+          "lag": 3,
+          "stat": 0.2111677141372003,
+          "p": 0.011812107198549882,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "4",
+          "lag": 4,
+          "stat": 0.18366990290465413,
+          "p": 0.0221237864107547,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        },
+        {
+          "deterministic": "ct",
+          "selection": "6",
+          "lag": 6,
+          "stat": 0.15152238992309608,
+          "p": 0.04539800839741993,
+          "critical": {
+            "10%": 0.119,
+            "5%": 0.146,
+            "2.5%": 0.176,
+            "1%": 0.216
+          },
+          "warnings": []
+        }
+      ],
+      "zivot_andrews": [
+        {
+          "deterministic": "c",
+          "selection": "AIC",
+          "stat": -3.4620580769941696,
+          "p": 0.7038616494322493,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 2,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "c",
+          "selection": "BIC",
+          "stat": -4.289405903335119,
+          "p": 0.19660915774554608,
+          "critical": {
+            "1%": -5.27644,
+            "5%": -4.81067,
+            "10%": -4.56618
+          },
+          "lag": 1,
+          "break_date": "2024-06-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "AIC",
+          "stat": -5.043610090411014,
+          "p": 0.05518352808796601,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 2,
+          "break_date": "2024-08-01"
+        },
+        {
+          "deterministic": "ct",
+          "selection": "BIC",
+          "stat": -5.135138397318606,
+          "p": 0.04309199028712161,
+          "critical": {
+            "1%": -5.57556,
+            "5%": -5.07332,
+            "10%": -4.82668
+          },
+          "lag": 1,
+          "break_date": "2024-08-01"
+        }
+      ]
+    }
+  },
+  "sources_sha256": {
+    "cash_sales.csv": "22b96a2ba220c4fff96533c0b83831193a7ea1a814c711535638f186ee800e5e",
+    "macro_scenario.xlsx": "f0957117ca2bf8a4e3c19ab985c99b62836edebc705d54794b02cc0a38cec277",
+    "price_index.xlsx": "f2e534766fdaa9995c3b16789da853d7e95f41dfe2b1070c113e54246dfe35ec"
+  },
+  "last_raw_rate_tested": "2026-08-01",
+  "engle_granger_exploratory": [
+    {
+      "trend": "c",
+      "selection": "AIC",
+      "stat": -5.998153698821001,
+      "p": 1.6384499725982827e-06,
+      "critical_1_5_10": [
+        -4.176205759637188,
+        -3.485476485260771,
+        -3.1469729024943307
+      ]
+    },
+    {
+      "trend": "c",
+      "selection": "BIC",
+      "stat": -5.998153698821001,
+      "p": 1.6384499725982827e-06,
+      "critical_1_5_10": [
+        -4.176205759637188,
+        -3.485476485260771,
+        -3.1469729024943307
+      ]
+    },
+    {
+      "trend": "ct",
+      "selection": "AIC",
+      "stat": -6.156493535404908,
+      "p": 4.361389414821068e-06,
+      "critical_1_5_10": [
+        -4.715434285714285,
+        -4.013857528344671,
+        -3.6688948990389805
+      ]
+    },
+    {
+      "trend": "ct",
+      "selection": "BIC",
+      "stat": -6.156493535404908,
+      "p": 4.361389414821068e-06,
+      "critical_1_5_10": [
+        -4.715434285714285,
+        -4.013857528344671,
+        -3.6688948990389805
+      ]
+    }
+  ],
+  "residual_kpss_descriptive": {
+    "stat": 0.1478082045272155,
+    "p": 0.1,
+    "lags": 2,
+    "warning": "Estimated full-sample Huber residuals; ordinary KPSS inference is descriptive, not a calibrated cointegration test.",
+    "table_warnings": [
+      "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+    ]
+  },
+  "july_2024_summary": {
+    "real_sales": {
+      "before": {
+        "n": 16,
+        "mean": 26.42097346791556,
+        "std": 14.032419389309055,
+        "adf_c_maxlag2": {
+          "AIC": {
+            "stat": -3.631546386315586,
+            "p": 0.005185791516715303,
+            "lag": 0
+          },
+          "BIC": {
+            "stat": -3.631546386315586,
+            "p": 0.005185791516715303,
+            "lag": 0
+          }
+        },
+        "kpss_c_auto": {
+          "stat": 0.14461158582216663,
+          "p": 0.1,
+          "lag": 0,
+          "warnings": [
+            "The test statistic is outside of the range of p-values available in the\nlook-up table. The actual p-value is greater than the p-value returned.\n"
+          ]
+        }
+      },
+      "after": {
+        "n": 27,
+        "mean": 48.36556226976564,
+        "std": 18.01962691316104,
+        "adf_c_maxlag2": {
+          "AIC": {
+            "stat": -2.576292916697952,
+            "p": 0.09799669575032355,
+            "lag": 0
+          },
+          "BIC": {
+            "stat": -2.576292916697952,
+            "p": 0.09799669575032355,
+            "lag": 0
+          }
+        },
+        "kpss_c_auto": {
+          "stat": 0.6124977329976994,
+          "p": 0.021500206091118235,
+          "lag": 3,
+          "warnings": []
+        }
+      }
+    },
+    "ks_avg3": {
+      "before": {
+        "n": 16,
+        "mean": 11.78125,
+        "std": 3.842124581048394,
+        "adf_c_maxlag2": {
+          "AIC": {
+            "stat": -1.75313007985781,
+            "p": 0.4039668178577363,
+            "lag": 1
+          },
+          "BIC": {
+            "stat": -1.75313007985781,
+            "p": 0.4039668178577363,
+            "lag": 1
+          }
+        },
+        "kpss_c_auto": {
+          "stat": 0.5815804364007446,
+          "p": 0.024310869418114122,
+          "lag": 2,
+          "warnings": []
+        }
+      },
+      "after": {
+        "n": 27,
+        "mean": 17.805555555555557,
+        "std": 2.4720661623652207,
+        "adf_c_maxlag2": {
+          "AIC": {
+            "stat": -2.080407266537187,
+            "p": 0.2524655636446441,
+            "lag": 1
+          },
+          "BIC": {
+            "stat": -2.080407266537187,
+            "p": 0.2524655636446441,
+            "lag": 1
+          }
+        },
+        "kpss_c_auto": {
+          "stat": 0.45149139449508124,
+          "p": 0.05496060582108568,
+          "lag": 3,
+          "warnings": []
+        }
+      }
+    }
+  },
+  "notes": [
+    "ADF H0: unit root; KPSS H0: level/trend stationarity.",
+    "c: constant; ct: constant plus deterministic linear trend.",
+    "ADF autolag max=4; fixed lags 0..6 are sensitivity, not opportunities to pick a preferred result.",
+    "KPSS p=.10 means p>=.10 and p=.01 means p<=.01 when table warning is present.",
+    "Zivot-Andrews allows one endogenously selected break; July 2024 is not imposed.",
+    "The smoothed KS factor is mechanically persistent; raw KS is reported separately.",
+    "Only about 3.5 annual cycles: seasonal roots and regime stability are not resolved.",
+    "Engle-Granger is exploratory and only interpretable as cointegration if both inputs are I(1).",
+    "No forecasts or model coefficients were changed by this script."
+  ]
+}
