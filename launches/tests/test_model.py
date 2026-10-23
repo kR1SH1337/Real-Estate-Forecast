@@ -47,6 +47,7 @@ class LaunchModelTests(unittest.TestCase):
             result=json.loads(output.read_text(encoding='utf-8'))
             self.assertEqual(result,json.loads(proc.stdout))
             self.assertEqual(result['annual'][0]['year'],2026)
+            self.assertEqual(output.with_name('forecast_chart.png').read_bytes()[:8],b'\x89PNG\r\n\x1a\n')
 
 
 if __name__ == '__main__':
