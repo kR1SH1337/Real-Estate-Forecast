@@ -1,4 +1,5 @@
 """Regression and data-availability checks. Run: python -m unittest discover -s tests -v."""
+import sys
 import tempfile
 import unittest
 import warnings
@@ -7,10 +8,9 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
-import cash_model as model
-
-
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+import cash_model as model
 
 
 class UpdatedModelTests(unittest.TestCase):

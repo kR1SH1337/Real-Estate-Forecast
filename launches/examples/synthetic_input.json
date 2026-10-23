@@ -1,0 +1,119 @@
+{
+  "units": "thousand square metres",
+  "quarterly": {
+    "2020Q1": {
+      "launch": 760.0
+    },
+    "2020Q2": {
+      "launch": 960.0
+    },
+    "2020Q3": {
+      "launch": 1040.0
+    },
+    "2020Q4": {
+      "launch": 1240.0
+    },
+    "2021Q1": {
+      "launch": 779.0,
+      "sales": 665.0
+    },
+    "2021Q2": {
+      "launch": 984.0,
+      "sales": 840.0
+    },
+    "2021Q3": {
+      "launch": 1066.0,
+      "sales": 910.0
+    },
+    "2021Q4": {
+      "launch": 1271.0,
+      "sales": 1085.0
+    },
+    "2022Q1": {
+      "launch": 798.0,
+      "sales": 680.2
+    },
+    "2022Q2": {
+      "launch": 1008.0,
+      "sales": 859.1999999999999
+    },
+    "2022Q3": {
+      "launch": 1092.0,
+      "sales": 930.8000000000001
+    },
+    "2022Q4": {
+      "launch": 1302.0,
+      "sales": 1109.8
+    },
+    "2023Q1": {
+      "launch": 817.0,
+      "sales": 695.4
+    },
+    "2023Q2": {
+      "launch": 1032.0,
+      "sales": 878.4
+    },
+    "2023Q3": {
+      "launch": 1118.0,
+      "sales": 951.6
+    },
+    "2023Q4": {
+      "launch": 1333.0,
+      "sales": 1134.6
+    },
+    "2024Q1": {
+      "launch": 836.0,
+      "sales": 710.6
+    },
+    "2024Q2": {
+      "launch": 1056.0,
+      "sales": 897.6
+    },
+    "2024Q3": {
+      "launch": 1144.0,
+      "sales": 972.4
+    },
+    "2024Q4": {
+      "launch": 1364.0,
+      "sales": 1159.4
+    },
+    "2025Q1": {
+      "launch": 855.0,
+      "sales": 725.8
+    },
+    "2025Q2": {
+      "launch": 1080.0,
+      "sales": 916.8
+    },
+    "2025Q3": {
+      "launch": 1170.0,
+      "sales": 993.2
+    },
+    "2025Q4": {
+      "launch": 1395.0,
+      "sales": 1184.2
+    },
+    "2026Q1": {
+      "launch": 874.0,
+      "sales": 741.0
+    },
+    "2026Q2": {
+      "launch": 1104.0,
+      "sales": 936.0
+    },
+    "2026Q3": {
+      "launch": 1196.0,
+      "sales": 1014.0
+    }
+  },
+  "annual_sales_forecast": {
+    "2026": 3900.0,
+    "2027": 4050.0,
+    "2028": 4200.0,
+    "2029": 4350.0,
+    "2030": 4500.0
+  },
+  "source_notes": [
+    "SYNTHETIC DEMONSTRATION DATA. No real Moscow data or forecasts. Do not interpret model outputs as a market forecast."
+  ]
+}

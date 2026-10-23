@@ -1,2 +1,1 @@
--r requirements.txt
-statsmodels==0.14.6
+-r cash_installments/requirements-diagnostics.txt
