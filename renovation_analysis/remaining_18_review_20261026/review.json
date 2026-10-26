@@ -1,0 +1,4352 @@
+{
+  "as_of": "2026-10-26",
+  "eis_snapshot": "2026-10-23",
+  "statistics": {
+    "snapshot_unique_eis_ids": 2680,
+    "reviewed_sites": 18,
+    "new_confirmed_eis_ids": 0,
+    "working_renovation_eis_ids_including_user_assumption": 24,
+    "working_apartment_area_m2": 379085.09,
+    "unresolved_sites": 18,
+    "apartments_in_18_site_cards": 7932,
+    "sites_with_same_apartment_count_candidate_within_3km": 0
+  },
+  "sites": [
+    {
+      "site_id": "73f27c4d2203421615f62720",
+      "address": "3-й Нижнелихоборский пр-д, влд. 5, стр. 1",
+      "fund_apartments": 190,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "3-й Нижнелихоборский пр-д, влд. 5, стр. 1",
+        "stage": "Сообщение о строительстве 21.10.2026: 190 квартир, две секции; не корпус Большой Академической 85 на 234 квартиры.",
+        "url": "https://www.mos.ru/news/item/177452073/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/3-y-nizhnelikhoborskiy-pr-d-vld-5/",
+      "nearest_candidates": [
+        {
+          "eis_id": "38649",
+          "project": "Большая Академическая 85",
+          "developer": "\"СЗ \"ЛИХОБОРЫ\"",
+          "apartments": "234",
+          "area_m2": "9088.2",
+          "status": "Сдан",
+          "rns": "77-206000-019273-2020",
+          "cadastral": "77:09:0003024:4151",
+          "distance_m": 99.9
+        },
+        {
+          "eis_id": "36581",
+          "project": "Большая Академическая 85",
+          "developer": "\"СЗ \"ЛИХОБОРЫ\"",
+          "apartments": "198",
+          "area_m2": "9288",
+          "status": "Сдан",
+          "rns": "77-206000-018924-2020",
+          "cadastral": "77:09:0003024:4151",
+          "distance_m": 284.3
+        },
+        {
+          "eis_id": "37647",
+          "project": "Большая Академическая 85",
+          "developer": "\"СЗ \"ЛИХОБОРЫ\"",
+          "apartments": "216",
+          "area_m2": "9189",
+          "status": "Сдан",
+          "rns": "77-206000-019204-2020",
+          "cadastral": "77:09:0003024:4151",
+          "distance_m": 284.3
+        },
+        {
+          "eis_id": "43279",
+          "project": "Большая Академическая 85",
+          "developer": "\"СЗ \"ЛИХОБОРЫ\"",
+          "apartments": "410",
+          "area_m2": "16723",
+          "status": "Сдан",
+          "rns": "77-206000-019771-2021",
+          "cadastral": "77:09:0003024:4150",
+          "distance_m": 284.3
+        },
+        {
+          "eis_id": "52350",
+          "project": "Большая Академическая 85",
+          "developer": "\"СЗ \"ЛИХОБОРЫ\"",
+          "apartments": "1152",
+          "area_m2": "45096.2",
+          "status": "Сдан",
+          "rns": "77-09-020875-2023",
+          "cadastral": "77:09:0003024:4155",
+          "distance_m": 340.8
+        },
+        {
+          "eis_id": "53897",
+          "project": "Большая Академическая 85",
+          "developer": "\"СЗ \"ЛИХОБОРЫ\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-09-021035-2023",
+          "cadastral": "77:09:0003024:4155",
+          "distance_m": 377.7
+        },
+        {
+          "eis_id": "14136",
+          "project": "Поколение",
+          "developer": "СИГНАЛСТРОЙГРУПП",
+          "apartments": "502",
+          "area_m2": "25386.5",
+          "status": "Сдан",
+          "rns": "77-175000-018185-2019",
+          "cadastral": "77:02:7003:107",
+          "distance_m": 866.3
+        },
+        {
+          "eis_id": "9311",
+          "project": "Поколение",
+          "developer": "СИГНАЛСТРОЙГРУПП",
+          "apartments": "614",
+          "area_m2": "31985.3",
+          "status": "Сдан",
+          "rns": "77-175000-016740-2018",
+          "cadastral": "77:02:0007003:107",
+          "distance_m": 920.5
+        },
+        {
+          "eis_id": "38738",
+          "project": "Тринити",
+          "developer": "СЗ СТРОЙТЭК",
+          "apartments": "1432",
+          "area_m2": "63093.8",
+          "status": "Сдан",
+          "rns": "77-131000-019336-2021",
+          "cadastral": "77:09:0002030:78",
+          "distance_m": 1095.4
+        },
+        {
+          "eis_id": "23076",
+          "project": "Талисман на Дмитровском",
+          "developer": "СЗ \"Талисман ДМК\"",
+          "apartments": "748",
+          "area_m2": "35157",
+          "status": "Сдан",
+          "rns": "77-131000-017518-2018",
+          "cadastral": "77:09:0002030:63",
+          "distance_m": 1142.4
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "52453",
+          "project": "Союз",
+          "developer": "\"СЗ \"ИСКРА\"",
+          "apartments": "190",
+          "area_m2": "12315.2",
+          "status": "Строится",
+          "rns": "77-184000-020269-2022",
+          "cadastral": "77:02:0018007:4602",
+          "distance_m": 4782.1
+        },
+        {
+          "eis_id": "1484",
+          "project": "Геометрия",
+          "developer": "Желдорипотека",
+          "apartments": "190",
+          "area_m2": "15295.5",
+          "status": "Сдан",
+          "rns": "77-148000-018040-2018",
+          "cadastral": "77:04:0001013:0000020",
+          "distance_m": 14172.2
+        },
+        {
+          "eis_id": "44730",
+          "project": "Ютаново",
+          "developer": "\"СЗ \"ТРИАЛ СЕРВИС\"",
+          "apartments": "190",
+          "area_m2": "8702.3",
+          "status": "Сдан",
+          "rns": "77-219000-019998-2022",
+          "cadastral": "77:05:0008005:13599",
+          "distance_m": 29023.4
+        },
+        {
+          "eis_id": "31065",
+          "project": "Ново-Никольское",
+          "developer": "АГРОСТРОЙ",
+          "apartments": "190",
+          "area_m2": "11169.67",
+          "status": "Сдан",
+          "rns": "77-242000-016121-2017",
+          "cadastral": "50:26:0180516:60",
+          "distance_m": 43394.6
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-131000-017290-2018",
+          "eis_ids": [
+            "38737",
+            "38736"
+          ],
+          "apartments_sum": 651,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "407397fc6dd27fc3dfc3e3c1",
+      "address": "Амурская ул., влд. 1/12 (зона 3.5)",
+      "fund_apartments": 1587,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Амурская ул., влд. 1/12 (зона 3.5)",
+        "stage": "Согласован проект из трёх корпусов 05.06.2025; карточка фонда содержит 1587 квартир. Нужно учитывать возможное разбиение на несколько ID.",
+        "url": "https://stroi.mos.ru/news/soghlasovan-proiekt-doma-iz-triekh-korpusov-po-rienovatsii-v-raionie-gol-ianovo"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/amurskaya-ul-vld-1-uch-3-5/",
+      "nearest_candidates": [
+        {
+          "eis_id": "48119",
+          "project": "ул Амурская, корпус 9",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "337",
+          "area_m2": "17908.8",
+          "status": "Сдан",
+          "rns": "77-121000-019970-2021",
+          "cadastral": "77:03:0002007:7190",
+          "distance_m": 149.6
+        },
+        {
+          "eis_id": "36146",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "128",
+          "area_m2": "7996.8",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 290.6
+        },
+        {
+          "eis_id": "42901",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "1063",
+          "area_m2": "43052.2",
+          "status": "Сдан",
+          "rns": "77-125000-019705-2021",
+          "cadastral": "77:03:0002007:4813; 77:03:0002007:4814",
+          "distance_m": 308.6
+        },
+        {
+          "eis_id": "36145",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "304",
+          "area_m2": "18059.2",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 324.7
+        },
+        {
+          "eis_id": "36147",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "416",
+          "area_m2": "20458",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 334.4
+        },
+        {
+          "eis_id": "46925",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "2131",
+          "area_m2": "83893.3",
+          "status": "Сдан",
+          "rns": "77-125000-020280-2022",
+          "cadastral": "77:03:0002007:4814",
+          "distance_m": 340.6
+        },
+        {
+          "eis_id": "36148",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "416",
+          "area_m2": "20458",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 397.0
+        },
+        {
+          "eis_id": "66710",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "1034",
+          "area_m2": "46597.1",
+          "status": "Строится",
+          "rns": "77-03-022098-2025",
+          "cadastral": "77:03:0002007:2154",
+          "distance_m": 434.5
+        },
+        {
+          "eis_id": "34741",
+          "project": "Level Амурская",
+          "developer": "МСМ №4",
+          "apartments": "1355",
+          "area_m2": "67913.8",
+          "status": "Сдан",
+          "rns": "77-125000-014170-2017",
+          "cadastral": "77:03:0002007:16",
+          "distance_m": 547.6
+        },
+        {
+          "eis_id": "28174",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "210",
+          "area_m2": "9531.03",
+          "status": "Сдан",
+          "rns": "77-113000-017924-2018",
+          "cadastral": "77:03:0003021:7843",
+          "distance_m": 572.2
+        }
+      ],
+      "same_apartment_count_all_snapshot": [],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "36145",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "304",
+          "area_m2": "18059.2",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 324.7
+        },
+        {
+          "eis_id": "48119",
+          "project": "ул Амурская, корпус 9",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "337",
+          "area_m2": "17908.8",
+          "status": "Сдан",
+          "rns": "77-121000-019970-2021",
+          "cadastral": "77:03:0002007:7190",
+          "distance_m": 149.6
+        },
+        {
+          "eis_id": "36148",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "416",
+          "area_m2": "20458",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 397.0
+        },
+        {
+          "eis_id": "36147",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "416",
+          "area_m2": "20458",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 334.4
+        },
+        {
+          "eis_id": "42901",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "1063",
+          "area_m2": "43052.2",
+          "status": "Сдан",
+          "rns": "77-125000-019705-2021",
+          "cadastral": "77:03:0002007:4813; 77:03:0002007:4814",
+          "distance_m": 308.6
+        },
+        {
+          "eis_id": "34741",
+          "project": "Level Амурская",
+          "developer": "МСМ №4",
+          "apartments": "1355",
+          "area_m2": "67913.8",
+          "status": "Сдан",
+          "rns": "77-125000-014170-2017",
+          "cadastral": "77:03:0002007:16",
+          "distance_m": 547.6
+        },
+        {
+          "eis_id": "70368",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "135",
+          "area_m2": "8590.4",
+          "status": "Строится",
+          "rns": "77-03-022543-2026",
+          "cadastral": "77:03:0002014:8435",
+          "distance_m": 2166.8
+        },
+        {
+          "eis_id": "70300",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "538",
+          "area_m2": "33714",
+          "status": "Строится",
+          "rns": "77-03-022544-2026",
+          "cadastral": "77:03:0002009:3338",
+          "distance_m": 1788.7
+        },
+        {
+          "eis_id": "73779",
+          "project": "Амурская, 40, ",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "574",
+          "area_m2": "36277",
+          "status": "Строится",
+          "rns": "Р001-77305-77/00000059",
+          "cadastral": "77:03:0002014:8434",
+          "distance_m": 2043.6
+        },
+        {
+          "eis_id": "34742",
+          "project": "Level Амурская",
+          "developer": "МСМ №4",
+          "apartments": "1047",
+          "area_m2": "50143.4",
+          "status": "Сдан",
+          "rns": "77-125000-014170-2017",
+          "cadastral": "77:03:0002007:16",
+          "distance_m": 623.6
+        },
+        {
+          "eis_id": "66710",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "1034",
+          "area_m2": "46597.1",
+          "status": "Строится",
+          "rns": "77-03-022098-2025",
+          "cadastral": "77:03:0002007:2154",
+          "distance_m": 434.5
+        },
+        {
+          "eis_id": "69317",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "538",
+          "area_m2": "32034.4",
+          "status": "Строится",
+          "rns": "77-03-022426-2025",
+          "cadastral": "77:03:0002009:3336",
+          "distance_m": 1655.0
+        },
+        {
+          "eis_id": "46925",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "2131",
+          "area_m2": "83893.3",
+          "status": "Сдан",
+          "rns": "77-125000-020280-2022",
+          "cadastral": "77:03:0002007:4814",
+          "distance_m": 340.6
+        },
+        {
+          "eis_id": "36146",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "128",
+          "area_m2": "7996.8",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 290.6
+        }
+      ],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-125000-018909-2020",
+          "eis_ids": [
+            "36146",
+            "36145",
+            "36147",
+            "36148"
+          ],
+          "apartments_sum": 1264,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-125000-014170-2017",
+          "eis_ids": [
+            "34741",
+            "34742"
+          ],
+          "apartments_sum": 2402,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-113000-017924-2018",
+          "eis_ids": [
+            "28174",
+            "28173",
+            "28170",
+            "28172",
+            "28169",
+            "28171",
+            "28168"
+          ],
+          "apartments_sum": 1117,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-113000-016600-2018",
+          "eis_ids": [
+            "7908",
+            "7907",
+            "7906",
+            "7909"
+          ],
+          "apartments_sum": 1336,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-157000-020185-2022",
+          "eis_ids": [
+            "46579",
+            "46578"
+          ],
+          "apartments_sum": 688,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-157000-019728-2021",
+          "eis_ids": [
+            "42659",
+            "42661",
+            "42660",
+            "42662"
+          ],
+          "apartments_sum": 1568,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-157000-020034-2022",
+          "eis_ids": [
+            "45131",
+            "45133",
+            "45134",
+            "45132"
+          ],
+          "apartments_sum": 1408,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-03-021739-2024",
+          "eis_ids": [
+            "63646",
+            "63647"
+          ],
+          "apartments_sum": 1447,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-03-022351-2025",
+          "eis_ids": [
+            "68659",
+            "68660",
+            "68658"
+          ],
+          "apartments_sum": 877,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "e3e6672c6f200ac0ba5e41c6",
+      "address": "Амурская ул., з/у 52",
+      "fund_apartments": 158,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Амурская ул., з/у 52",
+        "stage": "Согласование проекта на 158 квартир 24.09.2026. Это не Амурская 46 на 135 квартир. Физическое начало строительства и номер РНС не установлены этим этапом.",
+        "url": "https://www.mos.ru/news/item/176185073/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/amurskaya-ul-z-u-52/",
+      "nearest_candidates": [
+        {
+          "eis_id": "70368",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "135",
+          "area_m2": "8590.4",
+          "status": "Строится",
+          "rns": "77-03-022543-2026",
+          "cadastral": "77:03:0002014:8435",
+          "distance_m": 119.8
+        },
+        {
+          "eis_id": "73779",
+          "project": "Амурская, 40, ",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "574",
+          "area_m2": "36277",
+          "status": "Строится",
+          "rns": "Р001-77305-77/00000059",
+          "cadastral": "77:03:0002014:8434",
+          "distance_m": 243.6
+        },
+        {
+          "eis_id": "70300",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "538",
+          "area_m2": "33714",
+          "status": "Строится",
+          "rns": "77-03-022544-2026",
+          "cadastral": "77:03:0002009:3338",
+          "distance_m": 498.9
+        },
+        {
+          "eis_id": "69317",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "538",
+          "area_m2": "32034.4",
+          "status": "Строится",
+          "rns": "77-03-022426-2025",
+          "cadastral": "77:03:0002009:3336",
+          "distance_m": 631.3
+        },
+        {
+          "eis_id": "63646",
+          "project": "1-й Измайловский",
+          "developer": "\"СЗ \"СЕВЕРО-ЗАПАД СТОЛИЦЫ\"",
+          "apartments": "1137",
+          "area_m2": "45002.6",
+          "status": "Строится",
+          "rns": "77-03-021739-2024",
+          "cadastral": "77:03:0002010:3996",
+          "distance_m": 756.1
+        },
+        {
+          "eis_id": "63647",
+          "project": "1-й Измайловский",
+          "developer": "\"СЗ \"СЕВЕРО-ЗАПАД СТОЛИЦЫ\"",
+          "apartments": "310",
+          "area_m2": "15323",
+          "status": "Строится",
+          "rns": "77-03-021739-2024",
+          "cadastral": "77:03:0002010:3996",
+          "distance_m": 756.1
+        },
+        {
+          "eis_id": "56212",
+          "project": "1-й Измайловский",
+          "developer": "\"СЗ \"СЕВЕРО-ЗАПАД СТОЛИЦЫ\"",
+          "apartments": "726",
+          "area_m2": "32109.9",
+          "status": "Строится",
+          "rns": "77-03-021243-2023",
+          "cadastral": "77:03:0002010:3996",
+          "distance_m": 1102.1
+        },
+        {
+          "eis_id": "63629",
+          "project": "2-й Иртышский",
+          "developer": "\"СЗ \"Л-ДЕВЕЛОПМЕНТ\"",
+          "apartments": "707",
+          "area_m2": "29516.9",
+          "status": "Строится",
+          "rns": "77-03-021830-2024",
+          "cadastral": "77:03:0002008:1958",
+          "distance_m": 1235.3
+        },
+        {
+          "eis_id": "63594",
+          "project": "2-й Иртышский",
+          "developer": "\"СЗ \"Л-ДЕВЕЛОПМЕНТ\"",
+          "apartments": "563",
+          "area_m2": "23854",
+          "status": "Строится",
+          "rns": "77-03-021829-2024",
+          "cadastral": "77:03:0002008:1958",
+          "distance_m": 1235.3
+        },
+        {
+          "eis_id": "58644",
+          "project": "2-й Иртышский",
+          "developer": "\"СЗ \"Л-ДЕВЕЛОПМЕНТ\"",
+          "apartments": "693",
+          "area_m2": "27507.5",
+          "status": "Строится",
+          "rns": "77-03-021445-2024",
+          "cadastral": "77:03:0002008:1958",
+          "distance_m": 1257.7
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "62431",
+          "project": "Садовническая 76/71",
+          "developer": "\"СЗ БАЛЧУГ ЭСТЕЙТ\"",
+          "apartments": "158",
+          "area_m2": "22665.31",
+          "status": "Строится",
+          "rns": "77-01-021714-2024",
+          "cadastral": "77:01:0002014:6383",
+          "distance_m": 12213.9
+        },
+        {
+          "eis_id": "42848",
+          "project": "Voxhall",
+          "developer": "\"СЗ \"КОМПЛЕКТ\"",
+          "apartments": "158",
+          "area_m2": "11587.1",
+          "status": "Сдан",
+          "rns": "77-130000-017582-2018",
+          "cadastral": "77:01:0006017:46",
+          "distance_m": 13009.9
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "36145",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "304",
+          "area_m2": "18059.2",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 2123.8
+        },
+        {
+          "eis_id": "48119",
+          "project": "ул Амурская, корпус 9",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "337",
+          "area_m2": "17908.8",
+          "status": "Сдан",
+          "rns": "77-121000-019970-2021",
+          "cadastral": "77:03:0002007:7190",
+          "distance_m": 2278.3
+        },
+        {
+          "eis_id": "36148",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "416",
+          "area_m2": "20458",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 2024.2
+        },
+        {
+          "eis_id": "36147",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "416",
+          "area_m2": "20458",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 2032.6
+        },
+        {
+          "eis_id": "42901",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "1063",
+          "area_m2": "43052.2",
+          "status": "Сдан",
+          "rns": "77-125000-019705-2021",
+          "cadastral": "77:03:0002007:4813; 77:03:0002007:4814",
+          "distance_m": 2044.7
+        },
+        {
+          "eis_id": "34741",
+          "project": "Level Амурская",
+          "developer": "МСМ №4",
+          "apartments": "1355",
+          "area_m2": "67913.8",
+          "status": "Сдан",
+          "rns": "77-125000-014170-2017",
+          "cadastral": "77:03:0002007:16",
+          "distance_m": 1739.2
+        },
+        {
+          "eis_id": "70368",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "135",
+          "area_m2": "8590.4",
+          "status": "Строится",
+          "rns": "77-03-022543-2026",
+          "cadastral": "77:03:0002014:8435",
+          "distance_m": 119.8
+        },
+        {
+          "eis_id": "70300",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "538",
+          "area_m2": "33714",
+          "status": "Строится",
+          "rns": "77-03-022544-2026",
+          "cadastral": "77:03:0002009:3338",
+          "distance_m": 498.9
+        },
+        {
+          "eis_id": "73779",
+          "project": "Амурская, 40, ",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "574",
+          "area_m2": "36277",
+          "status": "Строится",
+          "rns": "Р001-77305-77/00000059",
+          "cadastral": "77:03:0002014:8434",
+          "distance_m": 243.6
+        },
+        {
+          "eis_id": "34742",
+          "project": "Level Амурская",
+          "developer": "МСМ №4",
+          "apartments": "1047",
+          "area_m2": "50143.4",
+          "status": "Сдан",
+          "rns": "77-125000-014170-2017",
+          "cadastral": "77:03:0002007:16",
+          "distance_m": 1662.7
+        },
+        {
+          "eis_id": "66710",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "1034",
+          "area_m2": "46597.1",
+          "status": "Строится",
+          "rns": "77-03-022098-2025",
+          "cadastral": "77:03:0002007:2154",
+          "distance_m": 1972.8
+        },
+        {
+          "eis_id": "69317",
+          "project": "На Амурской",
+          "developer": "\"СЗ \"ГОЛЬЯНОВО\"",
+          "apartments": "538",
+          "area_m2": "32034.4",
+          "status": "Строится",
+          "rns": "77-03-022426-2025",
+          "cadastral": "77:03:0002009:3336",
+          "distance_m": 631.3
+        },
+        {
+          "eis_id": "46925",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "2131",
+          "area_m2": "83893.3",
+          "status": "Сдан",
+          "rns": "77-125000-020280-2022",
+          "cadastral": "77:03:0002007:4814",
+          "distance_m": 2383.8
+        },
+        {
+          "eis_id": "36146",
+          "project": "Амурский Парк",
+          "developer": "СЗ \"ГЛОРИ\"",
+          "apartments": "128",
+          "area_m2": "7996.8",
+          "status": "Сдан",
+          "rns": "77-125000-018909-2020",
+          "cadastral": "77:03:0002007:2155",
+          "distance_m": 2111.1
+        }
+      ],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-03-021739-2024",
+          "eis_ids": [
+            "63646",
+            "63647"
+          ],
+          "apartments_sum": 1447,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-03-022351-2025",
+          "eis_ids": [
+            "68660",
+            "68659",
+            "68658"
+          ],
+          "apartments_sum": 877,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-125000-014170-2017",
+          "eis_ids": [
+            "34742",
+            "34741"
+          ],
+          "apartments_sum": 2402,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-157000-020034-2022",
+          "eis_ids": [
+            "45131",
+            "45133",
+            "45134",
+            "45132"
+          ],
+          "apartments_sum": 1408,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "a7d631e56f05d8b253b5f121",
+      "address": "Большая Черемушкинская ул., влд. 25Б",
+      "fund_apartments": 452,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Большая Черемушкинская ул., влд. 25Б",
+        "stage": "Официальная районная публикация 28.11.2025 описывает строительство четырёхсекционного дома на 452 квартиры. ENITEO по адресу 25 — другой объект.",
+        "url": "https://kotlovka.mos.ru/presscenter/news/detail/13358389.html"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/b-cheremushkinskaya-ul-vl-25b/",
+      "nearest_candidates": [
+        {
+          "eis_id": "37487",
+          "project": "ENITEO",
+          "developer": "СЗ ТЕКТА-АКАДЕМИЧЕСКАЯ",
+          "apartments": "662",
+          "area_m2": "44885.5",
+          "status": "Сдан",
+          "rns": "77-140000-019015-2020",
+          "cadastral": "77:06:0004003:2867; 77:06:0004003:2926",
+          "distance_m": 72.2
+        },
+        {
+          "eis_id": "70590",
+          "project": "Большая Черёмушкинская, з/у 26/2",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "152",
+          "area_m2": "9480.05",
+          "status": "Строится",
+          "rns": "77-06-022479-2025",
+          "cadastral": "77:06:0004002:10432",
+          "distance_m": 647.9
+        },
+        {
+          "eis_id": "12045",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "122",
+          "area_m2": "9680.38",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 835.8
+        },
+        {
+          "eis_id": "12044",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "285",
+          "area_m2": "20963.15",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 855.7
+        },
+        {
+          "eis_id": "56953",
+          "project": "Новые Академики",
+          "developer": "\"НОВЫЕ АКАДЕМИКИ - СПЕЦЗАСТРОЙЩИК\"",
+          "apartments": "784",
+          "area_m2": "62148.8",
+          "status": "Строится",
+          "rns": "77-06-021216-2023",
+          "cadastral": "77:06:0004003:3247",
+          "distance_m": 857.6
+        },
+        {
+          "eis_id": "12043",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "122",
+          "area_m2": "9690.08",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 929.4
+        },
+        {
+          "eis_id": "12046",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "166",
+          "area_m2": "11666.39",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 931.8
+        },
+        {
+          "eis_id": "46905",
+          "project": "Новочеремушкинская, 27",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "204",
+          "area_m2": "12751.1",
+          "status": "Сдан",
+          "rns": "77-101000-019154-2020",
+          "cadastral": "77:06:0004002:10180",
+          "distance_m": 974.4
+        },
+        {
+          "eis_id": "24317",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 1049.2
+        },
+        {
+          "eis_id": "24316",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 1057.6
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "44393",
+          "project": "ОСТРОВ",
+          "developer": " \"СЗ \"ТПУ \"ТЕРЕХОВО 12\"",
+          "apartments": "452",
+          "area_m2": "27434",
+          "status": "Сдан",
+          "rns": "77-212000-019942-2021",
+          "cadastral": "77:08:0014001:2184",
+          "distance_m": 11627.2
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "46905",
+          "project": "Новочеремушкинская, 27",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "204",
+          "area_m2": "12751.1",
+          "status": "Сдан",
+          "rns": "77-101000-019154-2020",
+          "cadastral": "77:06:0004002:10180",
+          "distance_m": 974.4
+        },
+        {
+          "eis_id": "12043",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "122",
+          "area_m2": "9690.08",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 929.4
+        },
+        {
+          "eis_id": "68276",
+          "project": "Новочеремушкинская 41А",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "544",
+          "area_m2": "31078",
+          "status": "Строится",
+          "rns": "77-06-022316-2025",
+          "cadastral": "77:06:0004002:10903",
+          "distance_m": 1247.5
+        },
+        {
+          "eis_id": "70590",
+          "project": "Большая Черёмушкинская, з/у 26/2",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "152",
+          "area_m2": "9480.05",
+          "status": "Строится",
+          "rns": "77-06-022479-2025",
+          "cadastral": "77:06:0004002:10432",
+          "distance_m": 647.9
+        },
+        {
+          "eis_id": "12044",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "285",
+          "area_m2": "20963.15",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 855.7
+        },
+        {
+          "eis_id": "12046",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "166",
+          "area_m2": "11666.39",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 931.8
+        },
+        {
+          "eis_id": "12045",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "122",
+          "area_m2": "9680.38",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 835.8
+        }
+      ],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-101000-014950-2017",
+          "eis_ids": [
+            "12045",
+            "12044",
+            "12043",
+            "12046"
+          ],
+          "apartments_sum": 695,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-216000-013385-2016",
+          "eis_ids": [
+            "24317",
+            "24316",
+            "24318",
+            "24319"
+          ],
+          "apartments_sum": 0,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-165000-018880-2020",
+          "eis_ids": [
+            "50156",
+            "50154",
+            "50155",
+            "50153",
+            "50151",
+            "50152",
+            "50150"
+          ],
+          "apartments_sum": 1208,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-06-022067-2025",
+          "eis_ids": [
+            "66448",
+            "66447"
+          ],
+          "apartments_sum": 1022,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "b55b0a00d18d500eb3ea102a",
+      "address": "Буденного пр-кт, з/у 49А (зона 13.1)",
+      "fund_apartments": 253,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Буденного пр-кт, з/у 49А (зона 13.1)",
+        "stage": "Город 16.05.2026 сообщил о начале строительства дома на 253 квартиры по проекту Московские кварталы, адрес з/у 49; 14.09.2026 опубликована новая заметка о строительстве. Это рабочий вариант адреса 49/49А, но ID не найден.",
+        "url": "https://www.mos.ru/news/item/170065073/",
+        "additional_url": "https://stroi.mos.ru/news/dom-na-253-kvartiry-stroiat-na-prospiektie-budiennogho-dlia-proiekta-moskovskiie-kvartaly"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/budennogo-pr-d-z-u-49/",
+      "nearest_candidates": [
+        {
+          "eis_id": "3010",
+          "project": "Золотая звезда",
+          "developer": "Золотая звезда",
+          "apartments": "1133",
+          "area_m2": "47409.55",
+          "status": "Сдан",
+          "rns": "77-196000-011757-2015",
+          "cadastral": "77:03:0004007:12153",
+          "distance_m": 143.0
+        },
+        {
+          "eis_id": "3003",
+          "project": "Золотая звезда",
+          "developer": "Золотая звезда",
+          "apartments": "264",
+          "area_m2": "13298.88",
+          "status": "Сдан",
+          "rns": "77-196000-011753-2015",
+          "cadastral": "77:03:0004007:12155",
+          "distance_m": 265.6
+        },
+        {
+          "eis_id": "62789",
+          "project": "UNO Соколиная гора",
+          "developer": "СЗ АК БАРС-ИНВЕСТ",
+          "apartments": "642",
+          "area_m2": "29749.7",
+          "status": "Строится",
+          "rns": "77-03-021745-2024",
+          "cadastral": "77:03:0004007:14953",
+          "distance_m": 882.4
+        },
+        {
+          "eis_id": "58201",
+          "project": "EvoPark Измайлово",
+          "developer": "\"СЗ \"АК БАРС НЕДВИЖИМОСТЬ\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Строится",
+          "rns": "77-03-021309-2023",
+          "cadastral": "77:03:0006001:4660",
+          "distance_m": 1024.0
+        },
+        {
+          "eis_id": "73516",
+          "project": "Ориент Экспресс",
+          "developer": "\"СЗ \"ИНФОСЕТЬ\"",
+          "apartments": "244",
+          "area_m2": "13651.28",
+          "status": "Строится",
+          "rns": "77-03-022917-2026",
+          "cadastral": "77:03:0006001:1011",
+          "distance_m": 1253.3
+        },
+        {
+          "eis_id": "20370",
+          "project": "Семеновский парк",
+          "developer": "\"СЗ \"АРЕМЗ\"",
+          "apartments": "650",
+          "area_m2": "34387.2",
+          "status": "Сдан",
+          "rns": "77-196000-017499-2018",
+          "cadastral": "77:03:0004006:6416",
+          "distance_m": 1501.9
+        },
+        {
+          "eis_id": "20369",
+          "project": "Семеновский парк",
+          "developer": "\"СЗ \"АРЕМЗ\"",
+          "apartments": "360",
+          "area_m2": "17096.7",
+          "status": "Сдан",
+          "rns": "77-196000-017499-2018",
+          "cadastral": "77:03:0004006:6416",
+          "distance_m": 1627.3
+        },
+        {
+          "eis_id": "52951",
+          "project": "Семеновский парк 2",
+          "developer": "\"СЗ \"АРЕМЗ\"",
+          "apartments": "714",
+          "area_m2": "37676.4",
+          "status": "Сдан",
+          "rns": "77-03-020924-2023",
+          "cadastral": "77:03:0004006:9546",
+          "distance_m": 1630.1
+        },
+        {
+          "eis_id": "20371",
+          "project": "Семеновский парк",
+          "developer": "\"СЗ \"АРЕМЗ\"",
+          "apartments": "612",
+          "area_m2": "34485.4",
+          "status": "Сдан",
+          "rns": "77-196000-017499-2018",
+          "cadastral": "77:03:0004006:6416",
+          "distance_m": 1699.9
+        },
+        {
+          "eis_id": "56502",
+          "project": "Плеханова 11",
+          "developer": "\"СЗ \"ЯСЕНЕВЫЙ ПАРК\"",
+          "apartments": "1509",
+          "area_m2": "63793.5",
+          "status": "Строится",
+          "rns": "77-03-021268-2023",
+          "cadastral": "77:03:0006007:2465; 77:03:0006007:2466",
+          "distance_m": 1852.3
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "21788",
+          "project": "SREDA",
+          "developer": "СЗ \"ВЦ Стройэкспо\"",
+          "apartments": "253",
+          "area_m2": "12295.87",
+          "status": "Сдан",
+          "rns": "77-167000-014589-2017",
+          "cadastral": "77:04:2003:2600",
+          "distance_m": 3716.9
+        },
+        {
+          "eis_id": "25487",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "253",
+          "area_m2": "15315.7",
+          "status": "Сдан",
+          "rns": "77-152000-017419-2018",
+          "cadastral": "77:04:0003010:15",
+          "distance_m": 11181.0
+        },
+        {
+          "eis_id": "49606",
+          "project": "Никольские луга",
+          "developer": "\"СЗ \"ТЕРИБЕРСКИЙ БЕРЕГ\"",
+          "apartments": "253",
+          "area_m2": "10964.2",
+          "status": "Сдан",
+          "rns": "77-06-020587-2022",
+          "cadastral": "77:06:0012017:1000",
+          "distance_m": 29099.1
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-196000-017499-2018",
+          "eis_ids": [
+            "20370",
+            "20369",
+            "20371"
+          ],
+          "apartments_sum": 1622,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "cb506d738bf61ac01685ab11",
+      "address": "Дежнева пр-д., з/у 20",
+      "fund_apartments": 139,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Дежнева пр-д., з/у 20",
+        "stage": "13.09.2026 опубликовано согласование проектов двух домов на участках 20 и 24 по 139 квартир; 18.10.2026 — анонс домов проекта Московские кварталы. Номер и дата РНС не извлечены; публикацию ПД и физическое начало работ не подтверждаем.",
+        "url": "https://stroi.mos.ru/news/dva-doma-dlia-riealizatsii-proghrammy-rienovatsii-poiaviatsia-v-proiezdie-diezhnieva",
+        "additional_url": "https://stroi.mos.ru/news/dva-zhilykh-doma-postroiat-po-proiektu-moskovskiie-kvartaly-v-iuzhnom-miedviedkovie"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/dezhneva-pr-d-vld-20/",
+      "nearest_candidates": [
+        {
+          "eis_id": "47254",
+          "project": "Полярная 1, вл. 3",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "170",
+          "area_m2": "8556.9",
+          "status": "Сдан",
+          "rns": "77-221000-020131-2022",
+          "cadastral": "77:02:0006002:16375",
+          "distance_m": 134.2
+        },
+        {
+          "eis_id": "62332",
+          "project": "Полярная 4",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "168",
+          "area_m2": "9249.6",
+          "status": "Сдан",
+          "rns": "77-02-021557-2024",
+          "cadastral": "77:02:0006003:7766",
+          "distance_m": 189.7
+        },
+        {
+          "eis_id": "46654",
+          "project": "Пр-д Дежнёва, корпус 3, вл. 30",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "96",
+          "area_m2": "5211.84",
+          "status": "Сдан",
+          "rns": "77-221000-019908-2021",
+          "cadastral": "77:02:0006002:16374",
+          "distance_m": 265.2
+        },
+        {
+          "eis_id": "46492",
+          "project": "Заречная 6",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "101",
+          "area_m2": "5515.62",
+          "status": "Сдан",
+          "rns": "77-221000-019817-2021",
+          "cadastral": "77:02:0006002:16376",
+          "distance_m": 266.0
+        },
+        {
+          "eis_id": "66982",
+          "project": "Полярная 16",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "422",
+          "area_m2": "22472.61",
+          "status": "Сдан",
+          "rns": "77-02-021655-2024",
+          "cadastral": "77:02:0006003:7765",
+          "distance_m": 608.4
+        },
+        {
+          "eis_id": "27213",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "416",
+          "area_m2": "21433.6",
+          "status": "Сдан",
+          "rns": "77-221000-017475-2018",
+          "cadastral": "77:02:0005006:19; 77:02:0005006:20",
+          "distance_m": 1082.1
+        },
+        {
+          "eis_id": "63526",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-02-021009-2023",
+          "cadastral": "77:02:0005006:19",
+          "distance_m": 1093.9
+        },
+        {
+          "eis_id": "34937",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-221000-018517-2019",
+          "cadastral": "77:02:0005006:19",
+          "distance_m": 1115.0
+        },
+        {
+          "eis_id": "27210",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "416",
+          "area_m2": "21480.5",
+          "status": "Сдан",
+          "rns": "77-221000-017446-2018",
+          "cadastral": "77:02:0005006:19",
+          "distance_m": 1139.8
+        },
+        {
+          "eis_id": "27214",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "858",
+          "area_m2": "47367",
+          "status": "Сдан",
+          "rns": "77-221000-017473-2018",
+          "cadastral": "77:02:0005006:19; 77:02:0005006:20",
+          "distance_m": 1159.7
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "69275",
+          "project": "Новая, 11",
+          "developer": "\"СЗ \"ГНЦ ЛПК\"",
+          "apartments": "139",
+          "area_m2": "7954.28",
+          "status": "Строится",
+          "rns": "77-01-022445-2025",
+          "cadastral": "77:01:0003029:16",
+          "distance_m": 11626.3
+        },
+        {
+          "eis_id": "10937",
+          "project": "PerovSky (Перовский)",
+          "developer": "СТРОЙИНВЕСТПРОЕКТ",
+          "apartments": "139",
+          "area_m2": "8705",
+          "status": "Сдан",
+          "rns": "77-177000-011937-2015",
+          "cadastral": "77:03:0006017:20",
+          "distance_m": 15486.7
+        },
+        {
+          "eis_id": "17564",
+          "project": "PerovSky (Перовский)",
+          "developer": "СТРОЙИНВЕСТПРОЕКТ",
+          "apartments": "139",
+          "area_m2": "7682.6",
+          "status": "Сдан",
+          "rns": "77-177000-011937-2015",
+          "cadastral": "77:03:0006017:20",
+          "distance_m": 15510.9
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "46654",
+          "project": "Пр-д Дежнёва, корпус 3, вл. 30",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "96",
+          "area_m2": "5211.84",
+          "status": "Сдан",
+          "rns": "77-221000-019908-2021",
+          "cadastral": "77:02:0006002:16374",
+          "distance_m": 265.2
+        }
+      ],
+      "nearby_multiple_id_groups": [],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "b19d97321d94837ad06e6d8e",
+      "address": "Дежнева пр-д., з/у 24",
+      "fund_apartments": 139,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Дежнева пр-д., з/у 24",
+        "stage": "13.09.2026 опубликовано согласование проектов двух домов на участках 20 и 24 по 139 квартир; 18.10.2026 — анонс домов проекта Московские кварталы. Номер и дата РНС не извлечены; публикацию ПД и физическое начало работ не подтверждаем.",
+        "url": "https://stroi.mos.ru/news/dva-doma-dlia-riealizatsii-proghrammy-rienovatsii-poiaviatsia-v-proiezdie-diezhnieva",
+        "additional_url": "https://stroi.mos.ru/news/dva-zhilykh-doma-postroiat-po-proiektu-moskovskiie-kvartaly-v-iuzhnom-miedviedkovie"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/dezhneva-pr-d-vld-24/",
+      "nearest_candidates": [
+        {
+          "eis_id": "47254",
+          "project": "Полярная 1, вл. 3",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "170",
+          "area_m2": "8556.9",
+          "status": "Сдан",
+          "rns": "77-221000-020131-2022",
+          "cadastral": "77:02:0006002:16375",
+          "distance_m": 174.0
+        },
+        {
+          "eis_id": "46492",
+          "project": "Заречная 6",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "101",
+          "area_m2": "5515.62",
+          "status": "Сдан",
+          "rns": "77-221000-019817-2021",
+          "cadastral": "77:02:0006002:16376",
+          "distance_m": 178.0
+        },
+        {
+          "eis_id": "46654",
+          "project": "Пр-д Дежнёва, корпус 3, вл. 30",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "96",
+          "area_m2": "5211.84",
+          "status": "Сдан",
+          "rns": "77-221000-019908-2021",
+          "cadastral": "77:02:0006002:16374",
+          "distance_m": 209.9
+        },
+        {
+          "eis_id": "62332",
+          "project": "Полярная 4",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "168",
+          "area_m2": "9249.6",
+          "status": "Сдан",
+          "rns": "77-02-021557-2024",
+          "cadastral": "77:02:0006003:7766",
+          "distance_m": 257.7
+        },
+        {
+          "eis_id": "66982",
+          "project": "Полярная 16",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "422",
+          "area_m2": "22472.61",
+          "status": "Сдан",
+          "rns": "77-02-021655-2024",
+          "cadastral": "77:02:0006003:7765",
+          "distance_m": 633.1
+        },
+        {
+          "eis_id": "27213",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "416",
+          "area_m2": "21433.6",
+          "status": "Сдан",
+          "rns": "77-221000-017475-2018",
+          "cadastral": "77:02:0005006:19; 77:02:0005006:20",
+          "distance_m": 1076.6
+        },
+        {
+          "eis_id": "63526",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-02-021009-2023",
+          "cadastral": "77:02:0005006:19",
+          "distance_m": 1093.8
+        },
+        {
+          "eis_id": "34937",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-221000-018517-2019",
+          "cadastral": "77:02:0005006:19",
+          "distance_m": 1123.8
+        },
+        {
+          "eis_id": "27210",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "416",
+          "area_m2": "21480.5",
+          "status": "Сдан",
+          "rns": "77-221000-017446-2018",
+          "cadastral": "77:02:0005006:19",
+          "distance_m": 1158.9
+        },
+        {
+          "eis_id": "27214",
+          "project": "Полярная, 25",
+          "developer": "\"СЗ \"ЛЗСМИК\"",
+          "apartments": "858",
+          "area_m2": "47367",
+          "status": "Сдан",
+          "rns": "77-221000-017473-2018",
+          "cadastral": "77:02:0005006:19; 77:02:0005006:20",
+          "distance_m": 1168.1
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "69275",
+          "project": "Новая, 11",
+          "developer": "\"СЗ \"ГНЦ ЛПК\"",
+          "apartments": "139",
+          "area_m2": "7954.28",
+          "status": "Строится",
+          "rns": "77-01-022445-2025",
+          "cadastral": "77:01:0003029:16",
+          "distance_m": 11645.8
+        },
+        {
+          "eis_id": "10937",
+          "project": "PerovSky (Перовский)",
+          "developer": "СТРОЙИНВЕСТПРОЕКТ",
+          "apartments": "139",
+          "area_m2": "8705",
+          "status": "Сдан",
+          "rns": "77-177000-011937-2015",
+          "cadastral": "77:03:0006017:20",
+          "distance_m": 15536.0
+        },
+        {
+          "eis_id": "17564",
+          "project": "PerovSky (Перовский)",
+          "developer": "СТРОЙИНВЕСТПРОЕКТ",
+          "apartments": "139",
+          "area_m2": "7682.6",
+          "status": "Сдан",
+          "rns": "77-177000-011937-2015",
+          "cadastral": "77:03:0006017:20",
+          "distance_m": 15560.4
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "46654",
+          "project": "Пр-д Дежнёва, корпус 3, вл. 30",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "96",
+          "area_m2": "5211.84",
+          "status": "Сдан",
+          "rns": "77-221000-019908-2021",
+          "cadastral": "77:02:0006002:16374",
+          "distance_m": 209.9
+        }
+      ],
+      "nearby_multiple_id_groups": [],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "751719d6b17297b5d3b494fe",
+      "address": "Кржижановского ул., влд. 31/1",
+      "fund_apartments": 368,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Кржижановского ул., влд. 31/1",
+        "stage": "07.02.2025 сообщалось о начале стройки, 23.08.2025 — о заливке фундамента; две секции, 368 квартир. Коммерческие Новые Академики на 784 квартиры не соответствуют этим характеристикам.",
+        "url": "https://stroi.mos.ru/news/zaviershaietsia-zalivka-fundamienta-budushchiegho-doma-po-rienovatsii-v-kotlovkie"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/krzhizhanovskogo-ul-vld-31/",
+      "nearest_candidates": [
+        {
+          "eis_id": "56953",
+          "project": "Новые Академики",
+          "developer": "\"НОВЫЕ АКАДЕМИКИ - СПЕЦЗАСТРОЙЩИК\"",
+          "apartments": "784",
+          "area_m2": "62148.8",
+          "status": "Строится",
+          "rns": "77-06-021216-2023",
+          "cadastral": "77:06:0004003:3247",
+          "distance_m": 99.7
+        },
+        {
+          "eis_id": "24316",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 370.8
+        },
+        {
+          "eis_id": "24317",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 411.5
+        },
+        {
+          "eis_id": "24319",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 416.4
+        },
+        {
+          "eis_id": "68276",
+          "project": "Новочеремушкинская 41А",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "544",
+          "area_m2": "31078",
+          "status": "Строится",
+          "rns": "77-06-022316-2025",
+          "cadastral": "77:06:0004002:10903",
+          "distance_m": 444.1
+        },
+        {
+          "eis_id": "24318",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 447.2
+        },
+        {
+          "eis_id": "46905",
+          "project": "Новочеремушкинская, 27",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "204",
+          "area_m2": "12751.1",
+          "status": "Сдан",
+          "rns": "77-101000-019154-2020",
+          "cadastral": "77:06:0004002:10180",
+          "distance_m": 633.7
+        },
+        {
+          "eis_id": "70590",
+          "project": "Большая Черёмушкинская, з/у 26/2",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "152",
+          "area_m2": "9480.05",
+          "status": "Строится",
+          "rns": "77-06-022479-2025",
+          "cadastral": "77:06:0004002:10432",
+          "distance_m": 776.6
+        },
+        {
+          "eis_id": "37487",
+          "project": "ENITEO",
+          "developer": "СЗ ТЕКТА-АКАДЕМИЧЕСКАЯ",
+          "apartments": "662",
+          "area_m2": "44885.5",
+          "status": "Сдан",
+          "rns": "77-140000-019015-2020",
+          "cadastral": "77:06:0004003:2867; 77:06:0004003:2926",
+          "distance_m": 940.5
+        },
+        {
+          "eis_id": "12045",
+          "project": "Новочеремушкинская 17",
+          "developer": "СИГМА-ХАУС",
+          "apartments": "122",
+          "area_m2": "9680.38",
+          "status": "Сдан",
+          "rns": "77-101000-014950-2017",
+          "cadastral": "77:06:0004002:7525",
+          "distance_m": 992.3
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "41984",
+          "project": "ОСТРОВ",
+          "developer": "\"СЗ \"ТПУ \"ТЕРЕХОВО 27\"",
+          "apartments": "368",
+          "area_m2": "27958.6",
+          "status": "Сдан",
+          "rns": "77-212000-019681-2021",
+          "cadastral": "77:08:0014001:2188",
+          "distance_m": 11876.9
+        },
+        {
+          "eis_id": "26195",
+          "project": "Новая Звезда",
+          "developer": "СЗ \"ГСД\"",
+          "apartments": "368",
+          "area_m2": "15130.1",
+          "status": "Сдан",
+          "rns": "77-245000-015142-2017",
+          "cadastral": "77:17:120316:6133",
+          "distance_m": 12348.1
+        },
+        {
+          "eis_id": "10379",
+          "project": "Испанские Кварталы",
+          "developer": "\"А101\"",
+          "apartments": "368",
+          "area_m2": "24283.8",
+          "status": "Сдан",
+          "rns": "77-245000-016750-2018",
+          "cadastral": "77:17:0120114:5880",
+          "distance_m": 12571.9
+        },
+        {
+          "eis_id": "45065",
+          "project": "Прайм Парк",
+          "developer": "СЗ ПРАЙМ ПАРК",
+          "apartments": "368",
+          "area_m2": "32695.1",
+          "status": "Сдан",
+          "rns": "77-213000-016436-2018",
+          "cadastral": "77:09:0005008:57; 77:09:0005008:62",
+          "distance_m": 13495.9
+        },
+        {
+          "eis_id": "10829",
+          "project": "Филатов Луг",
+          "developer": "\"СЗ \"ФИЛАТОВ ЛУГ\"",
+          "apartments": "368",
+          "area_m2": "18635.66",
+          "status": "Сдан",
+          "rns": "77-239000-015944-2017",
+          "cadastral": "77:17:0110205:12565",
+          "distance_m": 13905.7
+        },
+        {
+          "eis_id": "18194",
+          "project": "Бунинские луга",
+          "developer": "\"ПИК СЗ\"",
+          "apartments": "368",
+          "area_m2": "15387.2",
+          "status": "Сдан",
+          "rns": "77-245000-017114-2018",
+          "cadastral": "77:17:0120316:11173",
+          "distance_m": 14755.3
+        },
+        {
+          "eis_id": "16763",
+          "project": "Эко Бунино",
+          "developer": "\"СЗ \"МИЦ-МИЦ\"",
+          "apartments": "368",
+          "area_m2": "16452.52",
+          "status": "Сдан",
+          "rns": "77-245000-015036-2017",
+          "cadastral": "77:17:0130206:817",
+          "distance_m": 16758.2
+        },
+        {
+          "eis_id": "26656",
+          "project": "Кленовые Аллеи",
+          "developer": "\"СЗ \"МИЦ-МИЦ\"",
+          "apartments": "368",
+          "area_m2": "15242.09",
+          "status": "Сдан",
+          "rns": "77-232000-017403-2018",
+          "cadastral": "77:17:0140116:6499",
+          "distance_m": 23572.6
+        },
+        {
+          "eis_id": "55296",
+          "project": "Академик",
+          "developer": "СЗ \"ВЫБОР-СТОЛИЦА\"",
+          "apartments": "368",
+          "area_m2": "19801.8",
+          "status": "Сдан",
+          "rns": "77-19-000195-2023",
+          "cadastral": "77:19:0020215:477",
+          "distance_m": 25998.1
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-216000-013385-2016",
+          "eis_ids": [
+            "24316",
+            "24317",
+            "24319",
+            "24318"
+          ],
+          "apartments_sum": 0,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-101000-014950-2017",
+          "eis_ids": [
+            "12045",
+            "12046",
+            "12044",
+            "12043"
+          ],
+          "apartments_sum": 695,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-06-022067-2025",
+          "eis_ids": [
+            "66448",
+            "66447"
+          ],
+          "apartments_sum": 1022,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-165000-018880-2020",
+          "eis_ids": [
+            "50156",
+            "50154",
+            "50153",
+            "50155",
+            "50151",
+            "50152",
+            "50150"
+          ],
+          "apartments_sum": 1208,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "a1bee58ad7849054a0c4a153",
+      "address": "Матросова ул., з/у 29/1",
+      "fund_apartments": 866,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Матросова ул., з/у 29/1",
+        "stage": "Проект на 866 квартир состоит из двух отдельно стоящих корпусов по пять секций. 23.10.2025 опубликовано начало сооружения надземной части. Нельзя искать только один ID на 866 квартир.",
+        "url": "https://stroi.mos.ru/press_releases/na-ulitsie-matrosova-v-solntsievie-poiavitsia-novostroika-po-proghrammie-rienovatsii",
+        "additional_url": "https://stroi.mos.ru/news/nachalos-sooruzhieniie-nadziemnoi-chasti-doma-po-rienovatsii-v-raionie-solntsievo"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/matrosova-ul-vl-21-29/",
+      "nearest_candidates": [
+        {
+          "eis_id": "9658",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-198000-016288-2018",
+          "cadastral": "77:07:0000000:4910",
+          "distance_m": 180.2
+        },
+        {
+          "eis_id": "3567",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "445",
+          "area_m2": "26165.4",
+          "status": "Сдан",
+          "rns": "77-198000-013657-2016",
+          "cadastral": "77:07:0000000:4910",
+          "distance_m": 204.6
+        },
+        {
+          "eis_id": "3577",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "912",
+          "area_m2": "53727.8",
+          "status": "Сдан",
+          "rns": "77-198000-014279-2017",
+          "cadastral": "77:07:0000000:4910",
+          "distance_m": 241.4
+        },
+        {
+          "eis_id": "7437",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "550",
+          "area_m2": "31176",
+          "status": "Сдан",
+          "rns": "77-198000-015645-2017",
+          "cadastral": "77:07:0015002:7505",
+          "distance_m": 311.5
+        },
+        {
+          "eis_id": "3623",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-198000-013829-2016",
+          "cadastral": "77:07:0000000:4864",
+          "distance_m": 375.4
+        },
+        {
+          "eis_id": "18451",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "480",
+          "area_m2": "23702.3",
+          "status": "Сдан",
+          "rns": "77-198000-015659-2017",
+          "cadastral": "77:07:0015002:7505",
+          "distance_m": 391.2
+        },
+        {
+          "eis_id": "32877",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-198000-016420-2018",
+          "cadastral": "77:07:0015002:7505",
+          "distance_m": 442.6
+        },
+        {
+          "eis_id": "26512",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "498",
+          "area_m2": "26394.8",
+          "status": "Сдан",
+          "rns": "77-198000-016296-2018",
+          "cadastral": "77:07:0015002:7505",
+          "distance_m": 477.3
+        },
+        {
+          "eis_id": "9334",
+          "project": "Мещерский лес",
+          "developer": "\"ПИК-ИНДУСТРИЯ\"",
+          "apartments": "480",
+          "area_m2": "26615.8",
+          "status": "Сдан",
+          "rns": "77-198000-016291-2018",
+          "cadastral": "77:07:0015002:7505",
+          "distance_m": 564.2
+        },
+        {
+          "eis_id": "40846",
+          "project": "Мещерский лес",
+          "developer": "\"СЗ \"СФЕРА\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-198000-019593-2021",
+          "cadastral": "77:07:0015002:7505; 77:07:0015002:8",
+          "distance_m": 606.7
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "51432",
+          "project": "Дом Дау",
+          "developer": "СЗ \"1-Й КРАСНОГВАРДЕЙСКИЙ\"",
+          "apartments": "866",
+          "area_m2": "83814.09",
+          "status": "Строится",
+          "rns": "77-01-020789-2023",
+          "cadastral": "77:01:0004042:20610",
+          "distance_m": 12683.3
+        },
+        {
+          "eis_id": "68001",
+          "project": "SOUL",
+          "developer": "\"СЗ ЧАСОВАЯ\"",
+          "apartments": "866",
+          "area_m2": "53985.9",
+          "status": "Строится",
+          "rns": "77-09-022308-2025",
+          "cadastral": "77:09:0000000:189135; 77:09:0004003:60",
+          "distance_m": 17742.6
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-239000-011882-2015",
+          "eis_ids": [
+            "14026",
+            "14027",
+            "14028"
+          ],
+          "apartments_sum": 550,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-176000-019904-2021",
+          "eis_ids": [
+            "44164",
+            "44165"
+          ],
+          "apartments_sum": 1440,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "1a73246b22c53bff83a2c046",
+      "address": "Нахимовский пр-кт, з/у 17/2",
+      "fund_apartments": 132,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Нахимовский пр-кт, з/у 17/2",
+        "stage": "15.02.2026 сообщалось о начале строительства двухсекционного дома на 132 квартиры; соседний ID 66443 по Одесской 4 содержит 294 квартиры.",
+        "url": "https://stroi.mos.ru/news/na-odiesskoi-ulitsie-i-nakhimovskom-prospiektie-nachali-stroit-doma-po-proghrammie-rienovatsii"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/nakhimovskiy-pr-kt-z-u-17-2/",
+      "nearest_candidates": [
+        {
+          "eis_id": "66443",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "294",
+          "area_m2": "18585.7",
+          "status": "Сдан",
+          "rns": "77-06-021938-2025",
+          "cadastral": "77:06:0005005:6361",
+          "distance_m": 184.2
+        },
+        {
+          "eis_id": "66447",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "660",
+          "area_m2": "42110.1",
+          "status": "Сдан",
+          "rns": "77-06-022067-2025",
+          "cadastral": "77:06:0005005:6363; 77:06:0005005:6364",
+          "distance_m": 291.8
+        },
+        {
+          "eis_id": "66448",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "362",
+          "area_m2": "22847.4",
+          "status": "Сдан",
+          "rns": "77-06-022067-2025",
+          "cadastral": "77:06:0005005:6363; 77:06:0005005:6364",
+          "distance_m": 389.3
+        },
+        {
+          "eis_id": "50153",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "274",
+          "area_m2": "15850.37",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1192.8
+        },
+        {
+          "eis_id": "53658",
+          "project": "Twelve",
+          "developer": "СЗ \"ТЕКТА-НАГОРНАЯ\"",
+          "apartments": "934",
+          "area_m2": "54797.6",
+          "status": "Сдан",
+          "rns": "77-05-021014-2023",
+          "cadastral": "77:05:0003002:26",
+          "distance_m": 1197.1
+        },
+        {
+          "eis_id": "50154",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "274",
+          "area_m2": "15852.21",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1205.2
+        },
+        {
+          "eis_id": "50152",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "194",
+          "area_m2": "8771.16",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1208.5
+        },
+        {
+          "eis_id": "50155",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "50",
+          "area_m2": "3347.09",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1217.3
+        },
+        {
+          "eis_id": "50156",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1221.8
+        },
+        {
+          "eis_id": "50151",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "193",
+          "area_m2": "12632.72",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1247.7
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "20152",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "132",
+          "area_m2": "6293.36",
+          "status": "Сдан",
+          "rns": "77-115000-017366-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 15516.0
+        },
+        {
+          "eis_id": "45258",
+          "project": "СберСити",
+          "developer": "\"СБЕРСИТИ\"",
+          "apartments": "132",
+          "area_m2": "8346.32",
+          "status": "Сдан",
+          "rns": "77-145000-019996-2022",
+          "cadastral": "77:12:0050610:58",
+          "distance_m": 21698.4
+        },
+        {
+          "eis_id": "18474",
+          "project": "Зеленоград Сити",
+          "developer": "ОДА Премиум",
+          "apartments": "132",
+          "area_m2": "7836.4",
+          "status": "Сдан",
+          "rns": "77-186000-017091-2018",
+          "cadastral": "77:10:0004005:4470",
+          "distance_m": 43592.4
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "24317",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 1404.0
+        },
+        {
+          "eis_id": "24319",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 1416.4
+        },
+        {
+          "eis_id": "24318",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 1373.2
+        },
+        {
+          "eis_id": "24316",
+          "project": "Nakhimov (Нахимов)",
+          "developer": "БЦ \"На Долгоруковской\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-216000-013385-2016",
+          "cadastral": "77:06:0004006:0000029",
+          "distance_m": 1459.9
+        }
+      ],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-06-022067-2025",
+          "eis_ids": [
+            "66447",
+            "66448"
+          ],
+          "apartments_sum": 1022,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-165000-018880-2020",
+          "eis_ids": [
+            "50153",
+            "50154",
+            "50152",
+            "50155",
+            "50156",
+            "50151",
+            "50150"
+          ],
+          "apartments_sum": 1208,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-216000-013385-2016",
+          "eis_ids": [
+            "24318",
+            "24317",
+            "24319",
+            "24316"
+          ],
+          "apartments_sum": 0,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-161000-017492-2018",
+          "eis_ids": [
+            "18584",
+            "18581",
+            "18582",
+            "18583"
+          ],
+          "apartments_sum": 688,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "684a57ed3ddb5ced71edba9d",
+      "address": "Одесская ул., влд. 5",
+      "fund_apartments": 280,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Одесская ул., влд. 5",
+        "stage": "15.02.2026 сообщалось о начале строительства дома на 280 квартир; фонд также публикует ход строительства именно з/у 5. Одесская 4 на 294 квартиры — другой объект.",
+        "url": "https://stroi.mos.ru/news/na-odiesskoi-ulitsie-i-nakhimovskom-prospiektie-nachali-stroit-doma-po-proghrammie-rienovatsii",
+        "additional_url": "https://fr.mos.ru/news/v-zyuzine-prodolzhaetsya-stroitelstvo-zhilogo-doma-po-programme-renovatsii/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/odesskaya-ul-vld-5/",
+      "nearest_candidates": [
+        {
+          "eis_id": "66443",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "294",
+          "area_m2": "18585.7",
+          "status": "Сдан",
+          "rns": "77-06-021938-2025",
+          "cadastral": "77:06:0005005:6361",
+          "distance_m": 116.6
+        },
+        {
+          "eis_id": "66447",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "660",
+          "area_m2": "42110.1",
+          "status": "Сдан",
+          "rns": "77-06-022067-2025",
+          "cadastral": "77:06:0005005:6363; 77:06:0005005:6364",
+          "distance_m": 210.6
+        },
+        {
+          "eis_id": "66448",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "362",
+          "area_m2": "22847.4",
+          "status": "Сдан",
+          "rns": "77-06-022067-2025",
+          "cadastral": "77:06:0005005:6363; 77:06:0005005:6364",
+          "distance_m": 310.6
+        },
+        {
+          "eis_id": "50153",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "274",
+          "area_m2": "15850.37",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1263.2
+        },
+        {
+          "eis_id": "50154",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "274",
+          "area_m2": "15852.21",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1275.1
+        },
+        {
+          "eis_id": "53658",
+          "project": "Twelve",
+          "developer": "СЗ \"ТЕКТА-НАГОРНАЯ\"",
+          "apartments": "934",
+          "area_m2": "54797.6",
+          "status": "Сдан",
+          "rns": "77-05-021014-2023",
+          "cadastral": "77:05:0003002:26",
+          "distance_m": 1278.3
+        },
+        {
+          "eis_id": "50152",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "194",
+          "area_m2": "8771.16",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1280.5
+        },
+        {
+          "eis_id": "50155",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "50",
+          "area_m2": "3347.09",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1287.6
+        },
+        {
+          "eis_id": "50156",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1291.0
+        },
+        {
+          "eis_id": "50151",
+          "project": "TOPHILLS",
+          "developer": "\"ИНГРАД\"",
+          "apartments": "193",
+          "area_m2": "12632.72",
+          "status": "Сдан",
+          "rns": "77-165000-018880-2020",
+          "cadastral": "77:05:0003002:6143",
+          "distance_m": 1318.9
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "50967",
+          "project": "Level Нагатинская",
+          "developer": "СЗ \"Инвестиционное развитие\"",
+          "apartments": "280",
+          "area_m2": "12163.5",
+          "status": "Сдан",
+          "rns": "77-163000-019723-2021",
+          "cadastral": "77:05:0004002:7839",
+          "distance_m": 3208.7
+        },
+        {
+          "eis_id": "5731",
+          "project": "Водный",
+          "developer": "ЖИЛИЩНАЯ КОРПОРАЦИЯ",
+          "apartments": "280",
+          "area_m2": "11177.5",
+          "status": "Сдан",
+          "rns": "77-124000-013007-2016",
+          "cadastral": "77:09:0001025:1468",
+          "distance_m": 20726.6
+        },
+        {
+          "eis_id": "13457",
+          "project": "Водный",
+          "developer": "ЖИЛИЩНАЯ КОРПОРАЦИЯ",
+          "apartments": "280",
+          "area_m2": "11391.2",
+          "status": "Сдан",
+          "rns": "77-124000-013007-2016",
+          "cadastral": "77:09:0001025:1468",
+          "distance_m": 20794.8
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "66448",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "362",
+          "area_m2": "22847.4",
+          "status": "Сдан",
+          "rns": "77-06-022067-2025",
+          "cadastral": "77:06:0005005:6363; 77:06:0005005:6364",
+          "distance_m": 310.6
+        },
+        {
+          "eis_id": "66447",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "660",
+          "area_m2": "42110.1",
+          "status": "Сдан",
+          "rns": "77-06-022067-2025",
+          "cadastral": "77:06:0005005:6363; 77:06:0005005:6364",
+          "distance_m": 210.6
+        },
+        {
+          "eis_id": "66443",
+          "project": "Одесская",
+          "developer": "\"СЗ \"УЛИЦА ОДЕССКАЯ\"",
+          "apartments": "294",
+          "area_m2": "18585.7",
+          "status": "Сдан",
+          "rns": "77-06-021938-2025",
+          "cadastral": "77:06:0005005:6361",
+          "distance_m": 116.6
+        }
+      ],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-06-022067-2025",
+          "eis_ids": [
+            "66447",
+            "66448"
+          ],
+          "apartments_sum": 1022,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-165000-018880-2020",
+          "eis_ids": [
+            "50153",
+            "50154",
+            "50152",
+            "50155",
+            "50156",
+            "50151",
+            "50150"
+          ],
+          "apartments_sum": 1208,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-216000-013385-2016",
+          "eis_ids": [
+            "24318",
+            "24317",
+            "24319",
+            "24316"
+          ],
+          "apartments_sum": 0,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-161000-017492-2018",
+          "eis_ids": [
+            "18584",
+            "18581",
+            "18582"
+          ],
+          "apartments_sum": 520,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "665fc52f09896917c9c145b1",
+      "address": "Оренбургская ул., з/у 26",
+      "fund_apartments": 148,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Оренбургская ул., з/у 26",
+        "stage": "Город сообщил о выдаче разрешения на дом на 148 квартир в октябре 2023 и начале строительства в ноябре 2023. Найденный ID 66285 имеет 326 квартир; фонд отдельно связывает дом Оренбургская 30 на 326 квартир с переселением. Сосед тоже реновационный, но не заменяет з/у 26.",
+        "url": "https://www.mos.ru/news/item/130660073/",
+        "additional_url": "https://fr.mos.ru/news/vladimir-efimov-okolo-600-moskvichey-pristupili-k-pereseleniyu-v-novostroyku-po-programme-renovatsii/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/orenburgskaya-ul-vld-26/",
+      "nearest_candidates": [
+        {
+          "eis_id": "66285",
+          "project": "Оренбургская 30",
+          "developer": "СЗ \"УРЗ-2\"",
+          "apartments": "326",
+          "area_m2": "22320.9",
+          "status": "Строится",
+          "rns": "77-03-022116-2025",
+          "cadastral": "77:03:0010005:5753",
+          "distance_m": 67.1
+        },
+        {
+          "eis_id": "35469",
+          "project": "Дмитриевский",
+          "developer": "СЗ ТПУ УЛИЦА ДМИТРИЕВСКОГО 2",
+          "apartments": "192",
+          "area_m2": "10650.89",
+          "status": "Сдан",
+          "rns": "77-139000-018822-2020",
+          "cadastral": "77:03:0010008:27468",
+          "distance_m": 840.7
+        },
+        {
+          "eis_id": "6377",
+          "project": "Дмитриевский",
+          "developer": "ТПУ УЛИЦА ДМИТРИЕВСКОГО",
+          "apartments": "308",
+          "area_m2": "17515.82",
+          "status": "Сдан",
+          "rns": "77-139000-015088-2017",
+          "cadastral": "77:03:10008:26873",
+          "distance_m": 875.3
+        },
+        {
+          "eis_id": "30176",
+          "project": "Николая Старостина, 15",
+          "developer": "Восток",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-139000-017544-2018",
+          "cadastral": "77:03:0010002:1949",
+          "distance_m": 2311.3
+        },
+        {
+          "eis_id": "49393",
+          "project": "ул Николая Старостина, д. 14",
+          "developer": "\"СЗ \"ЗАМБЕРГ\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-139000-018818-2020",
+          "cadastral": "77:03:0010002:1858",
+          "distance_m": 2375.7
+        },
+        {
+          "eis_id": "12810",
+          "project": "Счастье в Вешняках",
+          "developer": "Вешняковская 18",
+          "apartments": "106",
+          "area_m2": "5270.3",
+          "status": "Сдан",
+          "rns": "77-116000-018066-2019",
+          "cadastral": "77:03:0007003:3",
+          "distance_m": 2980.8
+        },
+        {
+          "eis_id": "12807",
+          "project": "Счастье в Кусково",
+          "developer": "Вешняковская 10",
+          "apartments": "81",
+          "area_m2": "4646.2",
+          "status": "Сдан",
+          "rns": "77-116000-013717-2016",
+          "cadastral": "77:03:0007002:2",
+          "distance_m": 3686.3
+        },
+        {
+          "eis_id": "26687",
+          "project": "Квартал Некрасовка",
+          "developer": "\"СЗ \"НЕКРАСОВКА-ИНВЕСТ\"",
+          "apartments": "244",
+          "area_m2": "12240.8",
+          "status": "Сдан",
+          "rns": "77-166000-017533-2018",
+          "cadastral": "77:16:0010105:37215",
+          "distance_m": 4069.8
+        },
+        {
+          "eis_id": "26688",
+          "project": "Квартал Некрасовка",
+          "developer": "\"СЗ \"НЕКРАСОВКА-ИНВЕСТ\"",
+          "apartments": "284",
+          "area_m2": "14786.1",
+          "status": "Сдан",
+          "rns": "77-166000-017533-2018",
+          "cadastral": "77:16:0010105:37215",
+          "distance_m": 4165.5
+        },
+        {
+          "eis_id": "26685",
+          "project": "Квартал Некрасовка",
+          "developer": "\"СЗ \"НЕКРАСОВКА-ИНВЕСТ\"",
+          "apartments": "169",
+          "area_m2": "8256.2",
+          "status": "Сдан",
+          "rns": "77-166000-017533-2018",
+          "cadastral": "77:16:0010105:37215",
+          "distance_m": 4223.8
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "27721",
+          "project": "Михайловский парк",
+          "developer": "СКАЙТАУЭР ГРУП",
+          "apartments": "148",
+          "area_m2": "9158.1",
+          "status": "Сдан",
+          "rns": "77-185000-017330-2018",
+          "cadastral": "77:04:2007:13733",
+          "distance_m": 5653.9
+        },
+        {
+          "eis_id": "20272",
+          "project": "Михайловский парк",
+          "developer": "СКАЙТАУЭР ГРУП",
+          "apartments": "148",
+          "area_m2": "9158.1",
+          "status": "Сдан",
+          "rns": "77-185000-017327-2018",
+          "cadastral": "77:04:0002007:13733",
+          "distance_m": 5842.1
+        },
+        {
+          "eis_id": "2458",
+          "project": "Садовые Кварталы",
+          "developer": "\"СМАЙНЭКС УПРАВЛЕНИЕ АКТИВАМИ\"",
+          "apartments": "148",
+          "area_m2": "17417.93",
+          "status": "Сдан",
+          "rns": "77-210000-014224-2017",
+          "cadastral": "77:01:0005010:1011; 77:01:0005010:3090; 77:01:0005010:3091; 77:01:0005010:3096",
+          "distance_m": 18593.1
+        },
+        {
+          "eis_id": "8161",
+          "project": "Прайм Тайм",
+          "developer": "Атлантик",
+          "apartments": "148",
+          "area_m2": "10635.43",
+          "status": "Сдан",
+          "rns": "77-213000-016575-2018",
+          "cadastral": "77:09:0005004:113",
+          "distance_m": 23136.3
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "66285",
+          "project": "Оренбургская 30",
+          "developer": "СЗ \"УРЗ-2\"",
+          "apartments": "326",
+          "area_m2": "22320.9",
+          "status": "Строится",
+          "rns": "77-03-022116-2025",
+          "cadastral": "77:03:0010005:5753",
+          "distance_m": 67.1
+        }
+      ],
+      "nearby_multiple_id_groups": [],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "0e60dd2e305c54f505b1ffc3",
+      "address": "Рязанский пр-кт, з/у 17",
+      "fund_apartments": 525,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Рязанский пр-кт, з/у 17",
+        "stage": "Проект на 525 квартир согласован 09.06.2026; 20.10.2026 фонд опубликовал сообщение о стройке четырёхсекционного дома. Кандидат BESIDE 2.0 относится к другому адресу и содержит 1106 квартир.",
+        "url": "https://stroi.mos.ru/press_releases/ivan-shchierbakov-soghlasovan-proiekt-zhilogho-doma-po-proghrammie-rienovatsii-v-nizhieghorodskom-raionie",
+        "additional_url": "https://fr.mos.ru/news/dom-s-obemnymi-fasadami-stroyat-dlya-programmy-renovatsii-v-nizhegorodskom-rayone/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/ryazanskiy-pr-kt-z-u-17/",
+      "nearest_candidates": [
+        {
+          "eis_id": "58187",
+          "project": "Akvilon Beside",
+          "developer": "СЗ \"ТЕРМИНАЛ\"",
+          "apartments": "1106",
+          "area_m2": "44036.81",
+          "status": "Строится",
+          "rns": "77-04-021410-2024",
+          "cadastral": "77:04:0002003:7927",
+          "distance_m": 171.9
+        },
+        {
+          "eis_id": "47297",
+          "project": "Перовское 2",
+          "developer": "\"СЗ \"ПЕРОВСКОЕ\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-167000-020344-2022",
+          "cadastral": "77:04:0000000:6177; 77:04:0000000:6226",
+          "distance_m": 227.9
+        },
+        {
+          "eis_id": "19604",
+          "project": "SREDA",
+          "developer": "СЗ \"ВЦ Стройэкспо\"",
+          "apartments": "242",
+          "area_m2": "12448.78",
+          "status": "Сдан",
+          "rns": "77-167000-017886-2018",
+          "cadastral": "77:04:2003:2598",
+          "distance_m": 285.4
+        },
+        {
+          "eis_id": "19598",
+          "project": "SREDA",
+          "developer": "СЗ \"ВЦ Стройэкспо\"",
+          "apartments": "243",
+          "area_m2": "12478.69",
+          "status": "Сдан",
+          "rns": "77-167000-017886-2018",
+          "cadastral": "77:04:2003:2598",
+          "distance_m": 303.3
+        },
+        {
+          "eis_id": "19601",
+          "project": "SREDA",
+          "developer": "СЗ \"ВЦ Стройэкспо\"",
+          "apartments": "242",
+          "area_m2": "12469.72",
+          "status": "Сдан",
+          "rns": "77-167000-017886-2018",
+          "cadastral": "77:04:2003:2598",
+          "distance_m": 309.4
+        },
+        {
+          "eis_id": "19600",
+          "project": "SREDA",
+          "developer": "СЗ \"ВЦ Стройэкспо\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-167000-017886-2018",
+          "cadastral": "77:04:2003:2598",
+          "distance_m": 316.5
+        },
+        {
+          "eis_id": "40290",
+          "project": "Перовское 2",
+          "developer": "\"СЗ \"ПЕРОВСКОЕ\"",
+          "apartments": "928",
+          "area_m2": "35956.8",
+          "status": "Сдан",
+          "rns": "77-167000-019499-2021",
+          "cadastral": "77:04:0000000:6177",
+          "distance_m": 325.2
+        },
+        {
+          "eis_id": "19603",
+          "project": "SREDA",
+          "developer": "СЗ \"ВЦ Стройэкспо\"",
+          "apartments": "92",
+          "area_m2": "4928.4",
+          "status": "Сдан",
+          "rns": "77-167000-017886-2018",
+          "cadastral": "77:04:2003:2598",
+          "distance_m": 361.2
+        },
+        {
+          "eis_id": "38368",
+          "project": "Перовское 2",
+          "developer": "\"СЗ \"ПЕРОВСКОЕ\"",
+          "apartments": "928",
+          "area_m2": "35968.4",
+          "status": "Сдан",
+          "rns": "77-167000-019278-2020",
+          "cadastral": "77:04:0000000:6177",
+          "distance_m": 367.7
+        },
+        {
+          "eis_id": "66793",
+          "project": "MYPRIORITY Нижегородская",
+          "developer": "\"СЗ \"ТАЛИСМАН\"",
+          "apartments": "874",
+          "area_m2": "36939.18",
+          "status": "Строится",
+          "rns": "77-04-022119-2025",
+          "cadastral": "77:04:0002003:13519",
+          "distance_m": 380.1
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "59887",
+          "project": "Среда на Лобачевского",
+          "developer": "\"СЗ \"ЦЕНТРПОЛИС\"",
+          "apartments": "525",
+          "area_m2": "27462.7",
+          "status": "Строится",
+          "rns": "77-07-021538-2024",
+          "cadastral": "77:07:0012008:4413",
+          "distance_m": 18326.2
+        },
+        {
+          "eis_id": "64003",
+          "project": "РОДИНА ПАРК",
+          "developer": "\"СЗ \"РОДИНА ПАРК\"",
+          "apartments": "525",
+          "area_m2": "30708.9",
+          "status": "Строится",
+          "rns": "77-07-022095-2025",
+          "cadastral": "77:07:0012002:1000",
+          "distance_m": 18953.0
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "71512",
+          "project": "Первый Рязанский",
+          "developer": "\"СЗ \"ЭС АЙ ЭС ДЕВЕЛОПМЕНТ\"",
+          "apartments": "645",
+          "area_m2": "31675.24",
+          "status": "Строится",
+          "rns": "77-04-022608-2026",
+          "cadastral": "77:04:0002013:14854; 77:04:0002013:14855",
+          "distance_m": 3618.0
+        },
+        {
+          "eis_id": "70718",
+          "project": "Первый Рязанский",
+          "developer": "\"СЗ \"ЭС АЙ ЭС ДЕВЕЛОПМЕНТ\"",
+          "apartments": "70",
+          "area_m2": "3159.79",
+          "status": "Строится",
+          "rns": "77-04-022583-2026",
+          "cadastral": "77:04:0002013:14854; 77:04:0002013:14855",
+          "distance_m": 3621.2
+        },
+        {
+          "eis_id": "58924",
+          "project": "Первый Рязанский",
+          "developer": "\"СЗ \"ЭС АЙ ЭС ДЕВЕЛОПМЕНТ\"",
+          "apartments": "290",
+          "area_m2": "11937.16",
+          "status": "Сдан",
+          "rns": "77-04-020972-2023",
+          "cadastral": "77:04:0002013:12849",
+          "distance_m": 3503.4
+        }
+      ],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-167000-017886-2018",
+          "eis_ids": [
+            "19604",
+            "19598",
+            "19601",
+            "19600",
+            "19603",
+            "19599",
+            "19602",
+            "19605"
+          ],
+          "apartments_sum": 1184,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-167000-013391-2016",
+          "eis_ids": [
+            "19625",
+            "19628",
+            "19626",
+            "19627"
+          ],
+          "apartments_sum": 399,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-167000-019096-2020",
+          "eis_ids": [
+            "37646",
+            "37645"
+          ],
+          "apartments_sum": 1356,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-167000-013636-2016",
+          "eis_ids": [
+            "19633",
+            "19629",
+            "19632",
+            "19630",
+            "19631"
+          ],
+          "apartments_sum": 441,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-167000-014589-2017",
+          "eis_ids": [
+            "21791",
+            "21790",
+            "21792",
+            "21788",
+            "21789"
+          ],
+          "apartments_sum": 628,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-185000-014538-2017",
+          "eis_ids": [
+            "22396",
+            "23231",
+            "23234",
+            "22399",
+            "23237",
+            "23236",
+            "22397",
+            "22398",
+            "23232",
+            "23239",
+            "23238",
+            "22400",
+            "22401",
+            "23235",
+            "23233",
+            "23240",
+            "23241",
+            "23242"
+          ],
+          "apartments_sum": 2286,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-04-021403-2024",
+          "eis_ids": [
+            "72456",
+            "58312"
+          ],
+          "apartments_sum": 1113,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-185000-018648-2019",
+          "eis_ids": [
+            "35463",
+            "35464",
+            "35465"
+          ],
+          "apartments_sum": 498,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-453394-16-2022",
+          "eis_ids": [
+            "46859",
+            "46860"
+          ],
+          "apartments_sum": 714,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-204000-019765-2021",
+          "eis_ids": [
+            "42873",
+            "42874"
+          ],
+          "apartments_sum": 1000,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-204000-019295-2020",
+          "eis_ids": [
+            "38370",
+            "38369"
+          ],
+          "apartments_sum": 452,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-204000-019467-2021",
+          "eis_ids": [
+            "39717",
+            "39718"
+          ],
+          "apartments_sum": 460,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-204000-020408-2022",
+          "eis_ids": [
+            "47779",
+            "47778"
+          ],
+          "apartments_sum": 512,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-204000-020410-2022",
+          "eis_ids": [
+            "54355",
+            "54356"
+          ],
+          "apartments_sum": 495,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "42df474f4121119c5cc5ace6",
+      "address": "Ставропольская ул., з/у 7А",
+      "fund_apartments": 746,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Ставропольская ул., з/у 7А",
+        "stage": "11.02.2026 опубликовано согласование двух проектов 7А/9А. Для 7А — десять секций, 746 квартир; фонд отдельно сообщает о подготовительных работах. ID 38642 на 112 квартир не соответствует площадке.",
+        "url": "https://stroi.mos.ru/press_releases/ivan-shchierbakov-soghlasovany-proiekty-mnoghokvartirnykh-domov-po-proghrammie-rienovatsii-v-raionie-liublino",
+        "additional_url": "https://fr.mos.ru/news/nachalis-podgotovitelnye-raboty-k-stroitelstvu-doma-po-programme-renovatsii-v-lyubline/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/stavropolskaya-ul-z-u-7a/",
+      "nearest_candidates": [
+        {
+          "eis_id": "38642",
+          "project": "40 лет Октября, 7",
+          "developer": "\"СЗ \"Гортензия\"",
+          "apartments": "112",
+          "area_m2": "5181.34",
+          "status": "Сдан",
+          "rns": "77-152000-018866-2020",
+          "cadastral": "77:04:0004009:5430",
+          "distance_m": 187.8
+        },
+        {
+          "eis_id": "61985",
+          "project": "Люблинская 52/1",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "147",
+          "area_m2": "7525.93",
+          "status": "Сдан",
+          "rns": "77-0-021281-2023",
+          "cadastral": "77:04:0003010:15600",
+          "distance_m": 437.9
+        },
+        {
+          "eis_id": "21",
+          "project": "Люблинский",
+          "developer": "Строительные Инвестиции",
+          "apartments": "279",
+          "area_m2": "13850.87",
+          "status": "Сдан",
+          "rns": "77-152000-014011-2017",
+          "cadastral": "77:04:0004010:9325",
+          "distance_m": 871.3
+        },
+        {
+          "eis_id": "27248",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "607",
+          "area_m2": "30239.2",
+          "status": "Строится",
+          "rns": "77-152000-017474-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 1159.0
+        },
+        {
+          "eis_id": "27247",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "286",
+          "area_m2": "14867.6",
+          "status": "Строится",
+          "rns": "77-152000-017426-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 1247.9
+        },
+        {
+          "eis_id": "1426",
+          "project": "Атмосфера",
+          "developer": "Желдорипотека",
+          "apartments": "224",
+          "area_m2": "10569",
+          "status": "Сдан",
+          "rns": "77-152000-011788-2015",
+          "cadastral": "77:04:0004016:0000006",
+          "distance_m": 1287.3
+        },
+        {
+          "eis_id": "27250",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "312",
+          "area_m2": "14936.4",
+          "status": "Строится",
+          "rns": "77-152000-017427-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 1339.1
+        },
+        {
+          "eis_id": "27245",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "1260",
+          "area_m2": "52360.4",
+          "status": "Сдан",
+          "rns": "77-152000-017471-2018",
+          "cadastral": "77:04:0003010:15",
+          "distance_m": 1358.2
+        },
+        {
+          "eis_id": "23715",
+          "project": "LClub",
+          "developer": "ТПУ \"Люблино\"",
+          "apartments": "506",
+          "area_m2": "28083.44",
+          "status": "Сдан",
+          "rns": "77-152000-017255-2018",
+          "cadastral": "77:04:0004016:20",
+          "distance_m": 1453.2
+        },
+        {
+          "eis_id": "27246",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "1425",
+          "area_m2": "55216.8",
+          "status": "Сдан",
+          "rns": "77-152000-017472-2018",
+          "cadastral": "77:04:0003010:15546",
+          "distance_m": 1542.4
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "14077",
+          "project": "Ясный",
+          "developer": "ФиМ",
+          "apartments": "746",
+          "area_m2": "42300.3",
+          "status": "Сдан",
+          "rns": "77-172000-011760-2015",
+          "cadastral": "77:05:11008:3",
+          "distance_m": 8943.6
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [],
+      "nearby_multiple_id_groups": [],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "3d606f5184c5479c9622893c",
+      "address": "Ставропольская ул., з/у 9А",
+      "fund_apartments": 747,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Ставропольская ул., з/у 9А",
+        "stage": "11.02.2026 опубликовано согласование двух проектов 7А/9А. Для 9А — 747 квартир; фонд сообщает о подготовке площадки. ID 38642 на 112 квартир не соответствует площадке.",
+        "url": "https://stroi.mos.ru/press_releases/ivan-shchierbakov-soghlasovany-proiekty-mnoghokvartirnykh-domov-po-proghrammie-rienovatsii-v-raionie-liublino",
+        "additional_url": "https://fr.mos.ru/news/nachalas-podgotovka-ploshchadki-dlya-vozvedeniya-zhilogo-kompleksa-po-programme-renovatsii-v-lyublin/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/stavropolskaya-ul-z-u-9a/",
+      "nearest_candidates": [
+        {
+          "eis_id": "38642",
+          "project": "40 лет Октября, 7",
+          "developer": "\"СЗ \"Гортензия\"",
+          "apartments": "112",
+          "area_m2": "5181.34",
+          "status": "Сдан",
+          "rns": "77-152000-018866-2020",
+          "cadastral": "77:04:0004009:5430",
+          "distance_m": 107.9
+        },
+        {
+          "eis_id": "61985",
+          "project": "Люблинская 52/1",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "147",
+          "area_m2": "7525.93",
+          "status": "Сдан",
+          "rns": "77-0-021281-2023",
+          "cadastral": "77:04:0003010:15600",
+          "distance_m": 497.4
+        },
+        {
+          "eis_id": "21",
+          "project": "Люблинский",
+          "developer": "Строительные Инвестиции",
+          "apartments": "279",
+          "area_m2": "13850.87",
+          "status": "Сдан",
+          "rns": "77-152000-014011-2017",
+          "cadastral": "77:04:0004010:9325",
+          "distance_m": 858.8
+        },
+        {
+          "eis_id": "27248",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "607",
+          "area_m2": "30239.2",
+          "status": "Строится",
+          "rns": "77-152000-017474-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 1175.7
+        },
+        {
+          "eis_id": "1426",
+          "project": "Атмосфера",
+          "developer": "Желдорипотека",
+          "apartments": "224",
+          "area_m2": "10569",
+          "status": "Сдан",
+          "rns": "77-152000-011788-2015",
+          "cadastral": "77:04:0004016:0000006",
+          "distance_m": 1257.2
+        },
+        {
+          "eis_id": "27247",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "286",
+          "area_m2": "14867.6",
+          "status": "Строится",
+          "rns": "77-152000-017426-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 1276.4
+        },
+        {
+          "eis_id": "27250",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "312",
+          "area_m2": "14936.4",
+          "status": "Строится",
+          "rns": "77-152000-017427-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 1366.3
+        },
+        {
+          "eis_id": "23715",
+          "project": "LClub",
+          "developer": "ТПУ \"Люблино\"",
+          "apartments": "506",
+          "area_m2": "28083.44",
+          "status": "Сдан",
+          "rns": "77-152000-017255-2018",
+          "cadastral": "77:04:0004016:20",
+          "distance_m": 1383.3
+        },
+        {
+          "eis_id": "27245",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "1260",
+          "area_m2": "52360.4",
+          "status": "Сдан",
+          "rns": "77-152000-017471-2018",
+          "cadastral": "77:04:0003010:15",
+          "distance_m": 1387.8
+        },
+        {
+          "eis_id": "27246",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "1425",
+          "area_m2": "55216.8",
+          "status": "Сдан",
+          "rns": "77-152000-017472-2018",
+          "cadastral": "77:04:0003010:15546",
+          "distance_m": 1561.2
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "63497",
+          "project": "Саларьево Парк",
+          "developer": "\"СЗ \"ТИРОН\"",
+          "apartments": "747",
+          "area_m2": "32806.3",
+          "status": "Строится",
+          "rns": "77-17-021818-2024",
+          "cadastral": "77:17:0110205:17417",
+          "distance_m": 21353.9
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [],
+      "nearby_multiple_id_groups": [],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "3f61def65b49fb253b2071cd",
+      "address": "Судакова ул., з/у 5",
+      "fund_apartments": 474,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Судакова ул., з/у 5",
+        "stage": "30.09.2024 сообщалось о разрешении на комплекс из трёх корпусов на 474 квартиры; 02.09.2025 — о монолитных работах наземной части. ID 21 на 279 квартир не соответствует проекту. Требуется учитывать возможное разбиение по корпусам.",
+        "url": "https://stroi.mos.ru/news/novostroiku-iz-triekh-korpusov-vozviedut-po-rienovatsii-v-raionie-liublino",
+        "additional_url": "https://stroi.mos.ru/news/vozvoditsia-monolit-naziemnoi-chasti-doma-po-rienovatsii-na-ulitsie-sudakova"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/sudakova-ul-z-u-5/",
+      "nearest_candidates": [
+        {
+          "eis_id": "21",
+          "project": "Люблинский",
+          "developer": "Строительные Инвестиции",
+          "apartments": "279",
+          "area_m2": "13850.87",
+          "status": "Сдан",
+          "rns": "77-152000-014011-2017",
+          "cadastral": "77:04:0004010:9325",
+          "distance_m": 179.8
+        },
+        {
+          "eis_id": "27248",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "607",
+          "area_m2": "30239.2",
+          "status": "Строится",
+          "rns": "77-152000-017474-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 296.1
+        },
+        {
+          "eis_id": "27247",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "286",
+          "area_m2": "14867.6",
+          "status": "Строится",
+          "rns": "77-152000-017426-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 481.6
+        },
+        {
+          "eis_id": "27250",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "312",
+          "area_m2": "14936.4",
+          "status": "Строится",
+          "rns": "77-152000-017427-2018",
+          "cadastral": "77:04:0003010:15573",
+          "distance_m": 543.0
+        },
+        {
+          "eis_id": "1426",
+          "project": "Атмосфера",
+          "developer": "Желдорипотека",
+          "apartments": "224",
+          "area_m2": "10569",
+          "status": "Сдан",
+          "rns": "77-152000-011788-2015",
+          "cadastral": "77:04:0004016:0000006",
+          "distance_m": 556.0
+        },
+        {
+          "eis_id": "27245",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "1260",
+          "area_m2": "52360.4",
+          "status": "Сдан",
+          "rns": "77-152000-017471-2018",
+          "cadastral": "77:04:0003010:15",
+          "distance_m": 582.5
+        },
+        {
+          "eis_id": "27246",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "1425",
+          "area_m2": "55216.8",
+          "status": "Сдан",
+          "rns": "77-152000-017472-2018",
+          "cadastral": "77:04:0003010:15546",
+          "distance_m": 663.2
+        },
+        {
+          "eis_id": "61985",
+          "project": "Люблинская 52/1",
+          "developer": "ФОНД РЕНОВАЦИИ",
+          "apartments": "147",
+          "area_m2": "7525.93",
+          "status": "Сдан",
+          "rns": "77-0-021281-2023",
+          "cadastral": "77:04:0003010:15600",
+          "distance_m": 690.9
+        },
+        {
+          "eis_id": "27243",
+          "project": "Люблинский Парк",
+          "developer": "СЗ \"ЛЮБЛИНО ДЕВЕЛОПМЕНТ\"",
+          "apartments": "1425",
+          "area_m2": "55198.2",
+          "status": "Сдан",
+          "rns": "77-152000-017468-2018",
+          "cadastral": "77:04:0003010:15549",
+          "distance_m": 771.1
+        },
+        {
+          "eis_id": "27242",
+          "project": "Станция Л",
+          "developer": "\"СЗ \"МСК Люблинская\"",
+          "apartments": "1094",
+          "area_m2": "53144.6",
+          "status": "Строится",
+          "rns": "77-152000-017467-2018",
+          "cadastral": "77:04:0003010:15",
+          "distance_m": 780.6
+        }
+      ],
+      "same_apartment_count_all_snapshot": [],
+      "street_stem_candidates_all_snapshot": [],
+      "nearby_multiple_id_groups": [],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "c2a4adb96fcd806d2820f138",
+      "address": "Тюменская ул., влд. 5",
+      "fund_apartments": 508,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Тюменская ул., влд. 5",
+        "stage": "Проект на 508 квартир согласован 03.03.2026; фонд сообщает о подготовке площадки. Сданные корпуса Преображения с РНС 2018 года не приняты как соответствие новому дому.",
+        "url": "https://stroi.mos.ru/news/soghlasovan-proiekt-zhilogho-doma-po-proghrammie-rienovatsii-na-tiumienskoi-ulitsie",
+        "additional_url": "https://fr.mos.ru/news/vedutsya-raboty-po-podgotovke-ploshchadki-dlya-vozvedeniya-doma-po-programme-renovatsii-v-rayone-bog/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/tyumenskaya-ul-vld-5/",
+      "nearest_candidates": [
+        {
+          "eis_id": "28174",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "210",
+          "area_m2": "9531.03",
+          "status": "Сдан",
+          "rns": "77-113000-017924-2018",
+          "cadastral": "77:03:0003021:7843",
+          "distance_m": 43.8
+        },
+        {
+          "eis_id": "28170",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "160",
+          "area_m2": "7476.29",
+          "status": "Сдан",
+          "rns": "77-113000-017924-2018",
+          "cadastral": "77:03:0003021:7842",
+          "distance_m": 137.9
+        },
+        {
+          "eis_id": "28173",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "124",
+          "area_m2": "6441",
+          "status": "Сдан",
+          "rns": "77-113000-017924-2018",
+          "cadastral": "77:03:0003021:7843",
+          "distance_m": 141.2
+        },
+        {
+          "eis_id": "28172",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "202",
+          "area_m2": "9253.9",
+          "status": "Сдан",
+          "rns": "77-113000-017924-2018",
+          "cadastral": "77:03:0003021:7844",
+          "distance_m": 189.0
+        },
+        {
+          "eis_id": "28169",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "164",
+          "area_m2": "9142.52",
+          "status": "Сдан",
+          "rns": "77-113000-017924-2018",
+          "cadastral": "77:03:0003021:7842",
+          "distance_m": 192.2
+        },
+        {
+          "eis_id": "28168",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "78",
+          "area_m2": "4016.5",
+          "status": "Сдан",
+          "rns": "77-113000-017924-2018",
+          "cadastral": "77:03:0003021:7841",
+          "distance_m": 222.6
+        },
+        {
+          "eis_id": "28171",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "179",
+          "area_m2": "8961.5",
+          "status": "Сдан",
+          "rns": "77-113000-017924-2018",
+          "cadastral": "77:03:0003021:7844",
+          "distance_m": 238.6
+        },
+        {
+          "eis_id": "7908",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "334",
+          "area_m2": "16433.2",
+          "status": "Сдан",
+          "rns": "77-113000-016600-2018",
+          "cadastral": "77:03:0003021:6266",
+          "distance_m": 251.7
+        },
+        {
+          "eis_id": "7907",
+          "project": "Преображение",
+          "developer": "СЗ ГЛОБАЛ ГРУПП",
+          "apartments": "334",
+          "area_m2": "16285.8",
+          "status": "Сдан",
+          "rns": "77-113000-016600-2018",
+          "cadastral": "77:03:0003021:6266",
+          "distance_m": 321.2
+        },
+        {
+          "eis_id": "37342",
+          "project": "Талисман на Рокоссовского",
+          "developer": "\"СЗ \"ТРИ ЭС КОНСТРАКШН\"",
+          "apartments": "803",
+          "area_m2": "36822.5",
+          "status": "Сдан",
+          "rns": "77-113000-019066-2020",
+          "cadastral": "77:03:0003021:33",
+          "distance_m": 375.0
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "56866",
+          "project": "Эко Бунино",
+          "developer": "\"СЗ \"МИЦ-МИЦ\"",
+          "apartments": "508",
+          "area_m2": "20084.34",
+          "status": "Строится",
+          "rns": "77-21-021285-2023",
+          "cadastral": "50:21:0130206:717",
+          "distance_m": 34716.2
+        },
+        {
+          "eis_id": "51192",
+          "project": "Эко Бунино",
+          "developer": "\"СЗ \"МИЦ-МИЦ\"",
+          "apartments": "508",
+          "area_m2": "19855.3",
+          "status": "Сдан",
+          "rns": "77-21-020725-2023",
+          "cadastral": "50:21:0130206:717",
+          "distance_m": 34750.7
+        },
+        {
+          "eis_id": "3205",
+          "project": "Новые Ватутинки",
+          "developer": "Инвесттраст",
+          "apartments": "508",
+          "area_m2": "25051.33",
+          "status": "Сдан",
+          "rns": "77-232000-013363-2016",
+          "cadastral": "77:17:0140116:7433",
+          "distance_m": 40801.0
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-113000-017924-2018",
+          "eis_ids": [
+            "28174",
+            "28170",
+            "28173",
+            "28172",
+            "28169",
+            "28168",
+            "28171"
+          ],
+          "apartments_sum": 1117,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-113000-016600-2018",
+          "eis_ids": [
+            "7908",
+            "7907",
+            "7909",
+            "7906"
+          ],
+          "apartments_sum": 1336,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-157000-020185-2022",
+          "eis_ids": [
+            "46579",
+            "46578"
+          ],
+          "apartments_sum": 688,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-157000-019728-2021",
+          "eis_ids": [
+            "42659",
+            "42661",
+            "42660",
+            "42662"
+          ],
+          "apartments_sum": 1568,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-125000-018909-2020",
+          "eis_ids": [
+            "36146",
+            "36147",
+            "36145",
+            "36148"
+          ],
+          "apartments_sum": 1264,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-125000-014170-2017",
+          "eis_ids": [
+            "34741",
+            "34742"
+          ],
+          "apartments_sum": 2402,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-157000-020034-2022",
+          "eis_ids": [
+            "45131",
+            "45133",
+            "45134",
+            "45132"
+          ],
+          "apartments_sum": 1408,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-03-021739-2024",
+          "eis_ids": [
+            "63646",
+            "63647"
+          ],
+          "apartments_sum": 1447,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    },
+    {
+      "site_id": "79c4f2475b1eb16d967dc4d4",
+      "address": "Шереметьевская ул., влд. 17, к. 1, 2",
+      "fund_apartments": 220,
+      "matched_eis_ids": [],
+      "status": "NOT_LOCATED_AFTER_EXTENDED_SEARCH",
+      "evidence": {
+        "address": "Шереметьевская ул., влд. 17, к. 1, 2",
+        "stage": "Проект на 220 квартир согласован 16.09.2025; 20.11.2025 фонд сообщил о подготовке площадки. Соседний MariInn Park имеет 135 квартир; прямого соответствия нет.",
+        "url": "https://stroi.mos.ru/news/soghlasovan-proiekt-doma-po-rienovatsii-na-220-kvartir-v-mar-inoi-roshchie",
+        "additional_url": "https://fr.mos.ru/news/v-marinoy-roshche-postroyat-dom-dlya-realizatsii-programmy-renovatsii/"
+      },
+      "fund_url": "https://fr.mos.ru/uchastnikam-programmy/karta-renovatsii/sheremetevskaya-ul-vld-17-k-1-2/",
+      "nearest_candidates": [
+        {
+          "eis_id": "63924",
+          "project": "MariInn Park",
+          "developer": "\"СЗ \"ЭТАЛОН МАРИИН ПАРК\"",
+          "apartments": "135",
+          "area_m2": "9987.5",
+          "status": "Строится",
+          "rns": "77-02-021790-2024",
+          "cadastral": "77:02:0024002:49",
+          "distance_m": 182.4
+        },
+        {
+          "eis_id": "46238",
+          "project": "Каштан",
+          "developer": "\"СЗ \"ОКТЯБРЬСКАЯ\"",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "RU77154000-007804",
+          "cadastral": "77:02:0024003:1424",
+          "distance_m": 190.3
+        },
+        {
+          "eis_id": "2362",
+          "project": "JAZZ",
+          "developer": "СУЩЕВСКИЙ ВАЛ",
+          "apartments": "147",
+          "area_m2": "12157.49",
+          "status": "Сдан",
+          "rns": "77-154000-013741-2016",
+          "cadastral": "77:02:0024018:19",
+          "distance_m": 524.2
+        },
+        {
+          "eis_id": "2365",
+          "project": "JAZZ",
+          "developer": "СУЩЕВСКИЙ ВАЛ",
+          "apartments": "74",
+          "area_m2": "5299.02",
+          "status": "Сдан",
+          "rns": "77-154000-013741-2016",
+          "cadastral": "77:02:0024018:19",
+          "distance_m": 524.2
+        },
+        {
+          "eis_id": "2360",
+          "project": "JAZZ",
+          "developer": "СУЩЕВСКИЙ ВАЛ",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-154000-013741-2016",
+          "cadastral": "77:02:0024018:19",
+          "distance_m": 524.2
+        },
+        {
+          "eis_id": "2361",
+          "project": "JAZZ",
+          "developer": "СУЩЕВСКИЙ ВАЛ",
+          "apartments": "130",
+          "area_m2": "8920.93",
+          "status": "Сдан",
+          "rns": "77-154000-013741-2016",
+          "cadastral": "77:02:0024018:19",
+          "distance_m": 524.2
+        },
+        {
+          "eis_id": "2364",
+          "project": "JAZZ",
+          "developer": "СУЩЕВСКИЙ ВАЛ",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-154000-013741-2016",
+          "cadastral": "77:02:0024018:19",
+          "distance_m": 524.2
+        },
+        {
+          "eis_id": "2359",
+          "project": "JAZZ",
+          "developer": "СУЩЕВСКИЙ ВАЛ",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-154000-013741-2016",
+          "cadastral": "77:02:0024018:19",
+          "distance_m": 524.2
+        },
+        {
+          "eis_id": "2363",
+          "project": "JAZZ",
+          "developer": "СУЩЕВСКИЙ ВАЛ",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-154000-013741-2016",
+          "cadastral": "77:02:0024018:19",
+          "distance_m": 526.5
+        },
+        {
+          "eis_id": "2366",
+          "project": "JAZZ",
+          "developer": "СУЩЕВСКИЙ ВАЛ",
+          "apartments": "0",
+          "area_m2": "0",
+          "status": "Сдан",
+          "rns": "77-154000-013741-2016",
+          "cadastral": "77:02:0024018:19",
+          "distance_m": 533.9
+        }
+      ],
+      "same_apartment_count_all_snapshot": [
+        {
+          "eis_id": "50364",
+          "project": "Селигер Сити",
+          "developer": "СЗ \"СЕЛИГЕР ПАРК\"",
+          "apartments": "220",
+          "area_m2": "11603.3",
+          "status": "Сдан",
+          "rns": "77-09-020594-2022",
+          "cadastral": "77:09:0002025:30",
+          "distance_m": 8324.6
+        },
+        {
+          "eis_id": "31632",
+          "project": "Ильменский 17",
+          "developer": "СЗ \"М.СТРОЙ\"",
+          "apartments": "220",
+          "area_m2": "11341",
+          "status": "Сдан",
+          "rns": "77-131000-018225-2019",
+          "cadastral": "77:09:0002030:54",
+          "distance_m": 8369.8
+        },
+        {
+          "eis_id": "39718",
+          "project": "Волжский Парк",
+          "developer": "\"СЗ \"Волжский парк\"",
+          "apartments": "220",
+          "area_m2": "8902",
+          "status": "Сдан",
+          "rns": "77-204000-019467-2021",
+          "cadastral": "77:04:0002005:10947",
+          "distance_m": 11043.7
+        },
+        {
+          "eis_id": "39273",
+          "project": "Город На Реке Тушино-2018",
+          "developer": "\"СЗ \"СТАДИОН \"СПАРТАК\"",
+          "apartments": "220",
+          "area_m2": "13540.2",
+          "status": "Сдан",
+          "rns": "77-179000-019352-2021",
+          "cadastral": "77:08:0015001:1777",
+          "distance_m": 12054.3
+        },
+        {
+          "eis_id": "25797",
+          "project": "Ривер Парк",
+          "developer": "СЗ\"МССЗ\"",
+          "apartments": "220",
+          "area_m2": "14329.6",
+          "status": "Сдан",
+          "rns": "77-164000-017462-2018",
+          "cadastral": "77:05:0004011:2277",
+          "distance_m": 13591.1
+        },
+        {
+          "eis_id": "65723",
+          "project": "Кутузов Сити",
+          "developer": "\"СЗ \"ГРОДНЕНСКАЯ 18\"",
+          "apartments": "220",
+          "area_m2": "13425.6",
+          "status": "Строится",
+          "rns": "77-07-022056-2025",
+          "cadastral": "77:07:0008006:3",
+          "distance_m": 14595.2
+        },
+        {
+          "eis_id": "41213",
+          "project": "LIFE-Варшавская",
+          "developer": "\"СЗ \"ПИОНЕР-1\"",
+          "apartments": "220",
+          "area_m2": "11488.3",
+          "status": "Сдан",
+          "rns": "77-161000-019589-2021",
+          "cadastral": "77:05:0005003:6463",
+          "distance_m": 16280.9
+        },
+        {
+          "eis_id": "20191",
+          "project": "Москва А101",
+          "developer": "\"А101\"",
+          "apartments": "220",
+          "area_m2": "13493",
+          "status": "Сдан",
+          "rns": "77-245000-017370-2018",
+          "cadastral": "77:17:0000000:11573",
+          "distance_m": 27201.3
+        }
+      ],
+      "street_stem_candidates_all_snapshot": [
+        {
+          "eis_id": "20151",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "607",
+          "area_m2": "32625.2",
+          "status": "Сдан",
+          "rns": "77-115000-017366-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 1256.5
+        },
+        {
+          "eis_id": "20152",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "132",
+          "area_m2": "6293.36",
+          "status": "Сдан",
+          "rns": "77-115000-017366-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 1270.8
+        },
+        {
+          "eis_id": "27678",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "664",
+          "area_m2": "35693.54",
+          "status": "Сдан",
+          "rns": "77-115000-017365-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 1006.3
+        },
+        {
+          "eis_id": "27677",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "541",
+          "area_m2": "32789.09",
+          "status": "Сдан",
+          "rns": "77-115000-017365-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 1100.1
+        },
+        {
+          "eis_id": "20155",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "99",
+          "area_m2": "5475.04",
+          "status": "Сдан",
+          "rns": "77-115000-017366-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 1098.2
+        },
+        {
+          "eis_id": "20156",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "222",
+          "area_m2": "11418.12",
+          "status": "Сдан",
+          "rns": "77-115000-017366-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 1060.6
+        },
+        {
+          "eis_id": "20154",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "98",
+          "area_m2": "5509.55",
+          "status": "Сдан",
+          "rns": "77-115000-017366-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 1154.9
+        },
+        {
+          "eis_id": "20153",
+          "project": "Шереметьевский",
+          "developer": "БОРЕЦ",
+          "apartments": "130",
+          "area_m2": "6910.42",
+          "status": "Сдан",
+          "rns": "77-115000-017366-2018",
+          "cadastral": "77:02:0021006:53",
+          "distance_m": 1228.5
+        }
+      ],
+      "nearby_multiple_id_groups": [
+        {
+          "rns": "77-154000-013741-2016",
+          "eis_ids": [
+            "2362",
+            "2365",
+            "2360",
+            "2361",
+            "2364",
+            "2359",
+            "2363",
+            "2366"
+          ],
+          "apartments_sum": 351,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-115000-017365-2018",
+          "eis_ids": [
+            "27678",
+            "27677"
+          ],
+          "apartments_sum": 1205,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-115000-017366-2018",
+          "eis_ids": [
+            "20156",
+            "20155",
+            "20154",
+            "20153",
+            "20151",
+            "20152"
+          ],
+          "apartments_sum": 1288,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-115000-011971-2015",
+          "eis_ids": [
+            "10954",
+            "10955",
+            "10953",
+            "10956",
+            "10957"
+          ],
+          "apartments_sum": 1606,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-174000-017494-2018",
+          "eis_ids": [
+            "23186",
+            "23185"
+          ],
+          "apartments_sum": 1012,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-02-021237-2023",
+          "eis_ids": [
+            "72964",
+            "56269",
+            "56270"
+          ],
+          "apartments_sum": 1933,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        },
+        {
+          "rns": "77-203000-018355-2019",
+          "eis_ids": [
+            "2885",
+            "2886"
+          ],
+          "apartments_sum": 146,
+          "equals_site_apartments": false,
+          "caveat": "Sum of saved IDs within 2 km by RNS; not a mapped construction site. Zero and missing counts can make sums incomplete."
+        }
+      ],
+      "rns_from_fund_document": null,
+      "cadastral_from_fund_document": null,
+      "limitation": "No verified permit/cadastral document was obtained for the fund site; absence from EIS and legal regime remain unproven."
+    }
+  ],
+  "web_search_note": "Official fund/city pages were searched for every target; a separate EIS-domain query was run for every address. No new valid identity was established. Search-engine absence is not proof of registry absence. Direct article fetches often timed out.",
+  "related_but_different_project": {
+    "eis_id": 66285,
+    "address": "Оренбургская, 30",
+    "apartments": 326,
+    "interpretation": "The fund confirms renovation use of a 326-apartment house at Orenburgskaya 30. This contextual link does not map the 148-apartment site Orenburgskaya 26 and does not add an under-construction site to the working list.",
+    "source": "https://fr.mos.ru/news/vladimir-efimov-okolo-600-moskvichey-pristupili-k-pereseleniyu-v-novostroyku-po-programme-renovatsii/"
+  }
+}
