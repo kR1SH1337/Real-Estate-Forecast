@@ -1,0 +1,19 @@
+{
+  "assembled_on": "2026-10-26",
+  "object_snapshot": "2026-10-23",
+  "sales_through": "2026-09-01",
+  "project_rows": 2680,
+  "unique_project_object_ids": 2680,
+  "register_objects": 37,
+  "monthly_history_rows": 746,
+  "working_group_objects": 21,
+  "not_included": [
+    "full Moscow monthly database",
+    "original temporary workbook-builder script",
+    "verbatim chat export",
+    "full web page snapshots",
+    "AC report source PDFs",
+    "buyer contracts/EGRN extracts"
+  ],
+  "code_status": "portable reconstruction tested on preserved data; original XLSX retained unchanged"
+}

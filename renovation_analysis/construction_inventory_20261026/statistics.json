@@ -1,0 +1,13 @@
+{
+  "sites": 169,
+  "unique_site_ids": 169,
+  "cards_read": 169,
+  "cards_failed": 0,
+  "generation": "20261026T012210Z-58d44c16c3d1",
+  "sites_with_candidate_200m": 41,
+  "sites_with_candidate_100m": 27,
+  "candidate_pairs": 69,
+  "eis_snapshot": "2026-10-23",
+  "source": "Dolewka.ru, states Fund as original data source",
+  "scope_warning": "169 source records, not proven complete universe of programme and not 169 EIS buildings"
+}

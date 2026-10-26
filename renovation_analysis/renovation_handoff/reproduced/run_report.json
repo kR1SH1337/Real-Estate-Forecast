@@ -1,0 +1,9 @@
+{
+  "events": 38,
+  "buildings": 37,
+  "input_buildings": 37,
+  "unmatched_buildings": [],
+  "duplicate_building_months": [],
+  "scope": "selected_buildings_only",
+  "static_project_snapshot": "2026-10-23"
+}
