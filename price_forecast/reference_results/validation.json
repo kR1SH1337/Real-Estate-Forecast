@@ -1,0 +1,13 @@
+{
+  "calibration_converged": true,
+  "multistart_successes": 17,
+  "objective": 0.6758103225459668,
+  "multistart_objective_spread": 4.056754931980322e-13,
+  "nine_month_growth_pct": 9.42139064806815,
+  "q4_growth_pct": 0.542469631851894,
+  "q4_cpi_growth_pct": 1.624764582920979,
+  "max_annual_guidance_deviation_pp": 0.05439951103336682,
+  "parameter_on_bound": false,
+  "historical_predictive_validation": "not performed; future guidance is used in calibration",
+  "sales_supply_link": "not included; no identified elasticity from previous diagnostics"
+}

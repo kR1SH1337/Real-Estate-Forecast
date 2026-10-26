@@ -1,0 +1,5 @@
+parameter,value,lower_bound,upper_bound
+longrun_premium_pp_at_4pct_cpi,1.7856012639717465,0.0,2.0
+initial_adjustment_log_pp_month,-0.6763713640217764,-2.0,0.0
+recovery_amplitude_log_pp_month,0.45103820134283773,0.0,2.0
+decay_time_months,5.090438106533731,2.0,24.0

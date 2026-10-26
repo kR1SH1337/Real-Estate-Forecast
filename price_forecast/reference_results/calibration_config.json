@@ -1,0 +1,34 @@
+{
+  "formula": "r_h=mu+(a+b*h/tau)*exp(-h/tau); mu=100/12*log((104+delta)/104)",
+  "origin": "2026-09-01",
+  "h_zero": "2026-10-01",
+  "rate_units": "monthly logarithmic percentage points",
+  "annual_guidance": {
+    "2026": 10.0,
+    "2027": 6.320295223124105,
+    "2028": 6.033673213964373,
+    "2029": 5.8336732139643726,
+    "2030": 5.8336732139643726
+  },
+  "annual_scales_pp": [
+    0.25,
+    0.4,
+    0.4,
+    0.4,
+    0.4
+  ],
+  "regularization": {
+    "longrun_delta_center": 1.8,
+    "longrun_delta_scale": 0.2,
+    "tau_center_months": 9.0,
+    "tau_scale_months": 6.0,
+    "b_center": 0.0,
+    "b_scale": 1.0
+  },
+  "parameters": {
+    "longrun_premium_pp_at_4pct_cpi": 1.7856012639717465,
+    "initial_adjustment_log_pp_month": -0.6763713640217764,
+    "recovery_amplitude_log_pp_month": 0.45103820134283773,
+    "decay_time_months": 5.090438106533731
+  }
+}

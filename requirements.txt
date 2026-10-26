@@ -1,2 +1,3 @@
 -r cash_installments/requirements.txt
 -r launches/requirements.txt
+-r price_forecast/requirements.txt
