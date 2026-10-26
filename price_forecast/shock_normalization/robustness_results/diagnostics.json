@@ -1,0 +1,8 @@
+{
+  "checks_passed": true,
+  "targets_used": false,
+  "ridge": "Standardized L2 penalty on phi and the two shock coefficients; intercept unpenalized. Nonlinear structural AR model, not ordinary linear Ridge.",
+  "selection": "Penalty grid is sensitivity only. No best penalty is selected, and future predictive accuracy is not established.",
+  "omission": "Leaving a calendar year out is an influence diagnostic, not a valid cleaning rule. Observed lags are retained; all forecasts start at actual September 2026 price.",
+  "calendar": "Early event months remain provisional."
+}

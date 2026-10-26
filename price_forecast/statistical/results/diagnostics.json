@@ -1,0 +1,22 @@
+{
+  "n_history": 67,
+  "history_start": "2021-03-01",
+  "history_end": "2026-09-01",
+  "selected_weight": 0.3,
+  "selection_rule": "minimum guidance RMSE among weights with training RMSE deterioration <=10%; not cross-validated",
+  "monthly_historical_error_scale": 1.387972093334881,
+  "guidance_error_scale_pp": 1.0,
+  "baseline_parameters": [
+    0.6271099004297457,
+    0.31593298327887337
+  ],
+  "guided_parameters": [
+    0.13577062413441668,
+    0.1506699498592862
+  ],
+  "baseline_rmse": 1.387972093334881,
+  "guided_rmse": 1.4687210450832902,
+  "backtest_note": "Unconstrained model only; 12-month horizons overlap; realized CPI is supplied. Guided forecast has no honest historical backtest.",
+  "leave_one_out_note": "Fixed selected weight, refitted parameters; diagnostic of guidance influence, not validation.",
+  "numerical_checks_passed": true
+}

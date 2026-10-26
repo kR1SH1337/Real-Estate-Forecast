@@ -1,0 +1,7 @@
+{
+  "n": 67,
+  "targets_used": false,
+  "checks_passed": true,
+  "backtest": "Matched 32 overlapping 12-month origins; actual future CPI; no new future pre-deadline pulses; retain post-deadline tails of events already observed. Retrospectively assembled policy calendar, not vintage-real-time validation.",
+  "calendar": "Pooled pre/post effects; deadline windows chosen from policy timing, not price peaks. Window lengths remain assumptions. Causal subsidy impact not identified."
+}

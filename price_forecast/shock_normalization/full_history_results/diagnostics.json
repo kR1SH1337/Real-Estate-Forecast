@@ -1,0 +1,6 @@
+{
+  "targets_used": false,
+  "checks_passed": true,
+  "distinction": "7 user-confirmed months vs 7 additional historical candidate months; full history not yet expert-confirmed.",
+  "limitations": "Retrospective event selection; shared coefficient assumes identical monthly effect; two-coefficient variant is sensitivity, not a selected winner; no causal identification or independent backtest. No post-event payback effect is included."
+}

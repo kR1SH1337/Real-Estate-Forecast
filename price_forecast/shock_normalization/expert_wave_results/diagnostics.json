@@ -1,0 +1,8 @@
+{
+  "targets_used": false,
+  "forecast_anchored_to_actual_september": true,
+  "expert_period": "User-confirmed window: September 2025 through January 2026. Not automatically detected.",
+  "interpretation": "Conditional association of a selected five-month episode; omitted factors may enter its coefficient. Not a causal subsidy estimate.",
+  "historical_backtest": "No honest backtest of a new event type from a single retrospectively identified wave. Future 2026-2030 forecast guidance not used.",
+  "checks_passed": true
+}

@@ -1,0 +1,10 @@
+{
+  "common_start": "2022-04-01",
+  "common_end": "2026-09-01",
+  "n": 54,
+  "checks_passed": true,
+  "future_assumptions": "Current market driver held constant, not an approved sales/stock forecast. MOS stress moves log MOS by -log(0.8) over 6 months; opposite case -log(1.2).",
+  "yoy_assumption": "Held annual sales-growth driver is diagnostic, not a level sales forecast.",
+  "validation": "Pseudo-out-of-sample: revised history and retrospectively selected shock dates. Actual future CPI supplied; future market regressor held at first target value known at origin. Overlapping horizons.",
+  "other": "No sign constraints or desired annual price-growth targets. Early event dates remain provisional. Stock publication lags not reconstructed."
+}
