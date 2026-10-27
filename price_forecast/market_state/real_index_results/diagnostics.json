@@ -1,0 +1,11 @@
+{
+  "start": "2022-04-01",
+  "end": "2026-09-01",
+  "n": 54,
+  "checks_passed": true,
+  "real_index": "100*(P/CPI)/(P0/CPI0); not subtraction of two index levels",
+  "shock_semantics": "Cumulative event indicators in level equations preserve permanent level effect of monthly growth events; coefficients re-estimated within every training fold.",
+  "persistence": "Unconstrained level persistence; a value near or above one is reported, not forced to imply mean reversion.",
+  "validation": "Same expanding windows and forecast origins as growth model. Actual future CPI; first available lagged market value held constant; no future events supplied. Revised history and retrospectively chosen event calendar. Overlapping horizons.",
+  "scope": "Historical experiment only; coupled forecasting system and original historical parameters untouched."
+}
