@@ -1,0 +1,14 @@
+{
+  "as_of": "2026-10-27",
+  "price_actual_through": "2026-09-01",
+  "portfolio_snapshot_date": "2026-10-23",
+  "initial_unsold_m2": 8186473.37,
+  "selected_model": "mos_lag1",
+  "coefficients_refitted": false,
+  "parameter_file_sha256": "84f3ba44a8df364d7f779a407d76e36427669ad7bf36be42ebb8c711ef2df802",
+  "checks_passed": true,
+  "source_csv_sha256": "56206ab5d88fed13bb85aa123e001792365ba69e15917faf7c36ddc0e267d813",
+  "source_snapshot_sha256": "d9835d518148a8ce12d7f589bbab01cb3d232c86e03d3f3b2fdaae1ea5003d2b",
+  "monthly_bridge": "Q4 2026 uniform per calendar day, subsequent years uniform per month. Stocks linearly interpolated in time through actual monthly snapshots, October 23 snapshot and next January 1 year-end forecast anchors.",
+  "scope": "One-way conditional update: sales, launches, completions and portfolio model are not re-estimated; price-to-sales feedback is not solved. Historical price/market coefficient instability and validation limitations are unchanged."
+}

@@ -1,0 +1,18 @@
+{
+  "as_of": "2026-10-27",
+  "repository": "kR1SH1337/Real-Estate-Forecast",
+  "source_commit": "9d4613ad282df62e044c19725a9a28630353d08f",
+  "source_files": [
+    {
+      "path": "portfolio_forecast/reference_results/forecast_by_class.csv",
+      "git_blob_sha": "e0dda5c9ed321b655527f614e48e2383ead0ffc5"
+    },
+    {
+      "path": "portfolio_forecast/inputs/snapshot_2026-10-27.json",
+      "git_blob_sha": "d67cd50e5d7ae3983d7e46d51b634778207bfb46"
+    }
+  ],
+  "workbook": "moscow_market_technical.xlsx",
+  "price_model_git_blob_sha": "f6d48ca9e5895b52379d576ae4335a0d1362571a",
+  "note": "Annual sales and year-end unsold construction stock supplied from the completed portfolio forecast; portfolio calculations are not changed."
+}
