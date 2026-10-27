@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-10-27",
+  "converged": true,
+  "iterations": 21,
+  "max_price_log_residual": 4.956916334137644e-09,
+  "tolerance": 1e-08,
+  "damping": 0.5,
+  "coefficients_refitted": false,
+  "price_anchor": "2025 annual average unit price from source workbook mapped to the sales-weighted 2025 mean model index",
+  "price_anchor_thousand_rub_m2": 427.7911946551917,
+  "mortgage_nominals_held_fixed_during_iterations": true,
+  "cash_and_oneoff_held_fixed_during_iterations": true,
+  "actual_9m_preserved": true,
+  "price_parameter_sha256": "84f3ba44a8df364d7f779a407d76e36427669ad7bf36be42ebb8c711ef2df802",
+  "future_launches": "Recalculated with current-year and next-year sales using the unchanged portfolio engine; terminal 2031 sales equal 2030.",
+  "numerator": "Mortgage transaction value includes down payment. Full annual nominal for 2027+; forecast Q4 nominal only for 2026.",
+  "denominator": "2026 forecast Q4 mean proxy price weighted by calendar days; 2027+ full-year arithmetic mean monthly proxy price.",
+  "caveats": "A numerical fixed point is not evidence of econometric forecast accuracy. Unit-price/index anchoring and annual-to-monthly bridge are assumptions. Earlier dummy dates remain provisional. Mortgage ruble amounts are fixed, with no extra affordability elasticity.",
+  "checks_passed": true
+}
