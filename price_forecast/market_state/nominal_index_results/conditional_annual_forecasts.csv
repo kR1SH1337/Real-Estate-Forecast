@@ -1,0 +1,21 @@
+model,year,nominal_growth_pct,year_end_index,case
+nominal_log_no_market,2026,11.065692575313268,245.35293351485748,Current market held; not a coupled equilibrium
+nominal_log_no_market,2027,5.797506950898712,259.57728688961527,Current market held; not a coupled equilibrium
+nominal_log_no_market,2028,5.276311222003449,273.2733924075441,Current market held; not a coupled equilibrium
+nominal_log_no_market,2029,4.803027991108344,286.39878993712983,Current market held; not a coupled equilibrium
+nominal_log_no_market,2030,4.373074866410898,298.9232234375754,Current market held; not a coupled equilibrium
+nominal_log_market,2026,9.842886535447226,242.65165788199386,Current market held; not a coupled equilibrium
+nominal_log_market,2027,1.431778156379515,246.125891315641,Current market held; not a coupled equilibrium
+nominal_log_market,2028,1.2602652229387834,249.22773032854013,Current market held; not a coupled equilibrium
+nominal_log_market,2029,1.1094100664317263,251.9926878571443,Current market held; not a coupled equilibrium
+nominal_log_market,2030,0.9766994294419851,254.45389900168055,Current market held; not a coupled equilibrium
+nominal_index_no_market,2026,11.237827184887905,245.73319253489586,Current market held; not a coupled equilibrium
+nominal_index_no_market,2027,6.805558408358814,262.456708481583,Current market held; not a coupled equilibrium
+nominal_index_no_market,2028,6.802856885731878,280.3112627465876,Current market held; not a coupled equilibrium
+nominal_index_no_market,2029,6.800328441911252,299.37334927302436,Current market held; not a coupled equilibrium
+nominal_index_no_market,2030,6.797961872349956,319.7246354125816,Current market held; not a coupled equilibrium
+nominal_index_market,2026,10.657572712136787,244.4513643323835,Current market held; not a coupled equilibrium
+nominal_index_market,2027,4.621154216888024,255.74783886346972,Current market held; not a coupled equilibrium
+nominal_index_market,2028,4.660105410988424,267.66595774083225,Current market held; not a coupled equilibrium
+nominal_index_market,2029,4.69763595734336,280.23993001723306,Current market held; not a coupled equilibrium
+nominal_index_market,2030,4.733771254367203,293.5058472676476,Current market held; not a coupled equilibrium

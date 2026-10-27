@@ -1,0 +1,146 @@
+{
+  "growth_market0_events0": {
+    "kind": "growth",
+    "market": false,
+    "events": false,
+    "c": 0.6695698279381396,
+    "rho": 0.36792950353644904,
+    "beta": {},
+    "gamma": 0.0,
+    "mean": 0.0
+  },
+  "growth_market0_events1": {
+    "kind": "growth",
+    "market": false,
+    "events": true,
+    "c": 0.5096294336404238,
+    "rho": 0.260726610704167,
+    "beta": {
+      "early": 1.3891034018673425,
+      "recent": 1.4828984385999595,
+      "data": 0.5333491138191627
+    },
+    "gamma": 0.0,
+    "mean": 0.0
+  },
+  "growth_market1_events0": {
+    "kind": "growth",
+    "market": true,
+    "events": false,
+    "c": 0.6705793886574731,
+    "rho": 0.3670125887633144,
+    "beta": {},
+    "gamma": -0.02225944845012282,
+    "mean": 3.3568500180088674
+  },
+  "growth_market1_events1": {
+    "kind": "growth",
+    "market": true,
+    "events": true,
+    "c": 0.5232352574659146,
+    "rho": 0.22860192888149253,
+    "beta": {
+      "early": 1.401705845059622,
+      "recent": 1.5681262592301728,
+      "data": 0.5653879088807191
+    },
+    "gamma": -0.6645946000946397,
+    "mean": 3.3568500180088674
+  },
+  "log_market0_events0": {
+    "kind": "log",
+    "market": false,
+    "events": false,
+    "c": 0.6011742450407089,
+    "rho": 1.008527251133502,
+    "beta": {},
+    "gamma": 0.0,
+    "mean": 0.0
+  },
+  "log_market0_events1": {
+    "kind": "log",
+    "market": false,
+    "events": true,
+    "c": 0.9790484213774642,
+    "rho": 0.9923866851684227,
+    "beta": {
+      "early": 1.563347010023934,
+      "recent": 1.7950615771428446,
+      "data": 0.9797215104797328
+    },
+    "gamma": 0.0,
+    "mean": 0.0
+  },
+  "log_market1_events0": {
+    "kind": "log",
+    "market": true,
+    "events": false,
+    "c": 0.5990912805549388,
+    "rho": 1.0085647631748906,
+    "beta": {},
+    "gamma": -0.9388375993679361,
+    "mean": 3.3568500180088674
+  },
+  "log_market1_events1": {
+    "kind": "log",
+    "market": true,
+    "events": true,
+    "c": 1.101968727066715,
+    "rho": 0.9894933442669381,
+    "beta": {
+      "early": 1.5115725606444388,
+      "recent": 1.9203641944073127,
+      "data": 0.9754409541961042
+    },
+    "gamma": -1.1787120040528767,
+    "mean": 3.3568500180088674
+  },
+  "raw_market0_events0": {
+    "kind": "raw",
+    "market": false,
+    "events": false,
+    "c": -1.4572831872230636,
+    "rho": 1.019386590236543,
+    "beta": {},
+    "gamma": 0.0,
+    "mean": 0.0
+  },
+  "raw_market0_events1": {
+    "kind": "raw",
+    "market": false,
+    "events": true,
+    "c": 0.26702491263415545,
+    "rho": 1.0054684600016581,
+    "beta": {
+      "early": 2.5081378254981077,
+      "recent": 3.7580237872984332,
+      "data": 1.713201142355098
+    },
+    "gamma": 0.0,
+    "mean": 0.0
+  },
+  "raw_market1_events0": {
+    "kind": "raw",
+    "market": true,
+    "events": false,
+    "c": -1.4968511264219284,
+    "rho": 1.0196103531775484,
+    "beta": {},
+    "gamma": -0.9896864603178297,
+    "mean": 3.3568500180088674
+  },
+  "raw_market1_events1": {
+    "kind": "raw",
+    "market": true,
+    "events": true,
+    "c": 0.41779879738017883,
+    "rho": 1.0044740746053566,
+    "beta": {
+      "early": 2.4560024048359543,
+      "recent": 3.871339376102232,
+      "data": 1.6758907340834723
+    },
+    "gamma": -1.4080140414892142,
+    "mean": 3.3568500180088674
+  }
+}

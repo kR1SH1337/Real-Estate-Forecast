@@ -1,0 +1,8 @@
+{
+  "checks_passed": true,
+  "target": "Nominal levels, log levels or monthly log growth",
+  "validation": "Same expanding windows, actual nominal outcomes, no CPI, first known market held fixed, no future events in standard forecasts",
+  "oracle": "Future event calendar supplied only in oracle_error_pp. Event magnitudes use training coefficients; unseen groups have no estimated coefficient. This is not a usable forecast.",
+  "interpretation": "Exploratory comparisons on one short, overlapping evaluation period; not independent model selection or a validation of a latent shock-free price path.",
+  "production_model_changed": false
+}

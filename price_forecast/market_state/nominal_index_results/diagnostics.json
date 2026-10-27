@@ -1,0 +1,14 @@
+{
+  "checks_passed": true,
+  "n": 54,
+  "start": "2022-04-01",
+  "end": "2026-09-01",
+  "validation": "Matching expanding windows; 24/19/13 forecasts at 1/6/12 months. Revised data and retrospective event dates; overlapping horizons.",
+  "cpi_used_for_nominal_predictions": false,
+  "market": "First available lagged value held fixed; future events not supplied.",
+  "reference_information": "Real-model benchmarks use actual future CPI and thus have a different information set.",
+  "shock_semantics": "Cumulative indicators retain level shifts; all coefficients re-estimated per fold.",
+  "persistence": "Unconstrained; report rho and sensitivity, not a stationarity claim.",
+  "conditional_future": "Frozen current market, no new shocks; not a four-block equilibrium.",
+  "production_model_changed": false
+}
