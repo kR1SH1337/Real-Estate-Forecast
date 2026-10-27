@@ -1,0 +1,1215 @@
+{
+  "method": "Compound nominal one-step fitted monthly growth, each month conditioned on actual preceding data. Full-sample parameters, not an out-of-sample annual forecast.",
+  "formula": "100*(exp(sum(fitted_monthly_log_pp)/100)-1)",
+  "years": [
+    2023,
+    2024,
+    2025
+  ],
+  "actual": {
+    "2023": 15.051110860057392,
+    "2024": 7.618977337888566,
+    "2025": 22.456256721617372
+  },
+  "models": [
+    {
+      "id": "guide_0",
+      "model": "Реальные приросты: вес ориентиров 0",
+      "family": "Мягкие ориентиры",
+      "n": 67,
+      "source": "statistical/results/weight_sensitivity.csv",
+      "aliases": [],
+      "2023": 15.563539063109888,
+      "2024": 15.329709114481538,
+      "2025": 14.605977214939045,
+      "mean_absolute_historical_error_pp": 5.357813162107931
+    },
+    {
+      "id": "guide_0.03",
+      "model": "Реальные приросты: вес ориентиров 0.03",
+      "family": "Мягкие ориентиры",
+      "n": 67,
+      "source": "statistical/results/weight_sensitivity.csv",
+      "aliases": [],
+      "2023": 11.283546972914191,
+      "2024": 10.926013457247349,
+      "2025": 10.416000767612774,
+      "mean_absolute_historical_error_pp": 6.3716186535021935
+    },
+    {
+      "id": "guide_0.1",
+      "model": "Реальные приросты: вес ориентиров 0.1",
+      "family": "Мягкие ориентиры",
+      "n": 67,
+      "source": "statistical/results/weight_sensitivity.csv",
+      "aliases": [],
+      "2023": 10.75375008968375,
+      "2024": 10.901982764562257,
+      "2025": 9.683085845558592,
+      "mean_absolute_historical_error_pp": 6.784512357702037
+    },
+    {
+      "id": "guide_0.3",
+      "model": "Реальные приросты: вес ориентиров 0.3 (выбранный)",
+      "family": "Мягкие ориентиры",
+      "n": 67,
+      "source": "statistical/results/weight_sensitivity.csv",
+      "aliases": [],
+      "2023": 10.044326947645501,
+      "2024": 11.057141332810536,
+      "2025": 8.627756063296452,
+      "mean_absolute_historical_error_pp": 7.424482855218261
+    },
+    {
+      "id": "guide_1",
+      "model": "Реальные приросты: вес ориентиров 1",
+      "family": "Мягкие ориентиры",
+      "n": 67,
+      "source": "statistical/results/weight_sensitivity.csv",
+      "aliases": [],
+      "2023": 8.948481594923088,
+      "2024": 11.368237062194266,
+      "2025": 6.9768459543463415,
+      "mean_absolute_historical_error_pp": 8.443766585570344
+    },
+    {
+      "id": "guide_3",
+      "model": "Реальные приросты: вес ориентиров 3",
+      "family": "Мягкие ориентиры",
+      "n": 67,
+      "source": "statistical/results/weight_sensitivity.csv",
+      "aliases": [],
+      "2023": 7.439622005293073,
+      "2024": 11.83504422250047,
+      "2025": 4.705741290345251,
+      "mean_absolute_historical_error_pp": 9.85935705688278
+    },
+    {
+      "id": "guide_10",
+      "model": "Реальные приросты: вес ориентиров 10",
+      "family": "Мягкие ориентиры",
+      "n": 67,
+      "source": "statistical/results/weight_sensitivity.csv",
+      "aliases": [],
+      "2023": 4.982396783171463,
+      "2024": 12.523380490823325,
+      "2025": 1.077495390576262,
+      "mean_absolute_historical_error_pp": 12.117292853620597
+    },
+    {
+      "id": "calendar_baseline",
+      "model": "AR без очистки",
+      "family": "Первоначальные спецификации",
+      "n": 67,
+      "source": "shock_normalization/results/parameters.json",
+      "aliases": [],
+      "2023": 15.563539080779186,
+      "2024": 15.329709121403013,
+      "2025": 14.605977236873018,
+      "mean_absolute_historical_error_pp": 5.357813162993533,
+      "same_historical_curve_as": "guide_0"
+    },
+    {
+      "id": "calendar_huber",
+      "model": "AR без очистки, Хьюбер",
+      "family": "Первоначальные спецификации",
+      "n": 67,
+      "source": "shock_normalization/results/parameters.json",
+      "aliases": [],
+      "2023": 16.78629383003136,
+      "2024": 16.3731452303422,
+      "2025": 15.891500630224373,
+      "mean_absolute_historical_error_pp": 5.6847023179402
+    },
+    {
+      "id": "calendar_calendar",
+      "model": "Календарные окна",
+      "family": "Первоначальные спецификации",
+      "n": 67,
+      "source": "shock_normalization/results/parameters.json",
+      "aliases": [],
+      "2023": 16.957502757010893,
+      "2024": 13.685113090732562,
+      "2025": 15.226046727949951,
+      "mean_absolute_historical_error_pp": 5.067579214488306
+    },
+    {
+      "id": "calendar_calendar_huber",
+      "model": "Календарные окна, Хьюбер",
+      "family": "Первоначальные спецификации",
+      "n": 67,
+      "source": "shock_normalization/results/parameters.json",
+      "aliases": [],
+      "2023": 18.01775057867791,
+      "2024": 14.682747212427353,
+      "2025": 16.932920142955663,
+      "mean_absolute_historical_error_pp": 5.184582057273671
+    },
+    {
+      "id": "calendar_regime",
+      "model": "Смена режима",
+      "family": "Первоначальные спецификации",
+      "n": 67,
+      "source": "shock_normalization/results/parameters.json",
+      "aliases": [],
+      "2023": 16.786618582966856,
+      "2024": 14.89522670387904,
+      "2025": 12.893092679930563,
+      "mean_absolute_historical_error_pp": 6.1916403768622486
+    },
+    {
+      "id": "calendar_calendar_regime",
+      "model": "Календарь + режим",
+      "family": "Первоначальные спецификации",
+      "n": 67,
+      "source": "shock_normalization/results/parameters.json",
+      "aliases": [],
+      "2023": 17.82633610345166,
+      "2024": 13.496517861921445,
+      "2025": 13.978819824338343,
+      "mean_absolute_historical_error_pp": 5.710067554902058
+    },
+    {
+      "id": "calendar_calendar_season",
+      "model": "Календарь + сезонность",
+      "family": "Первоначальные спецификации",
+      "n": 67,
+      "source": "shock_normalization/results/parameters.json",
+      "aliases": [],
+      "2023": 16.63970357568084,
+      "2024": 13.714760939004384,
+      "2025": 14.902066434100854,
+      "mean_absolute_historical_error_pp": 5.079522201418595
+    },
+    {
+      "id": "wave_baseline",
+      "model": "AR без очистки",
+      "family": "Экспертная волна",
+      "n": 67,
+      "source": "shock_normalization/expert_wave_results/parameters.json",
+      "aliases": [],
+      "2023": 15.563539082296968,
+      "2024": 15.329709141357425,
+      "2025": 14.605977230785,
+      "mean_absolute_historical_error_pp": 5.357813172180269,
+      "same_historical_curve_as": "guide_0"
+    },
+    {
+      "id": "wave_expert_wave",
+      "model": "Одна dummy: сентябрь 2025 — январь 2026",
+      "family": "Экспертная волна",
+      "n": 67,
+      "source": "shock_normalization/expert_wave_results/parameters.json",
+      "aliases": [],
+      "2023": 14.543618611996939,
+      "2024": 14.676195874197791,
+      "2025": 18.608587125251542,
+      "mean_absolute_historical_error_pp": 3.8041267935785026
+    },
+    {
+      "id": "full_unadjusted",
+      "model": "Без очистки",
+      "family": "Очистка всей истории",
+      "n": 67,
+      "source": "shock_normalization/full_history_results/parameters.json",
+      "aliases": [],
+      "2023": 15.563539082085356,
+      "2024": 15.32970913857431,
+      "2025": 14.60597723163423,
+      "mean_absolute_historical_error_pp": 5.35781317089895,
+      "same_historical_curve_as": "guide_0"
+    },
+    {
+      "id": "full_confirmed_2025_wave",
+      "model": "Только волна 2025–2026",
+      "family": "Очистка всей истории",
+      "n": 67,
+      "source": "shock_normalization/full_history_results/parameters.json",
+      "aliases": [],
+      "2023": 14.543601544004511,
+      "2024": 14.676206820101608,
+      "2025": 18.60864703798616,
+      "mean_absolute_historical_error_pp": 3.8041161606323786
+    },
+    {
+      "id": "full_all_user_confirmed",
+      "model": "Все подтверждённые эпизоды с 2025",
+      "family": "Очистка всей истории",
+      "n": 67,
+      "source": "shock_normalization/full_history_results/parameters.json",
+      "aliases": [],
+      "2023": 14.493027205264871,
+      "2024": 14.614021291107196,
+      "2025": 17.04596341042712,
+      "mean_absolute_historical_error_pp": 4.321140306400467
+    },
+    {
+      "id": "full_provisional_full_history",
+      "model": "Все эпизоды, одна dummy",
+      "family": "Очистка всей истории",
+      "n": 67,
+      "source": "shock_normalization/full_history_results/parameters.json",
+      "aliases": [],
+      "2023": 16.02484953217804,
+      "2024": 14.961339679118893,
+      "2025": 16.174837108935836,
+      "mean_absolute_historical_error_pp": 4.865840208677504
+    },
+    {
+      "id": "full_provisional_full_history_two_coefficients",
+      "model": "Волна и прочие эпизоды: две dummy",
+      "family": "Очистка всей истории",
+      "n": 67,
+      "source": "shock_normalization/full_history_results/parameters.json",
+      "aliases": [],
+      "2023": 15.56274517530703,
+      "2024": 14.706239777477254,
+      "2025": 17.564563445133633,
+      "mean_absolute_historical_error_pp": 4.163530010440689
+    },
+    {
+      "id": "full_provisional_full_history_by_era",
+      "model": "До 2025 / с 2025: две dummy",
+      "family": "Очистка всей истории",
+      "n": 67,
+      "source": "shock_normalization/full_history_results/parameters.json",
+      "aliases": [],
+      "2023": 16.08363239133753,
+      "2024": 14.989925817528393,
+      "2025": 16.08564601110644,
+      "mean_absolute_historical_error_pp": 4.924693573810299
+    },
+    {
+      "id": "full_provisional_full_history_by_era_plus_data",
+      "model": "Две эпохи + аномалии данных: три dummy",
+      "family": "Очистка всей истории",
+      "n": 67,
+      "source": "shock_normalization/full_history_results/parameters.json",
+      "aliases": [],
+      "2023": 15.948244918519928,
+      "2024": 14.870105821544028,
+      "2025": 16.74911683756606,
+      "mean_absolute_historical_error_pp": 4.61846747538977
+    },
+    {
+      "id": "robust_ols",
+      "model": "OLS, две dummy",
+      "family": "Робастность",
+      "n": 67,
+      "source": "shock_normalization/robustness_results/parameters.json",
+      "aliases": [],
+      "2023": 16.08363239133753,
+      "2024": 14.989925817528393,
+      "2025": 16.08564601110644,
+      "mean_absolute_historical_error_pp": 4.924693573810299,
+      "same_historical_curve_as": "full_provisional_full_history_by_era"
+    },
+    {
+      "id": "robust_huber",
+      "model": "Хьюбер, две dummy",
+      "family": "Робастность",
+      "n": 67,
+      "source": "shock_normalization/robustness_results/parameters.json",
+      "aliases": [],
+      "2023": 17.24249187180642,
+      "2024": 16.237259243229975,
+      "2025": 17.248328008768546,
+      "mean_absolute_historical_error_pp": 5.339197209979754
+    },
+    {
+      "id": "robust_ridge_0.01",
+      "model": "Ridge-type λ=0.01",
+      "family": "Робастность",
+      "n": 67,
+      "source": "shock_normalization/robustness_results/parameters.json",
+      "aliases": [],
+      "2023": 16.083128871572598,
+      "2024": 15.02011381633861,
+      "2025": 16.061766773504978,
+      "mean_absolute_historical_error_pp": 4.942548146025881
+    },
+    {
+      "id": "robust_ridge_0.1",
+      "model": "Ridge-type λ=0.1",
+      "family": "Робастность",
+      "n": 67,
+      "source": "shock_normalization/robustness_results/parameters.json",
+      "aliases": [],
+      "2023": 16.07476284237456,
+      "2024": 15.266494792697511,
+      "2025": 15.87243267152193,
+      "mean_absolute_historical_error_pp": 5.084997829073852
+    },
+    {
+      "id": "robust_ridge_1",
+      "model": "Ridge-type λ=1",
+      "family": "Робастность",
+      "n": 67,
+      "source": "shock_normalization/robustness_results/parameters.json",
+      "aliases": [],
+      "2023": 15.954925902410514,
+      "2024": 16.473616915532048,
+      "2025": 14.99885096521891,
+      "mean_absolute_historical_error_pp": 5.7386201254650215
+    },
+    {
+      "id": "robust_ridge_10",
+      "model": "Ridge-type λ=10",
+      "family": "Робастность",
+      "n": 67,
+      "source": "shock_normalization/robustness_results/parameters.json",
+      "aliases": [],
+      "2023": 15.794216690844337,
+      "2024": 17.718863501196754,
+      "2025": 14.05309255555222,
+      "mean_absolute_historical_error_pp": 6.415385386720094
+    },
+    {
+      "id": "market_baseline",
+      "model": "Без рынка",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 15.065244020174365,
+      "2024": 13.960670143869006,
+      "2025": 16.03167890023251,
+      "mean_absolute_historical_error_pp": 4.260134595827425
+    },
+    {
+      "id": "market_mos_lag1",
+      "model": "Остаток / продажи, лаг 1",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [
+        "linked_forecast: одинаковая историческая функция",
+        "coupled_forecast: одинаковая историческая функция",
+        "calibrated_equilibrium: поправки действуют только с октября 2026"
+      ],
+      "2023": 14.820001781715703,
+      "2024": 14.451442790918872,
+      "2025": 16.127767463746125,
+      "mean_absolute_historical_error_pp": 4.46402126308108
+    },
+    {
+      "id": "market_mos_lag3",
+      "model": "Остаток / продажи, лаг 3",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 13.52811736594632,
+      "2024": 15.165760371908835,
+      "2025": 16.066232632174877,
+      "mean_absolute_historical_error_pp": 5.153266872524612
+    },
+    {
+      "id": "market_sales_yoy_lag1",
+      "model": "Продажи год к году",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 15.66782567993913,
+      "2024": 14.41093575599659,
+      "2025": 16.05853693284463,
+      "mean_absolute_historical_error_pp": 4.602131008920835
+    },
+    {
+      "id": "market_sales_momentum_lag1",
+      "model": "Импульс продаж за 3 месяца",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 14.976223493286206,
+      "2024": 13.994500218891229,
+      "2025": 16.012128943788422,
+      "mean_absolute_historical_error_pp": 4.298179341867599
+    },
+    {
+      "id": "market_baseline_season",
+      "model": "Без рынка + сезонность",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 13.562608433273086,
+      "2024": 13.428831690594237,
+      "2025": 16.401528071588945,
+      "mean_absolute_historical_error_pp": 4.451028476506134
+    },
+    {
+      "id": "market_mos_lag1_season",
+      "model": "Остаток / продажи, лаг 1 + сезонность",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 12.4733917477191,
+      "2024": 15.139894651593908,
+      "2025": 16.834452255433604,
+      "mean_absolute_historical_error_pp": 5.240146964075801
+    },
+    {
+      "id": "market_mos_lag3_season",
+      "model": "Остаток / продажи, лаг 3 + сезонность",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 12.095942388151878,
+      "2024": 14.617007866830367,
+      "2025": 16.488665390635113,
+      "mean_absolute_historical_error_pp": 5.306930110609858
+    },
+    {
+      "id": "market_sales_yoy_lag1_season",
+      "model": "Продажи год к году + сезонность",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 14.71767089088637,
+      "2024": 14.32708772566694,
+      "2025": 16.51217416877742,
+      "mean_absolute_historical_error_pp": 4.328544303263116
+    },
+    {
+      "id": "market_sales_momentum_lag1_season",
+      "model": "Импульс продаж за 3 месяца + сезонность",
+      "family": "Реальные приросты, три dummy",
+      "n": 54,
+      "source": "market_state/results/parameters.json",
+      "aliases": [],
+      "2023": 14.400222327280876,
+      "2024": 13.014965228416898,
+      "2025": 16.570278437349625,
+      "mean_absolute_historical_error_pp": 3.977618235857532
+    },
+    {
+      "id": "real_log_index_no_market",
+      "model": "Логарифм реального индекса, без рынка",
+      "family": "Уровень реального индекса",
+      "n": 54,
+      "source": "market_state/real_index_results/parameters.json",
+      "aliases": [],
+      "2023": 17.426291916887106,
+      "2024": 10.866071539482126,
+      "2025": 19.1993500188479,
+      "mean_absolute_historical_error_pp": 2.9597273203975827
+    },
+    {
+      "id": "real_log_index_market",
+      "model": "Логарифм реального индекса + рынок",
+      "family": "Уровень реального индекса",
+      "n": 54,
+      "source": "market_state/real_index_results/parameters.json",
+      "aliases": [],
+      "2023": 17.005975632916094,
+      "2024": 11.250859895120744,
+      "2025": 19.272939647089824,
+      "mean_absolute_historical_error_pp": 2.923354801539476
+    },
+    {
+      "id": "real_real_index_no_market",
+      "model": "Реальный индекс, без рынка",
+      "family": "Уровень реального индекса",
+      "n": 54,
+      "source": "market_state/real_index_results/parameters.json",
+      "aliases": [],
+      "2023": 17.837000487728087,
+      "2024": 10.769635360501972,
+      "2025": 19.55198581156812,
+      "mean_absolute_historical_error_pp": 2.9469395201111177
+    },
+    {
+      "id": "real_real_index_market",
+      "model": "Реальный индекс + рынок",
+      "family": "Уровень реального индекса",
+      "n": 54,
+      "source": "market_state/real_index_results/parameters.json",
+      "aliases": [],
+      "2023": 17.42014119425369,
+      "2024": 11.07748405847282,
+      "2025": 19.59848949124702,
+      "mean_absolute_historical_error_pp": 2.895101428383635
+    },
+    {
+      "id": "nom_growth_market0_events0",
+      "model": "Номинальные приросты, без рынка, без dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [],
+      "2023": 14.115280948709655,
+      "2024": 11.839494767873529,
+      "2025": 14.966763997074164,
+      "mean_absolute_historical_error_pp": 4.215280021958636
+    },
+    {
+      "id": "nom_growth_market0_events1",
+      "model": "Номинальные приросты, без рынка + dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [],
+      "2023": 13.722713916828209,
+      "2024": 10.56428785762815,
+      "2025": 17.193458327891996,
+      "mean_absolute_historical_error_pp": 3.1788352855647144
+    },
+    {
+      "id": "nom_growth_market1_events0",
+      "model": "Номинальные приросты + рынок, без dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [],
+      "2023": 14.100749406599025,
+      "2024": 11.880184396740628,
+      "2025": 14.965663939904353,
+      "mean_absolute_historical_error_pp": 4.234053764674482
+    },
+    {
+      "id": "nom_growth_market1_events1",
+      "model": "Номинальные приросты + рынок + dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [],
+      "2023": 13.17551099153289,
+      "2024": 11.67250702868861,
+      "2025": 17.43484215367839,
+      "mean_absolute_historical_error_pp": 3.6501813757545096
+    },
+    {
+      "id": "nom_log_market0_events0",
+      "model": "Логарифм номинального индекса, без рынка, без dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [],
+      "2023": 11.934406863897614,
+      "2024": 13.768840512418773,
+      "2025": 15.043794392106088,
+      "mean_absolute_historical_error_pp": 5.559676500067089
+    },
+    {
+      "id": "nom_log_market0_events1",
+      "model": "Логарифм номинального индекса, без рынка + dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [
+        "nominal_index_experiment: та же спецификация"
+      ],
+      "2023": 14.09093457827823,
+      "2024": 11.25756299305294,
+      "2025": 17.38978645621338,
+      "mean_absolute_historical_error_pp": 3.221744067449176
+    },
+    {
+      "id": "nom_log_market1_events0",
+      "model": "Логарифм номинального индекса + рынок, без dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [],
+      "2023": 11.362875669846877,
+      "2024": 15.32072136873382,
+      "2025": 15.130168268290415,
+      "mean_absolute_historical_error_pp": 6.238689224794242
+    },
+    {
+      "id": "nom_log_market1_events1",
+      "model": "Логарифм номинального индекса + рынок + dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [
+        "nominal_index_experiment: та же спецификация"
+      ],
+      "2023": 13.444390675459259,
+      "2024": 12.864227894764484,
+      "2025": 17.59180787231045,
+      "mean_absolute_historical_error_pp": 3.905473196926991
+    },
+    {
+      "id": "nom_raw_market0_events0",
+      "model": "Номинальный индекс, без рынка, без dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [],
+      "2023": 12.107982730125915,
+      "2024": 14.058322770122425,
+      "2025": 15.225104589714078,
+      "mean_absolute_historical_error_pp": 5.53787523135621
+    },
+    {
+      "id": "nom_raw_market0_events1",
+      "model": "Номинальный индекс, без рынка + dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [
+        "nominal_index_experiment: та же спецификация"
+      ],
+      "2023": 14.0701529130409,
+      "2024": 11.254596374428099,
+      "2025": 17.910911829077623,
+      "mean_absolute_historical_error_pp": 3.0539739586985912
+    },
+    {
+      "id": "nom_raw_market1_events0",
+      "model": "Номинальный индекс + рынок, без dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [],
+      "2023": 11.561381789748422,
+      "2024": 15.005180942865803,
+      "2025": 15.297039728164801,
+      "mean_absolute_historical_error_pp": 6.011716556246259
+    },
+    {
+      "id": "nom_raw_market1_events1",
+      "model": "Номинальный индекс + рынок + dummy",
+      "family": "Номинальные модели",
+      "n": 54,
+      "source": "market_state/nominal_ablation_results/parameters.json",
+      "aliases": [
+        "nominal_index_experiment: та же спецификация"
+      ],
+      "2023": 13.336681409364223,
+      "2024": 12.468566969775138,
+      "2025": 18.04824361112102,
+      "mean_absolute_historical_error_pp": 3.6573440643586976
+    },
+    {
+      "id": "nominal_rw",
+      "model": "Неизменный номинальный индекс",
+      "family": "Простые ориентиры",
+      "n": 54,
+      "source": "nominal_index_experiment.py",
+      "aliases": [],
+      "2023": 0.0,
+      "2024": 0.0,
+      "2025": 0.0,
+      "mean_absolute_historical_error_pp": 15.042114973187777
+    },
+    {
+      "id": "inflation_only",
+      "model": "Рост только на ИПЦ",
+      "family": "Простые ориентиры",
+      "n": 54,
+      "source": "statistical/model.py",
+      "aliases": [],
+      "2023": 7.420000000000004,
+      "2024": 9.51999999999995,
+      "2025": 5.590000000000007,
+      "mean_absolute_historical_error_pp": 8.799463414595378
+    },
+    {
+      "id": "nominal_drift",
+      "model": "Средний номинальный прирост",
+      "family": "Простые ориентиры",
+      "n": 54,
+      "source": "nominal_index_experiment.py",
+      "aliases": [],
+      "2023": 13.764568999887908,
+      "2024": 13.764568999887908,
+      "2025": 13.764568999887908,
+      "mean_absolute_historical_error_pp": 5.37460708129943
+    },
+    {
+      "id": "real_drift",
+      "model": "Средний реальный прирост + ИПЦ",
+      "family": "Простые ориентиры",
+      "n": 54,
+      "source": "real_index_experiment.py",
+      "aliases": [],
+      "2023": 14.731403395477068,
+      "2024": 16.974337179972462,
+      "2025": 12.776846811845314,
+      "mean_absolute_historical_error_pp": 6.45149240547876
+    }
+  ],
+  "saved_december_backtests": [
+    {
+      "source": "statistical/results/baseline_backtest_folds.csv",
+      "model": "ar1",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 18.98335807920868,
+      "error_pp": 11.364380741320115
+    },
+    {
+      "source": "statistical/results/baseline_backtest_folds.csv",
+      "model": "inflation_only",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 9.519999999999996,
+      "error_pp": 1.90102266211143
+    },
+    {
+      "source": "statistical/results/baseline_backtest_folds.csv",
+      "model": "constant_real_growth",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 19.46498446449476,
+      "error_pp": 11.846007126606192
+    },
+    {
+      "source": "statistical/results/baseline_backtest_folds.csv",
+      "model": "ar1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 10.57610642056268,
+      "error_pp": -11.880150301054693
+    },
+    {
+      "source": "statistical/results/baseline_backtest_folds.csv",
+      "model": "inflation_only",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.590000000000006,
+      "error_pp": -16.866256721617365
+    },
+    {
+      "source": "statistical/results/baseline_backtest_folds.csv",
+      "model": "constant_real_growth",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 12.082830296205206,
+      "error_pp": -10.373426425412166
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "baseline",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 18.983357935562132,
+      "error_pp": 11.364380597673566
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "huber",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 22.04920988112093,
+      "error_pp": 14.430232543232364
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "calendar",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 18.030179646953584,
+      "error_pp": 10.411202309065018
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "calendar_huber",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 21.39607701631774,
+      "error_pp": 13.777099678429174
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "regime",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 18.983357935562132,
+      "error_pp": 11.364380597673566
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "calendar_regime",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 18.030179646953584,
+      "error_pp": 10.411202309065018
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "calendar_season",
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "forecast_growth_pct": 17.93467326242975,
+      "error_pp": 10.315695924541185
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "baseline",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 10.576106381118075,
+      "error_pp": -11.880150340499297
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "huber",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 12.808474128957284,
+      "error_pp": -9.647782592660088
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "calendar",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 10.56108178316822,
+      "error_pp": -11.895174938449152
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "calendar_huber",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 13.311766111224411,
+      "error_pp": -9.14449061039296
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "regime",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": -7.6266831362436065,
+      "error_pp": -30.08293985786098
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "calendar_regime",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": -3.451892336534872,
+      "error_pp": -25.908149058152244
+    },
+    {
+      "source": "shock_normalization/results/backtest_folds.csv",
+      "model": "calendar_season",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 10.638155725268367,
+      "error_pp": -11.818100996349004
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "baseline",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 6.054603248585657,
+      "error_pp": -16.401653473031715
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "mos_lag1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.196728802518685,
+      "error_pp": -17.259527919098687
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "mos_lag3",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.574212506000983,
+      "error_pp": -16.88204421561639
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "sales_yoy_lag1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.517278239803925,
+      "error_pp": -17.938978481813447
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "sales_momentum_lag1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.822307179681008,
+      "error_pp": -17.633949541936364
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "baseline_season",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.740595838251664,
+      "error_pp": -16.715660883365707
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "mos_lag1_season",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.933881215925389,
+      "error_pp": -17.522375505691983
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "mos_lag3_season",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.37944246513484,
+      "error_pp": -17.076814256482532
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "sales_yoy_lag1_season",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.326866792529149,
+      "error_pp": -18.129389929088223
+    },
+    {
+      "source": "market_state/results/backtest_folds.csv",
+      "model": "sales_momentum_lag1_season",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.3017632509263315,
+      "error_pp": -17.15449347069104
+    },
+    {
+      "source": "market_state/real_index_results/backtest_folds.csv",
+      "model": "growth_no_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 6.054603248585657,
+      "error_pp": -16.401653473031715
+    },
+    {
+      "source": "market_state/real_index_results/backtest_folds.csv",
+      "model": "growth_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.196728802518685,
+      "error_pp": -17.259527919098687
+    },
+    {
+      "source": "market_state/real_index_results/backtest_folds.csv",
+      "model": "log_index_no_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 7.786435515765628,
+      "error_pp": -14.669821205851743
+    },
+    {
+      "source": "market_state/real_index_results/backtest_folds.csv",
+      "model": "log_index_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 6.77017677038725,
+      "error_pp": -15.686079951230122
+    },
+    {
+      "source": "market_state/real_index_results/backtest_folds.csv",
+      "model": "real_index_no_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 7.79307736755562,
+      "error_pp": -14.663179354061752
+    },
+    {
+      "source": "market_state/real_index_results/backtest_folds.csv",
+      "model": "real_index_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 6.868675386885377,
+      "error_pp": -15.587581334731995
+    },
+    {
+      "source": "market_state/real_index_results/backtest_folds.csv",
+      "model": "real_random_walk",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.59,
+      "error_pp": -16.866256721617372
+    },
+    {
+      "source": "market_state/real_index_results/backtest_folds.csv",
+      "model": "real_drift",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 9.789750829337844,
+      "error_pp": -12.666505892279528
+    },
+    {
+      "source": "market_state/nominal_index_results/backtest_folds.csv",
+      "model": "nominal_log_no_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 1.8118627304936936,
+      "error_pp": -20.64439399112368
+    },
+    {
+      "source": "market_state/nominal_index_results/backtest_folds.csv",
+      "model": "nominal_log_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": -2.5329215009764106,
+      "error_pp": -24.989178222593782
+    },
+    {
+      "source": "market_state/nominal_index_results/backtest_folds.csv",
+      "model": "nominal_index_no_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 2.1825552793742666,
+      "error_pp": -20.273701442243105
+    },
+    {
+      "source": "market_state/nominal_index_results/backtest_folds.csv",
+      "model": "nominal_index_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": -1.7649395943786672,
+      "error_pp": -24.22119631599604
+    },
+    {
+      "source": "market_state/nominal_index_results/backtest_folds.csv",
+      "model": "nominal_random_walk",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 7.105427357601002e-15,
+      "error_pp": -22.456256721617365
+    },
+    {
+      "source": "market_state/nominal_index_results/backtest_folds.csv",
+      "model": "nominal_drift",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 11.028835337278261,
+      "error_pp": -11.42742138433911
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "growth_market0_events0",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 9.300778186661141,
+      "error_pp": -13.15547853495623
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "growth_market0_events1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 6.354621377760964,
+      "error_pp": -16.101635343856408
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "growth_market1_events0",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 8.78046176402717,
+      "error_pp": -13.675794957590202
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "growth_market1_events1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.679953647565821,
+      "error_pp": -16.77630307405155
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "log_market0_events0",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 8.06179918371981,
+      "error_pp": -14.394457537897562
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "log_market0_events1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 1.8118627304936936,
+      "error_pp": -20.64439399112368
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "log_market1_events0",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 1.94573105855644,
+      "error_pp": -20.510525663060932
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "log_market1_events1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": -2.5329215009764106,
+      "error_pp": -24.989178222593782
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "raw_market0_events0",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 7.743787480697147,
+      "error_pp": -14.712469240920225
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "raw_market0_events1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 2.1825552793742666,
+      "error_pp": -20.273701442243105
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "raw_market1_events0",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 2.6940600564340826,
+      "error_pp": -19.76219666518329
+    },
+    {
+      "source": "market_state/nominal_ablation_results/backtest_folds.csv",
+      "model": "raw_market1_events1",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": -1.7649395943786672,
+      "error_pp": -24.22119631599604
+    }
+  ],
+  "duplicates": [
+    [
+      "calendar_baseline",
+      "guide_0"
+    ],
+    [
+      "wave_baseline",
+      "guide_0"
+    ],
+    [
+      "full_unadjusted",
+      "guide_0"
+    ],
+    [
+      "robust_ols",
+      "full_provisional_full_history_by_era"
+    ]
+  ],
+  "not_separate_historical_models": [
+    "Original mechanical scenario: forecast starts October 2026, no fitted history",
+    "Linked, coupled and future-kappa scenarios share market_mos_lag1 historical equation",
+    "Sales-target inversion and price corridors have no independent historical price equation",
+    "Sensitivity windows, omitted years and alternative initial values are checks, not additional main model families"
+  ],
+  "checks_passed": true
+}
