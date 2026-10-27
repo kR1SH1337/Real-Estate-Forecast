@@ -1,0 +1,11 @@
+{
+  "as_of": "2026-10-27",
+  "mode": "Sales targets are fixed; annual prices follow the transaction identity",
+  "target_source": "Latest uploaded workbook, reference_sales_thousand_m2",
+  "mortgage_nominals_fixed": true,
+  "cash_oneoff_fixed": true,
+  "checks_passed": true,
+  "annual_price_definition": "Transaction-value/area effective annual price required by the mortgage conversion, not automatically a constant-quality December/December index.",
+  "monthly_index_calibrated": false,
+  "status": "Annual inverse scenario complete; monthly price-index path and 2026 linkage require a decision. Prior endogenous coupled solution remains separate."
+}

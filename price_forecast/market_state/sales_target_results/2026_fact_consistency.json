@@ -1,0 +1,11 @@
+{
+  "actual_mortgage_9m_thousand_m2": 1040.8756100178427,
+  "actual_mortgage_9m_transactions_bln": 500.0973786720398,
+  "required_q4_mortgage_thousand_m2": 256.55388367157207,
+  "q4_transactions_bln": 112.65454137520817,
+  "required_q4_effective_price_thousand_rub_m2": 439.1067473350865,
+  "observed_september_average_price_thousand_rub_m2": 466.8265833148828,
+  "difference_to_observed_september_pct": -5.937930051660912,
+  "september_model_proxy_thousand_rub_m2": 518.2214083984946,
+  "difference_to_model_proxy_pct": -15.26657520921476
+}
