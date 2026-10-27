@@ -1,0 +1,35 @@
+{
+  "baseline": {
+    "iterations": 21,
+    "max_price_log_residual": 4.956916334137644e-09
+  },
+  "sales_guidance_fit": {
+    "iterations": 19,
+    "max_price_log_residual": 6.595557677337194e-09,
+    "alternative_start_iterations": 59
+  },
+  "premium_1_8pp_2030": {
+    "iterations": 19,
+    "max_price_log_residual": 8.647920195149324e-09,
+    "alternative_start_iterations": 59
+  },
+  "as_of": "2026-10-27",
+  "checks_passed": true,
+  "bounds_kappa": [
+    -0.5,
+    0.0
+  ],
+  "primary_scenario": "sales_guidance_fit",
+  "outer_target_years": [
+    2027,
+    2028,
+    2029,
+    2030
+  ],
+  "outer_loss": "Mean squared log ratio of equilibrium sales to workbook guidance, equal weight by year",
+  "calibrated_parameter": "One constant future autonomous real-price-growth correction, applied from October 2026; no historical coefficient is re-estimated.",
+  "alternative": "One correction solving 2030 nominal growth minus inflation =1.8 percentage points; not real growth of 1.8 percent.",
+  "2026_note": "Excluded from calibration objective; actual nine months preserved and forecast quarter recomputed.",
+  "interpretation": "Explicit scenario shift, not an empirically identified causal effect or improved forecast accuracy. Target sales not fixed inside the four-block solver.",
+  "stock_note": "2026 launches are fixed. Later stock response depends on cohorts, sales, unsold exits and corrections; k>1 does not prove launches grow faster in percentage terms."
+}
