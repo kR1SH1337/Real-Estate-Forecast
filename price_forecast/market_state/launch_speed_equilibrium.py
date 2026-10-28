@@ -6,8 +6,8 @@ import json,copy,hashlib
 import coupled_forecast as c
 import numpy as np,pandas as pd
 class System(c.CoupledSystem):
- def __init__(self,kind,speed,omega=.5):
-  super().__init__();self.kind=kind;self.snapshot['assumptions']['launch_adjustment_speed']=speed
+ def __init__(self,kind,speed,omega=.5,channel_path=None):
+  super().__init__(channel_path=channel_path);self.kind=kind;self.snapshot['assumptions']['launch_adjustment_speed']=speed
   self.snapshot['assumptions']['launch_future_sales_weight']=omega
   if kind=='growth57':
    m=json.load(open(c.ROOT/'direct_sales_growth_results/parameters.json'))['ratio6_all_events']

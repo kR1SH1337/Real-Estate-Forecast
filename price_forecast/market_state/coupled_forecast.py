@@ -17,8 +17,8 @@ DATES=pd.date_range('2026-10-01','2030-12-01',freq='MS')
 
 
 class CoupledSystem:
-    def __init__(self,anchor='annual_2025'):
-        self.channel_path=ROOT/'inputs/channel_forecast_2026-10-27.json'
+    def __init__(self,anchor='annual_2025',channel_path=None):
+        self.channel_path=Path(channel_path) if channel_path is not None else ROOT/'inputs/channel_forecast_2026-10-27.json'
         self.channels=json.loads(self.channel_path.read_text())
         self.snapshot=json.loads(link.DEFAULT_SNAPSHOT.read_text())
         self.parameters=json.loads((ROOT/'results/parameters.json').read_text())['mos_lag1']
