@@ -33,11 +33,12 @@ def extract(path):
   observed=sum(value(col+str(row)) for col in ['AL','AM','AN','AO','AP','AQ','AR','AS','AT'])
   assert math.isclose(observed,new['actual_2026_9m'][field],rel_tol=1e-12)
  assert math.isclose(value('D55'),new['price_anchor_2025_mean_thousand_rub_m2'],rel_tol=1e-12)
+ assert math.isclose(1000*value('AT11')/value('AT3'),new['price_anchor_september_2026_thousand_rub_m2'],rel_tol=1e-12)
  for item in new['annual'][:3]:
   columns=[ref[:-1] for ref in cells if ref.endswith('1') and ref[:-1].isalpha() and value(ref)==item['year']]
   assert len(columns)==12
   assert math.isclose(sum(value(col+'24') for col in columns),item['mortgage_transactions_bln_rub'],rel_tol=1e-12)
- new['source_cells'].update(actual_mortgage_area='AL4:AT4',actual_cash_area='AL5:AT5',actual_mortgage_nominal='AL24:AT24',anchor_2025='D55')
+ new['source_cells'].update(actual_mortgage_area='AL4:AT4',actual_cash_area='AL5:AT5',actual_mortgage_nominal='AL24:AT24',anchor_2025='D55',anchor_september_2026='1000*AT11/AT3')
  return new
 if __name__=='__main__':
  parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('xlsx',type=Path);parser.add_argument('--output',type=Path,default=ROOT/'inputs/channel_forecast_2026-10-28.json');args=parser.parse_args()

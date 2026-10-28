@@ -1,0 +1,20 @@
+{
+  "checks_passed": true,
+  "alpha": 0.75,
+  "omega": 0.5,
+  "base_delays": [
+    0.2,
+    0.15,
+    0.1,
+    0.05,
+    0.05
+  ],
+  "completion_sold_rates_from2027": 0.95,
+  "completion_unsold_rates_from2027": 0.5,
+  "actual9m2026_unchanged": true,
+  "all_sales_allocated": true,
+  "scope": "Sold/unsold status measured after current-year sales allocation. Complete 95% of scheduled sold and 50% of scheduled unsold from 2027. Remaining areas re-enter next-year pool; no completed-unsold stock estimated. This is an aggregate approximation, not project-level completion decisions.",
+  "fixed": "Latest workbook v3 mortgage nominal, cash area, CPI, price coefficients, alpha75 omega50, sold95/unsold50 completions, class rules, profiles, terminal Q2031=Q2030 unchanged; only ruble/index scale changes.",
+  "caveat": "A single scale cannot match both 2025 average and September2026 transaction price when the transaction mix and index diverge. Latest observed price chosen for forecast conversion, not a refit of index coefficients. Numerical equilibrium does not validate price coefficients.",
+  "price_anchor": "September2026 observed transaction price 466.8265833148828 thousand RUB per m2 from 1000*AT11/AT3 in workbook v3. Annual2025 anchor retained only as comparison."
+}

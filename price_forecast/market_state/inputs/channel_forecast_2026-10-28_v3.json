@@ -12,7 +12,8 @@
     "actual_mortgage_area": "AL4:AT4",
     "actual_cash_area": "AL5:AT5",
     "actual_mortgage_nominal": "AL24:AT24",
-    "anchor_2025": "D55"
+    "anchor_2025": "D55",
+    "anchor_september_2026": "1000*AT11/AT3"
   },
   "annual": [
     {

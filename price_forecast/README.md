@@ -1,6 +1,6 @@
 # Прогноз цен первичного жилья Москвы
 
-> **Статус на 28.10.2026.** Сохраняется совместная система цен, продаж, запусков и портфеля. **α зафиксирована на 75%.** [Последний расчёт — уточнение ипотеки по Excel (3)](market_state/REVISED_MORTGAGE_EQUILIBRIUM.md), с вводом 95% проданного и 50% непроданного. [Правило ввода](market_state/SELECTIVE_COMPLETION_EQUILIBRIUM.md). [Ранее — общие переносы ввода](market_state/COMPLETION_DELAY_EQUILIBRIUM.md). [Ранее — вес будущих продаж ω = 50/75/100%](market_state/OMEGA_EQUILIBRIUM.md). Значение ω и ценовая спецификация пока не выбраны окончательно.
+> **Статус на 28.10.2026.** Сохраняется совместная система цен, продаж, запусков и портфеля. **α зафиксирована на 75%.** [Последний расчёт — привязка цены к факту сентября 2026](market_state/REANCHORED_PRICE_EQUILIBRIUM.md), с вводом 95% проданного и 50% непроданного. [Правило ввода](market_state/SELECTIVE_COMPLETION_EQUILIBRIUM.md). [Ранее — общие переносы ввода](market_state/COMPLETION_DELAY_EQUILIBRIUM.md). [Ранее — вес будущих продаж ω = 50/75/100%](market_state/OMEGA_EQUILIBRIUM.md). Значение ω и ценовая спецификация пока не выбраны окончательно.
 >
 > **Таблица ниже с поправкой κ — архивный сценарный эксперимент. Он не выбран базовым прогнозом.** [Статистическая диагностика исходных функций](market_state/statistical_comparison_results/README.md) и [полная история сравнения](market_state/annual_model_comparison/README.md).
 
@@ -11,10 +11,10 @@
 ## Текущий расчёт по последнему Excel
 
 ```bash
-python price_forecast/market_state/revised_mortgage_equilibrium.py
+python price_forecast/market_state/reanchored_price_equilibrium.py
 ```
 
-[Методика и результаты](market_state/REVISED_MORTGAGE_EQUILIBRIUM.md). Расчёт использует входы версии Excel (3) от 28.10, α = 75%, ω = 50%, ввод 95% проданного и 50% непроданного с 2027. Выходы — `market_state/revised_mortgage_results/`. Прежние сценарии ниже сохранены для воспроизведения.
+[Методика и результаты](market_state/REANCHORED_PRICE_EQUILIBRIUM.md). Расчёт использует входы версии Excel (3) от 28.10, α = 75%, ω = 50%, ввод 95% проданного и 50% непроданного с 2027. Рублёвая цена привязана к последнему факту сентября 2026. Выходы — `market_state/reanchored_price_results/`. Прежние сценарии ниже сохранены для воспроизведения.
 
 ## Архив: калибровка по ориентирам продаж
 
