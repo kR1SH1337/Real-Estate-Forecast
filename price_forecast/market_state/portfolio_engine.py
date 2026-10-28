@@ -29,10 +29,14 @@ def forecast(data):
     targets = a['launch_targets_by_class_2026']
     weights = [x / sum(targets) for x in targets]
     launches = [a['launches_2026']]
+    future_sales_weight = float(a.get('launch_future_sales_weight', 0.5))
+    if not 0 <= future_sales_weight <= 1:
+        raise ValueError('Future-sales weight must be between zero and one')
     for t in range(1, 5):
         next_sales = sales[t + 1] if t < 4 else a['sales_2031']
         speed = a['launch_adjustment_speed']
-        launches.append((1 - speed) * launches[-1] + speed * a['launch_sales_ratio'] * (sales[t] + next_sales) / 2)
+        desired_sales = (1 - future_sales_weight) * sales[t] + future_sales_weight * next_sales
+        launches.append((1 - speed) * launches[-1] + speed * a['launch_sales_ratio'] * desired_sales)
     remaining_total = launches[0] - sum(data['accounted'])
     gaps = [max(0, targets[i] - data['accounted'][i]) for i in range(3)]
     if remaining_total < -1e-8 or (remaining_total > 0 and sum(gaps) == 0):

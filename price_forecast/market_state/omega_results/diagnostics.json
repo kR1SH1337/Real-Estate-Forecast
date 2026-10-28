@@ -1,0 +1,19 @@
+{
+  "checks_passed": true,
+  "alpha": 0.75,
+  "alpha_selected_by_user": true,
+  "omega_cases": [
+    0.5,
+    0.75,
+    1.0
+  ],
+  "omega_selected": false,
+  "formula": "L_y=(1-alpha)*L_previous+alpha*1.149*((1-omega)*Q_y+omega*Q_next)",
+  "fixed": "All price coefficients, mortgage nominal amounts, cash areas, CPI, launch/sales ratio, completion delays/profiles, class allocation and price anchor unchanged within each price model.",
+  "price_models": "growth54 original production growth; growth57 Jan2022 re-estimation; level57 Jan2022 real-index level. Results never pooled across specifications.",
+  "terminal": "Q2031=Q2030: omega has no direct effect on desired launches in 2030; earlier launches and endogenous price-sales feedback still matter.",
+  "implementation": "Optional launch_future_sales_weight in local price_forecast/market_state/portfolio_engine.py, default 0.5 preserves archived results. Other portfolio directory not modified.",
+  "solver": "Full future monthly price fixed point with endogenous sales and cohort portfolios. Archived omega0.5 alpha0.75 reproduced; alternative starts at omega1 checked.",
+  "stock_note": "Higher inventory relative to a scenario is distinct from inventory growing over time.",
+  "caveat": "Numerical equilibrium is not statistical validation. Original weak market inference remains."
+}
