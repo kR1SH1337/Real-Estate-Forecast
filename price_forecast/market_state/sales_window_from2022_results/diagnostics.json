@@ -1,0 +1,10 @@
+{
+  "checks_passed": true,
+  "n": 57,
+  "start": "2022-01-01",
+  "end": "2026-09-01",
+  "change": "Trailing average monthly sales over 3 rather than 6 completed months. Same one-month lag in stock, same units, events and matching sample.",
+  "validation": "Expanding-window forecasts from 30 training months; actual future CPI, first available market indicator held fixed, no future events supplied; overlapping windows and retrospective event calendar.",
+  "quarterly_meaning": "Rolling three-month average, not fixed calendar quarters or three-month sum.",
+  "production_model_changed": false
+}

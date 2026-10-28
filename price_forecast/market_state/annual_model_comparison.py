@@ -13,7 +13,7 @@ import nominal_index_experiment as nominal
 
 ROOT=Path(__file__).resolve().parent;BASE=ROOT.parent
 OUT=ROOT/'annual_model_comparison'
-YEARS=[2023,2024,2025]
+YEARS=[2022,2023,2024,2025]
 P,C,R=market.P,market.C,market.R
 INFL=100*np.log(C/C.shift()).reindex(P.index)
 NOM=100*np.log(P/P.shift())
@@ -29,8 +29,8 @@ def register(key,label,family,fitted,source,n=None,aliases=None):
     for year in YEARS:
         z=fitted.loc[str(year)]
         row[str(year)]=float(100*np.expm1(z.sum()/100)) if len(z)==12 and z.notna().all() else None
-    assert all(row[str(y)] is not None for y in YEARS),key
-    row['mean_absolute_historical_error_pp']=float(np.mean([abs(row[str(y)]-100*(P.loc[f'{y}-12-01']/P.loc[f'{y-1}-12-01']-1)) for y in YEARS]))
+    assert all(row[str(y)] is not None for y in [2023,2024,2025]),key
+    row['mean_absolute_historical_error_pp']=float(np.mean([abs(row[str(y)]-100*(P.loc[f'{y}-12-01']/P.loc[f'{y-1}-12-01']-1)) for y in [2023,2024,2025]]))
     ROWS.append(row);MONTHLY[key]=fitted
 
 
@@ -102,6 +102,21 @@ def main():
         fit=100*np.log(pf/P.shift())
         label=('Логарифм реального индекса' if m['transform']=='log' else 'Реальный индекс')+(' + рынок' if m['feature'] else ', без рынка')
         register('real_'+name,label,'Уровень реального индекса',fit.where(fit.index.isin(market.COMMON)),'market_state/real_index_results/parameters.json',m['n'])
+    # Window experiments: retain old estimates and add the common full-2022 refit.
+    market.X['mos_avg3_lag1']=np.log(market.S.shift(1)/market.Q.rolling(3).mean().shift(1))
+    for folder,nobs,include_six in [('sales_window_results',54,False),('sales_window_from2022_results',57,True)]:
+        for name,m in load('market_state/'+folder+'/parameters.json').items():
+            if name.endswith('avg6') and not include_six:continue
+            target=real.LOGREAL if m['transform']=='log' else real.REAL
+            ef=effect_from(m,real.SHIFTS)
+            y=m['c']+m['rho']*(target.shift()-ef.shift())+ef+m['gamma']*(market.X[m['feature']]-m['x_mean'])
+            rf=100*np.exp(y/100) if m['transform']=='log' else y
+            pf=P.iloc[0]*rf/100*C.reindex(P.index)/C.loc[P.index[0]]
+            fitted=100*np.log(pf/P.shift())
+            fitted=fitted.where(fitted.index>=pd.Timestamp('2022-01-01')) if include_six else fitted.where(fitted.index.isin(market.COMMON))
+            label=('Логарифм реального индекса' if m['transform']=='log' else 'Реальный индекс')+' + рынок, среднее '+('6' if name.endswith('avg6') else '3')+' мес.'+(', оценка с января 2022' if include_six else ', оценка с апреля 2022')
+            register('window_'+folder+'_'+name,label,'Окно продаж и полный 2022 год',fitted,'market_state/'+folder+'/parameters.json',nobs)
+
     # Nominal ablations include all four earlier nominal-level models as aliases.
     nomlabels={'growth':'Номинальные приросты','log':'Логарифм номинального индекса','raw':'Номинальный индекс'}
     for name,m in load('market_state/nominal_ablation_results/parameters.json').items():
@@ -124,7 +139,7 @@ def main():
     register('real_drift','Средний реальный прирост + ИПЦ','Простые ориентиры',INFL+R.loc[market.COMMON].mean(),'real_index_experiment.py',54)
     # Saved genuine 12-month forecasts with a December origin, no refitting on future data.
     backtests=[]
-    sources=['statistical/results/baseline_backtest_folds.csv','shock_normalization/results/backtest_folds.csv','market_state/results/backtest_folds.csv','market_state/real_index_results/backtest_folds.csv','market_state/nominal_index_results/backtest_folds.csv','market_state/nominal_ablation_results/backtest_folds.csv']
+    sources=['statistical/results/baseline_backtest_folds.csv','shock_normalization/results/backtest_folds.csv','market_state/results/backtest_folds.csv','market_state/real_index_results/backtest_folds.csv','market_state/nominal_index_results/backtest_folds.csv','market_state/nominal_ablation_results/backtest_folds.csv','market_state/sales_window_results/backtest_folds.csv','market_state/sales_window_from2022_results/backtest_folds.csv']
     for source in sources:
         df=pd.read_csv(BASE/source)
         for _,row in df.iterrows():
@@ -152,17 +167,17 @@ def main():
                 not_separate_historical_models=['Original mechanical scenario: forecast starts October 2026, no fitted history','Linked, coupled and future-kappa scenarios share market_mos_lag1 historical equation','Sales-target inversion and price corridors have no independent historical price equation','Sensitivity windows, omitted years and alternative initial values are checks, not additional main model families'],checks_passed=True)
     (OUT/'comparison.json').write_text(json.dumps(result,ensure_ascii=False,indent=2))
     lines=['# Все модели цен: накопленный прирост декабрь к декабрю','',
-           'Дата: 27.10.2026. Только полные годы: 2023–2025. Все значения — номинальный прирост индекса, %. Факт рассчитан по отношению двух декабрьских значений. 2026 не включён: декабрь ещё не наблюдался.','',
+           'Дата: 27.10.2026. Полные годы: 2022–2025. Для старых вариантов с оценкой с апреля 2022 вместо неполного 2022 показан прочерк. Последние варианты переоценены с января 2022 (57 месяцев). Все значения — номинальный прирост индекса, %. Факт рассчитан по отношению двух декабрьских значений. 2026 не включён: декабрь ещё не наблюдался.','',
            '**Первая таблица — описание истории.** Месячные оценки рассчитаны с фактическим предыдущим наблюдением и накоплены по формуле `100 × (exp(Σ fitted_log_pp / 100) − 1)`. Коэффициенты оценены на всей доступной истории каждой спецификации. Это соответствует накоплению месячных оценок, а не отношению двух отдельных fitted-значений декабря. Для моделей уровней сначала вычисляется fitted-изменение от фактического предыдущего месяца.','',
-           'Шоки и фактический рыночный показатель подставлены в исторические оценки. У реальных моделей используется фактический ИПЦ. Эта таблица не является проверкой годового прогноза и не доказывает причинных эффектов. Разные обучающие выборки сохранены как в исходных экспериментах: 67 или 54 месяца.','',
-           '| Модель / вариант | N | 2023 | 2024 | 2025 |','|---|---:|---:|---:|---:|',
+           'Шоки и фактический рыночный показатель подставлены в исторические оценки. У реальных моделей используется фактический ИПЦ. Эта таблица не является проверкой годового прогноза и не доказывает причинных эффектов. Разные обучающие выборки сохранены как в исходных экспериментах: 67, 57 или 54 месяца.','',
+           '| Модель / вариант | N | 2022 | 2023 | 2024 | 2025 |','|---|---:|---:|---:|---:|---:|',
            '| **ФАКТ** | — | '+' | '.join(f'**{actual[str(y)]:.2f}%**' for y in YEARS)+' |']
     family=None
     for row in ROWS:
         if row['family']!=family:
-            family=row['family'];lines+=['| **'+family+'** | | | | |']
+            family=row['family'];lines+=['| **'+family+'** | | | | | |']
         label=row['model']+(' [повтор]' if 'same_historical_curve_as' in row else '')
-        lines+=['| '+label+' | '+str(row['n'])+' | '+' | '.join(f"{row[str(y)]:.2f}%" for y in YEARS)+' |']
+        lines+=['| '+label+' | '+str(row['n'])+' | '+' | '.join((f"{row[str(y)]:.2f}%" if row[str(y)] is not None else '—') for y in YEARS)+' |']
     lines+=['','Повторы оставлены, чтобы были видны все ранее сохранённые спецификации; они не являются независимыми моделями. Параметры, источники, точные значения и связи повторов доступны в `comparison.json`.','',
             '## Сохранённые прогнозы из предыдущего декабря','',
             'Здесь только ранее сохранённые прогнозы, рассчитанные по прошлой истории. Модели с мягкими ориентирами, Хьюбер/ридж без сохранённого такого backtest не получают придуманной исторической прогнозной оценки. У реальных моделей фактический будущий ИПЦ известен условно. Разметка событий ретроспективна.','',
@@ -174,7 +189,7 @@ def main():
     selected=['guide_0','guide_0.3','full_provisional_full_history_by_era_plus_data','robust_huber','robust_ridge_0.1','market_baseline','market_mos_lag1','market_mos_lag3','market_sales_yoy_lag1','market_mos_lag1_season','real_real_index_market','real_log_index_market','nom_raw_market1_events1','nom_log_market1_events1','nom_growth_market0_events1','nom_growth_market1_events1','nom_growth_market0_events0','nominal_drift']
     for key in selected:
         row=next(r for r in ROWS if r['id']==key)
-        print(row['model'],*[round(row[str(y)],2) for y in YEARS])
+        print(row['model'],*[(round(row[str(y)],2) if row[str(y)] is not None else None) for y in YEARS])
 
 
 if __name__=='__main__':main()
