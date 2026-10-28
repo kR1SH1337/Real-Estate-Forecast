@@ -1,0 +1,22 @@
+{
+  "checks_passed": true,
+  "launch_speeds": [
+    0.5,
+    0.75,
+    1.0
+  ],
+  "launch_sales_ratio": 1.149,
+  "price_models": {
+    "growth54": "Original production monthly real-growth model, Apr2022-Sep2026 N54",
+    "growth57": "Same form re-estimated Jan2022-Sep2026 N57, near-zero positive market coefficient",
+    "level57": "Real-index level with cumulative events, Jan2022-Sep2026 N57"
+  },
+  "coefficient_changes_within_launch_scenario": false,
+  "autonomous_price_correction": 0.0,
+  "fixed_inputs": "Mortgage nominal values, cash area, CPI, launch ratio, class allocation, completion profiles and delays, price anchor, terminal Q2031=Q2030.",
+  "solver": "All future monthly prices solved jointly with endogenous mortgage areas, launches and cohort inventories. Alternate initialization/damping checked at alpha=1 for every price model.",
+  "level_seed": "Level model uses the original growth path only as a numerical starting guess; its evaluation and final fixed point use level coefficients exclusively.",
+  "period_warning": "Different price samples are sensitivity, not a parameter selection by desired output; p-values and historical forecast limitations remain unchanged.",
+  "future_launches": "2026 launches fixed; alpha changes only 2027 onward.",
+  "status": "Research sensitivity; no final price model or launch speed selected"
+}
