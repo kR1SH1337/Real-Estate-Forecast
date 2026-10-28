@@ -1,0 +1,7 @@
+scenario,iterations,max_price_log_residual,max_unallocated_sales,alternative_start_deviation
+growth54_original_delays,20,8.87280486356372e-09,0.0,
+growth54_sold95_unsold50,20,8.978998473973106e-09,0.0,9.379049581000467e-09
+growth57_original_delays,17,6.485176818958857e-09,0.0,
+growth57_sold95_unsold50,17,7.700209773472081e-09,0.0,1.6347014497211776e-08
+level57_original_delays,25,8.455815416975714e-09,0.0,
+level57_sold95_unsold50,25,7.356619895896773e-09,0.0,4.339788963212438e-09

@@ -1,0 +1,19 @@
+{
+  "checks_passed": true,
+  "alpha": 0.75,
+  "omega": 0.5,
+  "base_delays": [
+    0.2,
+    0.15,
+    0.1,
+    0.05,
+    0.05
+  ],
+  "completion_sold_rates_from2027": 0.95,
+  "completion_unsold_rates_from2027": 0.5,
+  "year2026_unchanged": true,
+  "all_sales_allocated": true,
+  "scope": "Sold/unsold status measured after current-year sales allocation. Complete 95% of scheduled sold and 50% of scheduled unsold from 2027. Remaining areas re-enter next-year pool; no completed-unsold stock estimated. This is an aggregate approximation, not project-level completion decisions.",
+  "fixed": "Mortgage nominal, cash area, CPI, price coefficients, launch rule, class rules, profiles, terminal sales unchanged.",
+  "caveat": "Sensitivity, not empirical delay estimate or selected baseline. Numerical equilibrium does not validate price coefficients."
+}

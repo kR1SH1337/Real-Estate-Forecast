@@ -19,6 +19,9 @@ def forecast(data):
         raise ValueError('Completion profiles must sum to one, with zero same-year input')
     if abs(sum(a['sales_by_completion_lag']) - 1) > 1e-9:
         raise ValueError('Sales allocation weights must sum to one')
+    for key in ['completion_sold_rates', 'completion_unsold_rates']:
+        if key in a and (len(a[key]) != 5 or any(not 0 <= x <= 1 for x in a[key])):
+            raise ValueError('Completion rates must contain five values between zero and one')
     intensity = []
     prior_shares = []
     for k in classes:
@@ -79,12 +82,17 @@ def forecast(data):
             for j in range(5):
                 states[i][year + j][1] += allocated[j]
             due = states[i][year][:]
-            delay = a['completion_delays'][t]
-            completions = due[0] * (1 - delay)
-            completed_sold = due[1] * (1 - delay)
+            sold_rate = a.get('completion_sold_rates', [1 - x for x in a['completion_delays']])[t]
+            unsold_rate = a.get('completion_unsold_rates', [1 - x for x in a['completion_delays']])[t]
+            due_unsold = due[0] - due[1]
+            completed_sold = due[1] * sold_rate
+            completed_unsold = due_unsold * unsold_rate
+            completions = completed_sold + completed_unsold
+            delayed_sold = due[1] - completed_sold
+            delayed_unsold = due_unsold - completed_unsold
             states[i][year] = [0., 0.]
-            states[i][year + 1][0] += due[0] * delay
-            states[i][year + 1][1] += due[1] * delay
+            states[i][year + 1][0] += delayed_sold + delayed_unsold
+            states[i][year + 1][1] += delayed_sold
             correction = opening * a['stock_correction_rate'] if t else 0
             pre_area = sum(v[0] for v in states[i].values()) + adjustment[i]
             pre_sold = sum(v[1] for v in states[i].values()) + adjustment_sold[i]
@@ -106,6 +114,8 @@ def forecast(data):
                                unsold_closing=closing - sold,
                                unallocated_sales=max(0, period_sales - sum(allocated)),
                                sold_exiting_at_completion=completed_sold,
+                               scheduled_sold=due[1], scheduled_unsold=due_unsold,
+                               delayed_sold=delayed_sold, delayed_unsold=delayed_unsold,
                                balance_error=balance_error))
         prior_shares = shares
     for t, year in enumerate(years):
