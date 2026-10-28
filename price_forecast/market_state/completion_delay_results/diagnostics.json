@@ -1,0 +1,22 @@
+{
+  "checks_passed": true,
+  "alpha": 0.75,
+  "omega": 0.5,
+  "base_delays": [
+    0.2,
+    0.15,
+    0.1,
+    0.05,
+    0.05
+  ],
+  "extra_delays_pp_from2027": [
+    0,
+    10,
+    20
+  ],
+  "year2026_unchanged": true,
+  "all_sales_allocated": true,
+  "scope": "Uniform delay of due sold and unsold cohorts; no selective low-sellout delay estimated. Delayed cohorts re-enter next-year due pool and may be delayed again.",
+  "fixed": "Mortgage nominal, cash area, CPI, price coefficients, launch rule, class rules, profiles, terminal sales unchanged.",
+  "caveat": "Sensitivity, not empirical delay estimate or selected baseline. Numerical equilibrium does not validate price coefficients."
+}

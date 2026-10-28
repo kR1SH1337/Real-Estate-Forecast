@@ -1,0 +1,10 @@
+scenario,iterations,max_price_log_residual,max_unallocated_sales,alternative_start_deviation
+growth54_delay_plus0pp,20,8.87280486356372e-09,0.0,
+growth54_delay_plus10pp,20,8.885704656023682e-09,0.0,
+growth54_delay_plus20pp,20,8.894492515430925e-09,0.0,8.659579868477139e-09
+growth57_delay_plus0pp,17,6.485176818958857e-09,0.0,
+growth57_delay_plus10pp,17,6.736045920569229e-09,0.0,
+growth57_delay_plus20pp,17,7.019644840742608e-09,0.0,1.5603213932408306e-08
+level57_delay_plus0pp,25,8.455815416975714e-09,0.0,
+level57_delay_plus10pp,25,8.226132475725481e-09,0.0,
+level57_delay_plus20pp,25,7.957770807331451e-09,0.0,4.339788963212438e-09
