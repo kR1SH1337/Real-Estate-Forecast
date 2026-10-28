@@ -1,0 +1,91 @@
+{
+  "comparison": [
+    {
+      "year": 2022,
+      "actual_growth_pct": 17.7422680558168,
+      "original_growth_ratio_pct": 16.766258289151658,
+      "original_real_index_pct": 14.255606858842668,
+      "new_monthly_ols_pct": 22.65267066363592,
+      "proposed_annual_initialization_pct": 23.25983949118402,
+      "annual_sales_mln_m2": 3.4708410499999993,
+      "mean_lagged_unsold_mln_m2": 8.6915134375,
+      "inflation_pct": 11.939999999999994
+    },
+    {
+      "year": 2023,
+      "actual_growth_pct": 15.051110860057392,
+      "original_growth_ratio_pct": 14.429857275729535,
+      "original_real_index_pct": 16.87197145228831,
+      "new_monthly_ols_pct": 15.246643839362495,
+      "proposed_annual_initialization_pct": 16.368157836863784,
+      "annual_sales_mln_m2": 4.666321849999999,
+      "mean_lagged_unsold_mln_m2": 9.681819688333334,
+      "inflation_pct": 7.420000000000004
+    },
+    {
+      "year": 2024,
+      "actual_growth_pct": 7.618977337888566,
+      "original_growth_ratio_pct": 13.633707501622968,
+      "original_real_index_pct": 10.637797087419388,
+      "new_monthly_ols_pct": 13.787782545622473,
+      "proposed_annual_initialization_pct": 14.445462943436382,
+      "annual_sales_mln_m2": 4.248774200000001,
+      "mean_lagged_unsold_mln_m2": 9.908235547500002,
+      "inflation_pct": 9.519999999999996
+    },
+    {
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "original_growth_ratio_pct": 15.723990173832794,
+      "original_real_index_pct": 19.8323381581128,
+      "new_monthly_ols_pct": 12.581113121428956,
+      "proposed_annual_initialization_pct": 13.021480501227312,
+      "annual_sales_mln_m2": 4.18465597,
+      "mean_lagged_unsold_mln_m2": 9.540778314166669,
+      "inflation_pct": 5.590000000000006
+    }
+  ],
+  "monthly_ols_parameters": {
+    "c": 0.5100150149371988,
+    "phi": 0.0,
+    "beta": {},
+    "coefficients": {
+      "sales_now": 1.7247635089849909,
+      "stock_lag1": -5.9912985354318185
+    },
+    "means": {
+      "sales_now": 12.642780926915266,
+      "stock_lag1": 16.046232328937965
+    },
+    "n": 57,
+    "rmse_log_pp": 1.424429038662214
+  },
+  "initial_annual_parameters": {
+    "a": 0.06120180179246386,
+    "b_Q": 0.20697162107819891,
+    "b_U": 0.7189558242518183,
+    "Q_reference_m2": 3714250.9107478335,
+    "U_reference_m2": 9306580.875860017
+  },
+  "historical_descriptive_errors": {
+    "original_growth_ratio_pct": {
+      "historical_annual_mae_pp": 3.586065015627995,
+      "historical_annual_rmse_pp": 4.550795064975507
+    },
+    "original_real_index_pct": {
+      "historical_annual_mae_pp": 2.737565025560111,
+      "historical_annual_rmse_pp": 2.804931412124272
+    },
+    "new_monthly_ols_pct": {
+      "historical_annual_mae_pp": 5.287471098761636,
+      "historical_annual_rmse_pp": 6.319076390822078
+    },
+    "proposed_annual_initialization_pct": {
+      "historical_annual_mae_pp": 5.773970059527872,
+      "historical_annual_rmse_pp": 6.476768394328387
+    }
+  },
+  "interpretation": "The annual scenario equation has not received expert calibration. These are starting coefficients converted from unrestricted monthly OLS, not a final forecast or a validation of expert elasticities.",
+  "aggregation": "Monthly geometric inputs give exact aggregation. Proposed annual inputs are total sales and arithmetic mean monthly lagged stock; this diagnostic therefore differs from compounding the monthly fitted values.",
+  "checks_passed": true
+}
