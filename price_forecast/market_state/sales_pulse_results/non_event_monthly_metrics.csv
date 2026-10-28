@@ -1,0 +1,9 @@
+model,n,rmse
+baseline,18,1.0039374798566165
+cumulative_pulse_all_events,18,1.0114380781625087
+cumulative_pulse_data_only,18,1.0720221363465112
+pulse_lag_all_events,18,1.0462198269418452
+pulse_lag_data_only,18,1.054968667450596
+pulse_now_all_events,18,0.9890668490996956
+pulse_now_data_only,18,1.0275747265781054
+pulse_now_no_market,18,1.0614773902173493

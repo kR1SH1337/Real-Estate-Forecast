@@ -1,0 +1,11 @@
+{
+  "checks_passed": true,
+  "n": 57,
+  "pulse": "log(current month sales / average of preceding six completed months)",
+  "contemporaneous_endogeneity": "Current sales and price can be jointly determined; coefficient is not a causal effect.",
+  "forecast": "Market held at first lagged value; expected future pulse zero. Lagged-pulse model uses known prior-month pulse at first step. Actual future CPI. No future event increments.",
+  "realized_sales": "Diagnostic only: future observed sales pulse supplied; not an operational forecast.",
+  "events": "Policy groups removed only in data_only/no_market variants; February/April 2025 data-anomaly group retained. Cumulative pulse uses the same persistent-level-shift treatment as cumulative event dummies.",
+  "validation": "Matching expanding windows; revised data and retrospective event calendar; overlapping annual horizons, no clean annual event-free windows.",
+  "production_model_changed": false
+}

@@ -824,6 +824,97 @@
       "mean_absolute_historical_error_pp": 3.6573440643586976
     },
     {
+      "id": "pulse_pulse_now_all_events",
+      "model": "Текущий всплеск + все dummy + рынок",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 14.201659066818618,
+      "2023": 18.44139250601073,
+      "2024": 9.534648187799204,
+      "2025": 20.93227134411334,
+      "mean_absolute_historical_error_pp": 2.276645957789336
+    },
+    {
+      "id": "pulse_pulse_now_data_only",
+      "model": "Текущий всплеск + рынок, без ипотечных dummy",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 15.390804832441345,
+      "2023": 16.573577855788415,
+      "2024": 16.707233950444316,
+      "2025": 15.2141234170461,
+      "mean_absolute_historical_error_pp": 5.950952304286015
+    },
+    {
+      "id": "pulse_pulse_lag_all_events",
+      "model": "Всплеск с лагом + все dummy + рынок",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 14.465476403865814,
+      "2023": 16.258606691640754,
+      "2024": 11.036180087428004,
+      "2025": 19.464346993434546,
+      "mean_absolute_historical_error_pp": 2.5388694364352085
+    },
+    {
+      "id": "pulse_pulse_lag_data_only",
+      "model": "Всплеск с лагом + рынок, без ипотечных dummy",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 17.547311557026443,
+      "2023": 14.447626110019979,
+      "2024": 15.94372191283181,
+      "2025": 13.668085637832233,
+      "mean_absolute_historical_error_pp": 5.905466802921932
+    },
+    {
+      "id": "pulse_pulse_now_no_market",
+      "model": "Текущий всплеск, без рынка и ипотечных dummy",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 15.542703668386865,
+      "2023": 17.16735879228526,
+      "2024": 15.419309448472635,
+      "2025": 15.045494855780941,
+      "mean_absolute_historical_error_pp": 5.775780636216123
+    },
+    {
+      "id": "pulse_cumulative_pulse_all_events",
+      "model": "Накопленный всплеск + все dummy + рынок",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 14.169052942809993,
+      "2023": 17.949813960493827,
+      "2024": 10.00279856940825,
+      "2025": 20.506474126585182,
+      "mean_absolute_historical_error_pp": 2.4107689756627697
+    },
+    {
+      "id": "pulse_cumulative_pulse_data_only",
+      "model": "Накопленный всплеск + рынок, без ипотечных dummy",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 14.995956903159005,
+      "2023": 16.202054571363348,
+      "2024": 16.718975772920317,
+      "2025": 15.434486837792475,
+      "mean_absolute_historical_error_pp": 5.757570676720867
+    },
+    {
       "id": "nominal_rw",
       "model": "Неизменный номинальный индекс",
       "family": "Простые ориентиры",
@@ -1388,6 +1479,70 @@
       "actual_growth_pct": 22.456256721617372,
       "forecast_growth_pct": 8.109608584718178,
       "error_pp": -14.346648136899194
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "baseline",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 7.411809331628502,
+      "error_pp": -15.04444738998887
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "pulse_now_all_events",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 6.874665226353441,
+      "error_pp": -15.58159149526393
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "pulse_now_data_only",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.045120630023337,
+      "error_pp": -18.411136091594035
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "pulse_lag_all_events",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 7.449280997084912,
+      "error_pp": -15.00697572453246
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "pulse_lag_data_only",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.496952607430899,
+      "error_pp": -17.959304114186473
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "pulse_now_no_market",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 6.057087625004222,
+      "error_pp": -16.39916909661315
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "cumulative_pulse_all_events",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 6.9850037365773225,
+      "error_pp": -15.47125298504005
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "cumulative_pulse_data_only",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.248462361759685,
+      "error_pp": -18.207794359857687
     }
   ],
   "duplicates": [
