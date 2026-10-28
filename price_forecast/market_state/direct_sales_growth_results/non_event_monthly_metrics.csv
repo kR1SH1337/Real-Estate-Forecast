@@ -1,0 +1,7 @@
+model,n,rmse
+ar_all_events,18,1.0097398581328572
+lagged_sales_stock_data_only,18,1.0856878244488226
+ratio6_all_events,18,1.023304551175332
+sales_only_data_only,18,1.1812796584797067
+sales_stock_all_events,18,0.9895303605901935
+sales_stock_data_only,18,1.1461821926915554

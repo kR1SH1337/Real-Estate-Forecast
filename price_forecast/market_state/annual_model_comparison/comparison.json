@@ -915,6 +915,84 @@
       "mean_absolute_historical_error_pp": 5.757570676720867
     },
     {
+      "id": "direct_ar_all_events",
+      "model": "Реальные приросты: AR + dummy, с января 2022",
+      "family": "Приросты и отдельные продажи/остаток",
+      "n": 57,
+      "source": "market_state/direct_sales_growth_results/parameters.json",
+      "aliases": [],
+      "2022": 16.7696886479975,
+      "2023": 14.410433745167248,
+      "2024": 13.660076954461859,
+      "2025": 15.727212053392991,
+      "mean_absolute_historical_error_pp": 4.470273799895939
+    },
+    {
+      "id": "direct_ratio6_all_events",
+      "model": "Реальные приросты: U/продажи + dummy, с января 2022",
+      "family": "Приросты и отдельные продажи/остаток",
+      "n": 57,
+      "source": "market_state/direct_sales_growth_results/parameters.json",
+      "aliases": [],
+      "2022": 16.766258289151658,
+      "2023": 14.429857275729535,
+      "2024": 13.633707501622968,
+      "2025": 15.723990173832794,
+      "mean_absolute_historical_error_pp": 4.4560834319489455
+    },
+    {
+      "id": "direct_sales_stock_all_events",
+      "model": "Реальные приросты: отдельные Q и U + dummy",
+      "family": "Приросты и отдельные продажи/остаток",
+      "n": 57,
+      "source": "market_state/direct_sales_growth_results/parameters.json",
+      "aliases": [],
+      "2022": 19.729665114266034,
+      "2023": 13.643227738243361,
+      "2024": 11.8022315369488,
+      "2025": 15.03078355995862,
+      "mean_absolute_historical_error_pp": 4.338870160844339
+    },
+    {
+      "id": "direct_sales_stock_data_only",
+      "model": "Реальные приросты: отдельные Q и U, без ипотечных dummy",
+      "family": "Приросты и отдельные продажи/остаток",
+      "n": 57,
+      "source": "market_state/direct_sales_growth_results/parameters.json",
+      "aliases": [],
+      "2022": 22.067566244329825,
+      "2023": 14.755971172260088,
+      "2024": 12.941560890694124,
+      "2025": 13.667640713940834,
+      "mean_absolute_historical_error_pp": 4.8021130827598
+    },
+    {
+      "id": "direct_sales_only_data_only",
+      "model": "Реальные приросты: Q без U и ипотечных dummy",
+      "family": "Приросты и отдельные продажи/остаток",
+      "n": 57,
+      "source": "market_state/direct_sales_growth_results/parameters.json",
+      "aliases": [],
+      "2022": 17.84477119195122,
+      "2023": 16.160112177738377,
+      "2024": 15.915749318444677,
+      "2025": 14.597949052594231,
+      "mean_absolute_historical_error_pp": 5.754693655753411
+    },
+    {
+      "id": "direct_lagged_sales_stock_data_only",
+      "model": "Реальные приросты: Q с лагом и U, без ипотечных dummy",
+      "family": "Приросты и отдельные продажи/остаток",
+      "n": 57,
+      "source": "market_state/direct_sales_growth_results/parameters.json",
+      "aliases": [],
+      "2022": 21.041816512882292,
+      "2023": 12.817165317469223,
+      "2024": 12.383600674709507,
+      "2025": 13.076787300430837,
+      "mean_absolute_historical_error_pp": 5.459346100198548
+    },
+    {
       "id": "nominal_rw",
       "model": "Неизменный номинальный индекс",
       "family": "Простые ориентиры",
@@ -1543,6 +1621,54 @@
       "actual_growth_pct": 22.456256721617372,
       "forecast_growth_pct": 4.248462361759685,
       "error_pp": -18.207794359857687
+    },
+    {
+      "source": "market_state/direct_sales_growth_results/backtest_folds.csv",
+      "model": "ar_all_events",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.307936843611454,
+      "error_pp": -17.148319878005918
+    },
+    {
+      "source": "market_state/direct_sales_growth_results/backtest_folds.csv",
+      "model": "ratio6_all_events",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.684982817510125,
+      "error_pp": -17.771273904107247
+    },
+    {
+      "source": "market_state/direct_sales_growth_results/backtest_folds.csv",
+      "model": "sales_stock_all_events",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 0.8403781707070479,
+      "error_pp": -21.615878550910324
+    },
+    {
+      "source": "market_state/direct_sales_growth_results/backtest_folds.csv",
+      "model": "sales_stock_data_only",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.8374095929215954,
+      "error_pp": -17.618847128695776
+    },
+    {
+      "source": "market_state/direct_sales_growth_results/backtest_folds.csv",
+      "model": "sales_only_data_only",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 9.043079331399255,
+      "error_pp": -13.413177390218117
+    },
+    {
+      "source": "market_state/direct_sales_growth_results/backtest_folds.csv",
+      "model": "lagged_sales_stock_data_only",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 3.985278032862503,
+      "error_pp": -18.47097868875487
     }
   ],
   "duplicates": [

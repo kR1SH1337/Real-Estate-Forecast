@@ -1,0 +1,13 @@
+{
+  "checks_passed": true,
+  "n": 57,
+  "start": "2022-01-01",
+  "end": "2026-09-01",
+  "target": "100*delta log(P/CPI), monthly real growth, not real-index level",
+  "specification": "Centered log contemporaneous sales and centered log prior-month opening unsold stock, independent unrestricted coefficients; latent AR(1) plus optional event dummies.",
+  "forecast": "Future sales held at mean of six months known at origin. Stock held at origin opening stock. Lagged sales known at first step, then held at origin mean. Actual future CPI, no future events.",
+  "realized_sales_diagnostic": "Future actual sales supplied only in diagnostic, never in standard score. Stock remains held at origin.",
+  "limits": "Current sales and prices jointly determined; no causal identification. No extra seasonality. Short revised sample, retrospective events, overlapping horizons, all annual windows include events.",
+  "events": "data_only removes policy groups but retains February/April 2025 data-anomaly group; group remains a hypothesis.",
+  "production_model_changed": false
+}

@@ -143,6 +143,15 @@ def main():
             fit=100*np.log(pf/P.shift().reindex(group.index))
             register('pulse_'+name,plabels[name],'Всплески продаж',fit,'market_state/sales_pulse_results/parameters.json',57)
 
+    direct_history=ROOT/'direct_sales_growth_results/historical_fit.csv'
+    if direct_history.exists():
+        dh=pd.read_csv(direct_history,parse_dates=['month'])
+        labels={'ar_all_events':'Реальные приросты: AR + dummy, с января 2022','ratio6_all_events':'Реальные приросты: U/продажи + dummy, с января 2022','sales_stock_all_events':'Реальные приросты: отдельные Q и U + dummy','sales_stock_data_only':'Реальные приросты: отдельные Q и U, без ипотечных dummy','sales_only_data_only':'Реальные приросты: Q без U и ипотечных dummy','lagged_sales_stock_data_only':'Реальные приросты: Q с лагом и U, без ипотечных dummy'}
+        for name,group in dh.groupby('model',sort=False):
+            group=group.set_index('month')
+            fit=group.fitted_real_log_pp+INFL.reindex(group.index)
+            register('direct_'+name,labels[name],'Приросты и отдельные продажи/остаток',fit,'market_state/direct_sales_growth_results/parameters.json',57)
+
     # Reference rules evaluated with full matching sample means, as historical fits.
     register('nominal_rw','Неизменный номинальный индекс','Простые ориентиры',pd.Series(0.,index=P.index),'nominal_index_experiment.py',54)
     register('inflation_only','Рост только на ИПЦ','Простые ориентиры',INFL,'statistical/model.py',54)
@@ -150,7 +159,7 @@ def main():
     register('real_drift','Средний реальный прирост + ИПЦ','Простые ориентиры',INFL+R.loc[market.COMMON].mean(),'real_index_experiment.py',54)
     # Saved genuine 12-month forecasts with a December origin, no refitting on future data.
     backtests=[]
-    sources=['statistical/results/baseline_backtest_folds.csv','shock_normalization/results/backtest_folds.csv','market_state/results/backtest_folds.csv','market_state/real_index_results/backtest_folds.csv','market_state/nominal_index_results/backtest_folds.csv','market_state/nominal_ablation_results/backtest_folds.csv','market_state/sales_window_results/backtest_folds.csv','market_state/sales_window_from2022_results/backtest_folds.csv','market_state/sales_pulse_results/backtest_folds.csv']
+    sources=['statistical/results/baseline_backtest_folds.csv','shock_normalization/results/backtest_folds.csv','market_state/results/backtest_folds.csv','market_state/real_index_results/backtest_folds.csv','market_state/nominal_index_results/backtest_folds.csv','market_state/nominal_ablation_results/backtest_folds.csv','market_state/sales_window_results/backtest_folds.csv','market_state/sales_window_from2022_results/backtest_folds.csv','market_state/sales_pulse_results/backtest_folds.csv','market_state/direct_sales_growth_results/backtest_folds.csv']
     for source in sources:
         df=pd.read_csv(BASE/source)
         for _,row in df.iterrows():
