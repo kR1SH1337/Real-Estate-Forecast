@@ -1,0 +1,92 @@
+{
+  "CC34": {
+    "value": "203.23435402427634",
+    "formula": "SUM(BQ34:CB34)",
+    "shared": "138",
+    "type": null
+  },
+  "CC35": {
+    "value": "80.302347484006759",
+    "formula": "CC84-CC28",
+    "shared": null,
+    "type": null
+  },
+  "CC33": {
+    "value": "774.93199770927231",
+    "formula": "CC34+CC38",
+    "shared": null,
+    "type": null
+  },
+  "CC52": {
+    "value": "30.774556243033445",
+    "formula": "CC34/CC13",
+    "shared": "271",
+    "type": null
+  },
+  "CA103": {
+    "value": "12.438052396797913",
+    "formula": "BN103*1.05",
+    "shared": null,
+    "type": null
+  },
+  "CB103": {
+    "value": "12.489877615117905",
+    "formula": "BO103*1.05",
+    "shared": null,
+    "type": null
+  },
+  "CC103": {
+    "value": "12.541702833437897",
+    "formula": "BP103*1.05",
+    "shared": null,
+    "type": null
+  },
+  "CA88": {
+    "value": "7.1999999999999995E-2",
+    "formula": "'ДДУ-Продажи'!G54",
+    "shared": null,
+    "type": null
+  },
+  "CB88": {
+    "value": "0.08",
+    "formula": "'ДДУ-Продажи'!H54",
+    "shared": null,
+    "type": null
+  },
+  "CC88": {
+    "value": "8.2000000000000003E-2",
+    "formula": "'ДДУ-Продажи'!I54",
+    "shared": null,
+    "type": null
+  },
+  "CA56": {
+    "value": "8.8521615424760309",
+    "formula": "SUMPRODUCT(BO56:BZ56,BO38:BZ38)/SUM(BO38:BZ38)",
+    "shared": null,
+    "type": null
+  },
+  "CB17": {
+    "value": "53.58754025166737",
+    "formula": "CA17*(1+($CA$66-CB66)*CM7)",
+    "shared": null,
+    "type": null
+  },
+  "CB10": {
+    "value": "36.018404750644663",
+    "formula": "CA10*(1+($CA$66-CB66)*CM6)",
+    "shared": null,
+    "type": null
+  },
+  "CC10": {
+    "value": "36.351451643886925",
+    "formula": "CB10*(1+($CB$66-CC66)*CM6)",
+    "shared": null,
+    "type": null
+  },
+  "CM6": {
+    "value": "15",
+    "formula": null,
+    "shared": null,
+    "type": null
+  }
+}
