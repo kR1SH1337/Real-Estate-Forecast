@@ -1,0 +1,12 @@
+{
+  "checks_passed": true,
+  "period": "2022-01 through 2026-09",
+  "sample_n": 57,
+  "inference": "Conditional nonlinear least-squares inference using prediction Jacobian and HAC sandwich; Bartlett weights, six monthly lags, n/(n-k) correction; approximate t/F reference with n-k=51.",
+  "sensitivity": "Classical IID, HAC lag 0/3/6/12 and heteroskedastic HC3 leverage correction. Observed-Hessian bread sensitivity for market coefficient reported separately.",
+  "model_comparison": "Raw/adjusted R2 target-dependent; do not rank growth and level models by R2. AIC/BIC deltas only relative to no-market counterpart with same target.",
+  "residual_tests": "Ljung-Box degrees of freedom lag count minus one AR term, approximate; Koenker auxiliary regression of squared residual on prediction Jacobian, df5; Jarque-Bera approximate normality.",
+  "limitations": "Short sample, sparse/retrospectively chosen event groups, revised data and extensive model selection not accounted for in p-values. Conditional significance, not causal identification. Persistence p tests zero, not a unit root. HAC does not establish stationarity or fix endogenous regressors.",
+  "implementation": "NumPy/SciPy analytic Jacobian and covariance implementation; not estimated by Stata here.",
+  "production_model_changed": false
+}
