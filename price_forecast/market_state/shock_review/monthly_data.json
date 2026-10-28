@@ -1,0 +1,464 @@
+{
+  "period": "2022-01 through 2026-09",
+  "price": "100*((P_t/P_previous)/(CPI_t/CPI_previous)-1)",
+  "sales": "Unsmoothed contemporaneous DDU sales area, thousand m2; same source series used in market model",
+  "event_calendar": "Existing three-group calendar, unchanged. Data-anomaly effects and early events remain hypotheses.",
+  "rows": [
+    {
+      "month": "2022-01-01",
+      "real_mom_pct": 1.4699756502250467,
+      "sales_thousand_m2": 336.09088999999966,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-02-01",
+      "real_mom_pct": 1.8502885614622835,
+      "sales_thousand_m2": 378.3209099999999,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-03-01",
+      "real_mom_pct": -3.7798360754835114,
+      "sales_thousand_m2": 422.1024599999999,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-04-01",
+      "real_mom_pct": -0.25353347880461446,
+      "sales_thousand_m2": 219.89268,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-05-01",
+      "real_mom_pct": 3.7760366300245445,
+      "sales_thousand_m2": 181.04551999999995,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-06-01",
+      "real_mom_pct": 1.1298092974049445,
+      "sales_thousand_m2": 239.41268999999997,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-07-01",
+      "real_mom_pct": 0.2006713715457225,
+      "sales_thousand_m2": 290.0019899999998,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-08-01",
+      "real_mom_pct": 0.5563815723409133,
+      "sales_thousand_m2": 298.5474699999998,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-09-01",
+      "real_mom_pct": 0.7086343201972398,
+      "sales_thousand_m2": 319.17678000000006,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-10-01",
+      "real_mom_pct": -1.066026530016324,
+      "sales_thousand_m2": 192.52244,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-11-01",
+      "real_mom_pct": 0.7456506644987883,
+      "sales_thousand_m2": 239.53030999999987,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2022-12-01",
+      "real_mom_pct": -0.09466958686540944,
+      "sales_thousand_m2": 354.19691000000023,
+      "early": 1,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-01-01",
+      "real_mom_pct": -4.540663149650976,
+      "sales_thousand_m2": 239.60197,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-02-01",
+      "real_mom_pct": 0.10043308882599271,
+      "sales_thousand_m2": 206.31582,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-03-01",
+      "real_mom_pct": -0.32038660527905066,
+      "sales_thousand_m2": 454.5285600000001,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-04-01",
+      "real_mom_pct": 0.2624442373779701,
+      "sales_thousand_m2": 287.70101,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-05-01",
+      "real_mom_pct": -0.4152599040682722,
+      "sales_thousand_m2": 304.66571000000005,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-06-01",
+      "real_mom_pct": 1.6826346897146849,
+      "sales_thousand_m2": 309.85164000000003,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-07-01",
+      "real_mom_pct": 1.8771257738685483,
+      "sales_thousand_m2": 350.36365,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-08-01",
+      "real_mom_pct": 3.39474256223986,
+      "sales_thousand_m2": 483.05906,
+      "early": 1,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-09-01",
+      "real_mom_pct": 2.401429813611808,
+      "sales_thousand_m2": 560.7121099999999,
+      "early": 1,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-10-01",
+      "real_mom_pct": 1.7209023068700713,
+      "sales_thousand_m2": 497.33928,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-11-01",
+      "real_mom_pct": 1.010841475366605,
+      "sales_thousand_m2": 442.27178,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2023-12-01",
+      "real_mom_pct": -0.06727559993607551,
+      "sales_thousand_m2": 529.91126,
+      "early": 1,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-01-01",
+      "real_mom_pct": -0.9580206122874113,
+      "sales_thousand_m2": 250.11755,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-02-01",
+      "real_mom_pct": -1.0724872372855525,
+      "sales_thousand_m2": 228.84458,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-03-01",
+      "real_mom_pct": 0.6964272321883408,
+      "sales_thousand_m2": 366.89484,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-04-01",
+      "real_mom_pct": 0.9717633658314262,
+      "sales_thousand_m2": 409.71291,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-05-01",
+      "real_mom_pct": 1.4245727421790932,
+      "sales_thousand_m2": 404.03438,
+      "early": 1,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-06-01",
+      "real_mom_pct": 2.371434303705722,
+      "sales_thousand_m2": 527.00224,
+      "early": 1,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-07-01",
+      "real_mom_pct": -1.5149484459905125,
+      "sales_thousand_m2": 330.96544,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-08-01",
+      "real_mom_pct": -1.5706080698923783,
+      "sales_thousand_m2": 246.85028,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-09-01",
+      "real_mom_pct": 0.15434836489144718,
+      "sales_thousand_m2": 320.40711,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-10-01",
+      "real_mom_pct": 0.5558308748188661,
+      "sales_thousand_m2": 341.1677,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-11-01",
+      "real_mom_pct": -0.8401391865505352,
+      "sales_thousand_m2": 363.7836,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2024-12-01",
+      "real_mom_pct": -1.867028231527669,
+      "sales_thousand_m2": 458.99357,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2025-01-01",
+      "real_mom_pct": -0.05153652306459305,
+      "sales_thousand_m2": 284.45817,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2025-02-01",
+      "real_mom_pct": 1.0503760388866226,
+      "sales_thousand_m2": 375.13915,
+      "early": 0,
+      "recent": 0,
+      "data": 1
+    },
+    {
+      "month": "2025-03-01",
+      "real_mom_pct": 1.238075329529068,
+      "sales_thousand_m2": 384.81304,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2025-04-01",
+      "real_mom_pct": 0.8572915722974197,
+      "sales_thousand_m2": 318.42482,
+      "early": 0,
+      "recent": 0,
+      "data": 1
+    },
+    {
+      "month": "2025-05-01",
+      "real_mom_pct": 0.19068506066766971,
+      "sales_thousand_m2": 245.50237,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2025-06-01",
+      "real_mom_pct": 0.08960406773502984,
+      "sales_thousand_m2": 247.91024,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2025-07-01",
+      "real_mom_pct": 0.23577096889280993,
+      "sales_thousand_m2": 346.39907,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2025-08-01",
+      "real_mom_pct": 1.5026103277594187,
+      "sales_thousand_m2": 318.27737,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2025-09-01",
+      "real_mom_pct": 2.579118670828006,
+      "sales_thousand_m2": 356.78739,
+      "early": 0,
+      "recent": 1,
+      "data": 0
+    },
+    {
+      "month": "2025-10-01",
+      "real_mom_pct": 2.8382841697129213,
+      "sales_thousand_m2": 376.57911,
+      "early": 0,
+      "recent": 1,
+      "data": 0
+    },
+    {
+      "month": "2025-11-01",
+      "real_mom_pct": 1.101750153909821,
+      "sales_thousand_m2": 437.21125,
+      "early": 0,
+      "recent": 1,
+      "data": 0
+    },
+    {
+      "month": "2025-12-01",
+      "real_mom_pct": 3.3485123781144424,
+      "sales_thousand_m2": 493.15399,
+      "early": 0,
+      "recent": 1,
+      "data": 0
+    },
+    {
+      "month": "2026-01-01",
+      "real_mom_pct": 0.26617034227530645,
+      "sales_thousand_m2": 276.34443,
+      "early": 0,
+      "recent": 1,
+      "data": 0
+    },
+    {
+      "month": "2026-02-01",
+      "real_mom_pct": -0.6330793387716067,
+      "sales_thousand_m2": 170.25516,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2026-03-01",
+      "real_mom_pct": -0.7261852268985104,
+      "sales_thousand_m2": 174.28232,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2026-04-01",
+      "real_mom_pct": 1.3231025516553403,
+      "sales_thousand_m2": 181.79723,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2026-05-01",
+      "real_mom_pct": 0.28144257057749894,
+      "sales_thousand_m2": 176.74827,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2026-06-01",
+      "real_mom_pct": 0.209300177196668,
+      "sales_thousand_m2": 314.98023,
+      "early": 0,
+      "recent": 1,
+      "data": 0
+    },
+    {
+      "month": "2026-07-01",
+      "real_mom_pct": 0.3987084143407242,
+      "sales_thousand_m2": 208.29783,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2026-08-01",
+      "real_mom_pct": 1.274910920871158,
+      "sales_thousand_m2": 182.81444,
+      "early": 0,
+      "recent": 0,
+      "data": 0
+    },
+    {
+      "month": "2026-09-01",
+      "real_mom_pct": 1.7299187261396989,
+      "sales_thousand_m2": 272.4404,
+      "early": 0,
+      "recent": 1,
+      "data": 0
+    }
+  ]
+}
