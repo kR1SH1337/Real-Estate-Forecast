@@ -1,0 +1,17 @@
+{
+  "source_file": "Продажи и ипотека (3).xlsx",
+  "source_sha256": "dd5910bfedadf205849e7678b22364e97ed0da72c7c23c08a05b3a232e3b5b3b",
+  "source_value_mode": "Saved values and expanded shared formulas; workbook not recalculated or edited.",
+  "confirmed_secondary_2030_excess_bln": 0.0,
+  "reported_total_2030_bln": 1320.2289192203189,
+  "total_2030_if_only_secondary_rollup_corrected_bln": 1320.2289192203189,
+  "direct_price_input_affected": false,
+  "price_conditional_mortgage": "Family loan budget growth in 2028-2030 references assumed mean-price growth in Excel; frozen in coupled price model, not fed back.",
+  "market_count_response": "CM6=15 implies +15% market DDU loan count per 1pp rate decrease in annual recurrence; expert parameter, not estimated by this audit.",
+  "sample_average_note": "CA56 is volume-weighted average monthly loan size, not aggregate amount/count. It does not affect primary mortgage input directly.",
+  "family_average_year_references": {
+    "CB103": "CA103*1.05",
+    "CC103": "CB103*1.05"
+  },
+  "no_external_feasibility_validation": true
+}

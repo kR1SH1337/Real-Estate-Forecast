@@ -41,7 +41,9 @@ def read(path):
    sheets[name]=cells
  return sheets
 
-def main(path):
+def main(path,out_dir=None,equilibrium_path=None):
+ global OUT
+ if out_dir is not None:OUT=Path(out_dir)
  OUT.mkdir(exist_ok=True);before=hashlib.sha256(path.read_bytes()).hexdigest();sheets=read(path);x=sheets['Ипотека и ДДУ'];d=sheets['ДДУ-Продажи']
  def v(col,row):
   cell=x.get(f'{col}{row}',{});assert cell.get('type')!='e'
@@ -54,7 +56,7 @@ def main(path):
    checks.append(dict(year=year,check=label,lhs=lhs,rhs=rhs,difference=lhs-rhs,passed=bool(np.isclose(lhs,rhs,atol=1e-7,rtol=1e-10))))
  annual=pd.DataFrame(rows).set_index('year');annual.to_csv(OUT/'mortgage_annual.csv')
  pd.DataFrame(checks).to_csv(OUT/'identity_checks.csv',index=False)
- eq=pd.read_csv(ROOT/'updated_channels_results/annual_equilibrium.csv').set_index('year')
+ eq=pd.read_csv(equilibrium_path or ROOT/'updated_channels_results/annual_equilibrium.csv').set_index('year')
  bridge=[]
  for year,col in zip(range(2027,2031),['BN','CA','CB','CC']):
   ycol=colname(year-2026+5);nominal=float(d[ycol+'43']['value']);loans=annual.loc[year,'ddu_loan_bln'];pv=1-loans/nominal
@@ -65,9 +67,9 @@ def main(path):
  bridge.to_csv(OUT/'price_bridge.csv')
  important=['CC34','CC35','CC33','CC52','CA103','CB103','CC103','CA88','CB88','CC88','CA56','CB17','CB10','CC10','CM6']
  (OUT/'formula_evidence.json').write_text(json.dumps({ref:x[ref] for ref in important},ensure_ascii=False,indent=2))
- findings=dict(source_file=path.name,source_sha256=before,source_value_mode='Saved values and expanded shared formulas; workbook not recalculated or edited.',confirmed_secondary_2030_excess_bln=v('CC',34)-sum(v('CC',r) for r in [35,36,37]),reported_total_2030_bln=v('CC',23),total_2030_if_only_secondary_rollup_corrected_bln=v('CC',23)-v('CC',34)+sum(v('CC',r) for r in [35,36,37]),direct_price_input_affected=False,price_conditional_mortgage='Family loan budget growth in 2028-2030 references assumed mean-price growth in Excel; frozen in coupled price model, not fed back.',market_count_response='CM6=15 implies +15% market DDU loan count per 1pp rate decrease in annual recurrence; expert parameter, not estimated by this audit.',sample_average_note='CA56 is volume-weighted average monthly loan size, not aggregate amount/count. It does not affect primary mortgage input directly.',family_average_year_references='CB103=BO103*1.05 and CC103=BP103*1.05 refer to Jan/Feb2028, not prior annual columns; intent requires review.',no_external_feasibility_validation=True)
+ findings=dict(source_file=path.name,source_sha256=before,source_value_mode='Saved values and expanded shared formulas; workbook not recalculated or edited.',confirmed_secondary_2030_excess_bln=v('CC',34)-sum(v('CC',r) for r in [35,36,37]),reported_total_2030_bln=v('CC',23),total_2030_if_only_secondary_rollup_corrected_bln=v('CC',23)-v('CC',34)+sum(v('CC',r) for r in [35,36,37]),direct_price_input_affected=False,price_conditional_mortgage='Family loan budget growth in 2028-2030 references assumed mean-price growth in Excel; frozen in coupled price model, not fed back.',market_count_response='CM6=15 implies +15% market DDU loan count per 1pp rate decrease in annual recurrence; expert parameter, not estimated by this audit.',sample_average_note='CA56 is volume-weighted average monthly loan size, not aggregate amount/count. It does not affect primary mortgage input directly.',family_average_year_references={ref:x[ref]['formula'] for ref in ['CB103','CC103']},no_external_feasibility_validation=True)
  (OUT/'findings.json').write_text(json.dumps(findings,ensure_ascii=False,indent=2))
  assert hashlib.sha256(path.read_bytes()).hexdigest()==before
  print(annual.round(4).to_string());print('\nFAILED IDENTITIES\n'+pd.DataFrame(checks).query('not passed').to_string(index=False));print('\nBRIDGE\n'+bridge.round(4).to_string());print(json.dumps(findings,ensure_ascii=False,indent=2))
 if __name__=='__main__':
- p=argparse.ArgumentParser(description=__doc__);p.add_argument('xlsx',type=Path);main(p.parse_args().xlsx)
+ p=argparse.ArgumentParser(description=__doc__);p.add_argument('xlsx',type=Path);p.add_argument('--output-dir',type=Path);p.add_argument('--equilibrium',type=Path);args=p.parse_args();main(args.xlsx,args.output_dir,args.equilibrium)

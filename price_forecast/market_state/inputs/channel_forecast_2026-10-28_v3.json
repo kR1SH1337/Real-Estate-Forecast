@@ -1,0 +1,79 @@
+{
+  "source_file": "Продажи и ипотека (3).xlsx",
+  "source_sha256": "dd5910bfedadf205849e7678b22364e97ed0da72c7c23c08a05b3a232e3b5b3b",
+  "sheet": "ДДУ-Продажи",
+  "source_cells": {
+    "annual_nominal_mortgage": "E43:I43",
+    "cash_model": "E50:I50",
+    "oneoff": "E51:I51",
+    "cash_area": "E63:I63",
+    "reference_price": "E55:I55",
+    "reference_total_area": "E61:I61",
+    "actual_mortgage_area": "AL4:AT4",
+    "actual_cash_area": "AL5:AT5",
+    "actual_mortgage_nominal": "AL24:AT24",
+    "anchor_2025": "D55"
+  },
+  "annual": [
+    {
+      "year": 2026,
+      "mortgage_transactions_bln_rub": 612.751920047248,
+      "cash_model_real_bln_rub": 382.8,
+      "oneoff_real_bln_rub": 0.0,
+      "cash_total_thousand_m2": 1354.0856031128405,
+      "reference_annual_price_thousand_rub_m2": 472.28147889933166,
+      "reference_sales_thousand_m2": 2651.5150968022554,
+      "reference_mortgage_thousand_m2": 1297.4294936894148
+    },
+    {
+      "year": 2027,
+      "mortgage_transactions_bln_rub": 664.7006081385213,
+      "cash_model_real_bln_rub": 387.7,
+      "oneoff_real_bln_rub": 0.0,
+      "cash_total_thousand_m2": 1371.418464803679,
+      "reference_annual_price_thousand_rub_m2": 505.34118242228493,
+      "reference_sales_thousand_m2": 2686.768630710143,
+      "reference_mortgage_thousand_m2": 1315.350165906464
+    },
+    {
+      "year": 2028,
+      "mortgage_transactions_bln_rub": 873.0566681860657,
+      "cash_model_real_bln_rub": 319.9,
+      "oneoff_real_bln_rub": 80.0,
+      "cash_total_thousand_m2": 1414.573753095154,
+      "reference_annual_price_thousand_rub_m2": 541.2204063742671,
+      "reference_sales_thousand_m2": 3027.699677216954,
+      "reference_mortgage_thousand_m2": 1613.1259241218
+    },
+    {
+      "year": 2029,
+      "mortgage_transactions_bln_rub": 1095.1067428963845,
+      "cash_model_real_bln_rub": 289.7,
+      "oneoff_real_bln_rub": 90.0,
+      "cash_total_thousand_m2": 1343.1199151043509,
+      "reference_annual_price_thousand_rub_m2": 584.463916843571,
+      "reference_sales_thousand_m2": 3216.814272166747,
+      "reference_mortgage_thousand_m2": 1873.694357062396
+    },
+    {
+      "year": 2030,
+      "mortgage_transactions_bln_rub": 1214.3907721333721,
+      "cash_model_real_bln_rub": 289.7,
+      "oneoff_real_bln_rub": 100.0,
+      "cash_total_thousand_m2": 1378.4931022285107,
+      "reference_annual_price_thousand_rub_m2": 633.0328683332717,
+      "reference_sales_thousand_m2": 3296.8623258215484,
+      "reference_mortgage_thousand_m2": 1918.3692235930375
+    }
+  ],
+  "actual_2026_9m": {
+    "mortgage_thousand_m2": 1040.8756100178427,
+    "cash_thousand_m2": 917.0846999821571,
+    "mortgage_transactions_bln_rub": 500.0973786720398
+  },
+  "price_anchor_2025_mean_thousand_rub_m2": 427.7911946551917,
+  "price_anchor_september_2026_thousand_rub_m2": 466.8265833148828,
+  "mortgage_transactions_include_down_payment": true,
+  "base_cash_price_thousand_rub_m2": 282.7,
+  "source_value_mode": "Saved Excel cached values; no workbook recalculation or external-link refresh performed"
+}

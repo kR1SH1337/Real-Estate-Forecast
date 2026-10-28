@@ -9,6 +9,9 @@
   "price_conditional_mortgage": "Family loan budget growth in 2028-2030 references assumed mean-price growth in Excel; frozen in coupled price model, not fed back.",
   "market_count_response": "CM6=15 implies +15% market DDU loan count per 1pp rate decrease in annual recurrence; expert parameter, not estimated by this audit.",
   "sample_average_note": "CA56 is volume-weighted average monthly loan size, not aggregate amount/count. It does not affect primary mortgage input directly.",
-  "family_average_year_references": "CB103=BO103*1.05 and CC103=BP103*1.05 refer to Jan/Feb2028, not prior annual columns; intent requires review.",
+  "family_average_year_references": {
+    "CB103": "BO103*1.05",
+    "CC103": "BP103*1.05"
+  },
   "no_external_feasibility_validation": true
 }

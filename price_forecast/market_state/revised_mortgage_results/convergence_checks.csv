@@ -1,0 +1,9 @@
+scenario,iterations,max_price_log_residual,max_unallocated_sales,alternative_start_deviation
+growth54_previous,20,6.9321136849006404e-09,0.0,
+growth54_updated,20,7.059542864112539e-09,0.0,7.923958346947364e-09
+growth54_mortgage_only,20,7.104421076687881e-09,0.0,
+growth54_oneoff_only,20,6.9321136849006404e-09,0.0,
+growth57_previous,17,6.298870738476592e-09,0.0,
+growth57_updated,17,6.402023113351687e-09,0.0,1.504288082775232e-08
+level57_previous,25,7.214648904343155e-09,0.0,
+level57_updated,25,7.215545853531221e-09,0.0,4.339788963212438e-09
