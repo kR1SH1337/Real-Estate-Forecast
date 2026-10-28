@@ -8,6 +8,12 @@ cumulative_pulse_all_events,12,16,12.57089937005467
 cumulative_pulse_data_only,1,27,1.261905043206562
 cumulative_pulse_data_only,6,22,6.496864963966169
 cumulative_pulse_data_only,12,16,14.582053369150017
+cumulative_pulse_no_events,1,27,1.232223102799082
+cumulative_pulse_no_events,6,22,6.3495895973772045
+cumulative_pulse_no_events,12,16,14.478082511727159
+no_events_no_pulse,1,27,1.3433848323735047
+no_events_no_pulse,6,22,6.4252706677204685
+no_events_no_pulse,12,16,12.905636129425439
 pulse_lag_all_events,1,27,1.4606990128704043
 pulse_lag_all_events,6,22,6.018943335355574
 pulse_lag_all_events,12,16,11.351700292873906
@@ -20,6 +26,9 @@ pulse_now_all_events,12,16,12.250945125070059
 pulse_now_data_only,1,27,1.2725535915473443
 pulse_now_data_only,6,22,6.587780329181616
 pulse_now_data_only,12,16,14.291982990512574
+pulse_now_no_events,1,27,1.2450557344430029
+pulse_now_no_events,6,22,6.451952135119957
+pulse_now_no_events,12,16,14.36410832054818
 pulse_now_no_market,1,27,1.229548168312517
 pulse_now_no_market,6,22,5.9373810023615325
 pulse_now_no_market,12,16,12.63305892684203

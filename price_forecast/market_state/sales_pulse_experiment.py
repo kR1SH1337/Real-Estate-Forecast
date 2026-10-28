@@ -24,7 +24,10 @@ CONFIGS={
     'pulse_lag_data_only':dict(events=['data'],controls=['market','pulse_lag1']),
     'pulse_now_no_market':dict(events=['data'],controls=['pulse_now']),
     'cumulative_pulse_all_events':dict(events=['early','recent','data','sales_pulse'],controls=['market']),
-    'cumulative_pulse_data_only':dict(events=['data','sales_pulse'],controls=['market'])}
+    'cumulative_pulse_data_only':dict(events=['data','sales_pulse'],controls=['market']),
+    'no_events_no_pulse':dict(events=[],controls=['market']),
+    'pulse_now_no_events':dict(events=[],controls=['market','pulse_now']),
+    'cumulative_pulse_no_events':dict(events=['sales_pulse'],controls=['market'])}
 
 
 def fit(train,config):
@@ -71,7 +74,7 @@ def main():
     pars={};history=[];annual=[];summary=[];folds=[];sens=[]
     for name,config in CONFIGS.items():
         m=fit(SAMPLE,config);pars[name]=m
-        shift=SHIFTS.mul(pd.Series(m['beta'])).sum(axis=1)
+        shift=SHIFTS.mul(pd.Series(m['beta'],dtype=float)).sum(axis=1)
         pred=m['c']+m['rho']*(core.REAL.shift()-shift.shift())+shift
         for col,coef in m['coefficients'].items():pred+=coef*(X[col]-m['means'][col])
         err=pred.loc[SAMPLE]-core.REAL.loc[SAMPLE]
@@ -114,7 +117,7 @@ def main():
     metrics.to_csv(OUT/'backtest_metrics.csv',index=False);oracle_metrics.to_csv(OUT/'realized_sales_diagnostic_metrics.csv',index=False)
     calm.to_csv(OUT/'non_event_monthly_metrics.csv',index=False);f.to_csv(OUT/'backtest_folds.csv',index=False)
     pd.DataFrame(sens).to_csv(OUT/'sample_sensitivity.csv',index=False)
-    (OUT/'diagnostics.json').write_text(json.dumps(dict(checks_passed=True,n=len(SAMPLE),pulse='log(current month sales / average of preceding six completed months)',contemporaneous_endogeneity='Current sales and price can be jointly determined; coefficient is not a causal effect.',forecast='Market held at first lagged value; expected future pulse zero. Lagged-pulse model uses known prior-month pulse at first step. Actual future CPI. No future event increments.',realized_sales='Diagnostic only: future observed sales pulse supplied; not an operational forecast.',events='Policy groups removed only in data_only/no_market variants; February/April 2025 data-anomaly group retained. Cumulative pulse uses the same persistent-level-shift treatment as cumulative event dummies.',validation='Matching expanding windows; revised data and retrospective event calendar; overlapping annual horizons, no clean annual event-free windows.',production_model_changed=False),indent=2))
+    (OUT/'diagnostics.json').write_text(json.dumps(dict(checks_passed=True,n=len(SAMPLE),pulse='log(current month sales / average of preceding six completed months)',contemporaneous_endogeneity='Current sales and price can be jointly determined; coefficient is not a causal effect.',forecast='Market held at first lagged value; expected future pulse zero. Lagged-pulse model uses known prior-month pulse at first step. Actual future CPI. No future event increments.',realized_sales='Diagnostic only: future observed sales pulse supplied; not an operational forecast.',events='data_only/no_market retain data-anomaly events; no_events variants remove all three dummy groups. Cumulative pulse uses the same persistent-level-shift treatment as cumulative event dummies.',validation='Matching expanding windows; revised data and retrospective event calendar; overlapping annual horizons, no clean annual event-free windows.',production_model_changed=False),indent=2))
     print('FIT');print(pd.DataFrame(summary).round(4).to_string(index=False))
     print('ANNUAL');print(pd.DataFrame(annual).pivot(index='model',columns='year',values='fitted_growth_pct').round(3).to_string())
     print('FORECAST');print(metrics.round(4).to_string(index=False))

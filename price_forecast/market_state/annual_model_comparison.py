@@ -135,7 +135,7 @@ def main():
     pulse_history=ROOT/'sales_pulse_results/historical_fit.csv'
     if pulse_history.exists():
         ph=pd.read_csv(pulse_history,parse_dates=['month'])
-        plabels={'pulse_now_all_events':'Текущий всплеск + все dummy + рынок','pulse_now_data_only':'Текущий всплеск + рынок, без ипотечных dummy','pulse_lag_all_events':'Всплеск с лагом + все dummy + рынок','pulse_lag_data_only':'Всплеск с лагом + рынок, без ипотечных dummy','pulse_now_no_market':'Текущий всплеск, без рынка и ипотечных dummy','cumulative_pulse_all_events':'Накопленный всплеск + все dummy + рынок','cumulative_pulse_data_only':'Накопленный всплеск + рынок, без ипотечных dummy'}
+        plabels={'pulse_now_all_events':'Текущий всплеск + все dummy + рынок','pulse_now_data_only':'Текущий всплеск + рынок, без ипотечных dummy','pulse_lag_all_events':'Всплеск с лагом + все dummy + рынок','pulse_lag_data_only':'Всплеск с лагом + рынок, без ипотечных dummy','pulse_now_no_market':'Текущий всплеск, без рынка и ипотечных dummy','cumulative_pulse_all_events':'Накопленный всплеск + все dummy + рынок','cumulative_pulse_data_only':'Накопленный всплеск + рынок, без ипотечных dummy','no_events_no_pulse':'Реальный индекс + рынок, без всех dummy','pulse_now_no_events':'Реальный индекс + рынок + текущий всплеск, без всех dummy','cumulative_pulse_no_events':'Реальный индекс + рынок + накопленный всплеск, без всех dummy'}
         for name,group in ph.groupby('model',sort=False):
             if name=='baseline':continue
             group=group.set_index('month')

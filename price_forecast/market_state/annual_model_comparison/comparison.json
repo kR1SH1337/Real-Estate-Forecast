@@ -915,6 +915,45 @@
       "mean_absolute_historical_error_pp": 5.757570676720867
     },
     {
+      "id": "pulse_no_events_no_pulse",
+      "model": "Реальный индекс + рынок, без всех dummy",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 18.02852944302883,
+      "2023": 13.911371416388521,
+      "2024": 16.258011588265852,
+      "2025": 12.82755253695952,
+      "mean_absolute_historical_error_pp": 6.4691592929013355
+    },
+    {
+      "id": "pulse_pulse_now_no_events",
+      "model": "Реальный индекс + рынок + текущий всплеск, без всех dummy",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 15.39791774640922,
+      "2023": 16.595473430945216,
+      "2024": 16.759313681346296,
+      "2025": 15.012314762909115,
+      "mean_absolute_historical_error_pp": 6.042880291017937
+    },
+    {
+      "id": "pulse_cumulative_pulse_no_events",
+      "model": "Реальный индекс + рынок + накопленный всплеск, без всех dummy",
+      "family": "Всплески продаж",
+      "n": 57,
+      "source": "market_state/sales_pulse_results/parameters.json",
+      "aliases": [],
+      "2022": 15.016218646382148,
+      "2023": 16.23191214815888,
+      "2024": 16.7701640673969,
+      "2025": 15.220348614817922,
+      "mean_absolute_historical_error_pp": 5.855965374803091
+    },
+    {
       "id": "direct_ar_all_events",
       "model": "Реальные приросты: AR + dummy, с января 2022",
       "family": "Приросты и отдельные продажи/остаток",
@@ -1643,6 +1682,30 @@
     {
       "source": "market_state/sales_pulse_results/backtest_folds.csv",
       "model": "cumulative_pulse_data_only",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.248462361759685,
+      "error_pp": -18.207794359857687
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "no_events_no_pulse",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.554033467718629,
+      "error_pp": -17.902223253898743
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "pulse_now_no_events",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.045120630023337,
+      "error_pp": -18.411136091594035
+    },
+    {
+      "source": "market_state/sales_pulse_results/backtest_folds.csv",
+      "model": "cumulative_pulse_no_events",
       "year": 2025,
       "actual_growth_pct": 22.456256721617372,
       "forecast_growth_pct": 4.248462361759685,
