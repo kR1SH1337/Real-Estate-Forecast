@@ -993,6 +993,32 @@
       "mean_absolute_historical_error_pp": 5.459346100198548
     },
     {
+      "id": "noar_all_events_noar",
+      "model": "Реальные приросты без лага: Q и U + все dummy",
+      "family": "Удаление лага прироста",
+      "n": 57,
+      "source": "market_state/no_price_lag_results/parameters.json",
+      "aliases": [],
+      "2022": 19.561386564062804,
+      "2023": 13.564884987893963,
+      "2024": 12.086861273151829,
+      "2025": 15.349131804234014,
+      "mean_absolute_historical_error_pp": 4.353744908270016
+    },
+    {
+      "id": "noar_data_only_noar",
+      "model": "Реальные приросты без лага: Q и U, без ипотечных dummy",
+      "family": "Удаление лага прироста",
+      "n": 57,
+      "source": "market_state/no_price_lag_results/parameters.json",
+      "aliases": [],
+      "2022": 22.553815523389396,
+      "2023": 14.879858096605957,
+      "2024": 13.381249835456535,
+      "2025": 13.483129165584835,
+      "mean_absolute_historical_error_pp": 4.968884272350647
+    },
+    {
       "id": "nominal_rw",
       "model": "Неизменный номинальный индекс",
       "family": "Простые ориентиры",
@@ -1669,6 +1695,38 @@
       "actual_growth_pct": 22.456256721617372,
       "forecast_growth_pct": 3.985278032862503,
       "error_pp": -18.47097868875487
+    },
+    {
+      "source": "market_state/no_price_lag_results/backtest_folds.csv",
+      "model": "all_events_ar",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 0.8403781707070479,
+      "error_pp": -21.615878550910324
+    },
+    {
+      "source": "market_state/no_price_lag_results/backtest_folds.csv",
+      "model": "all_events_noar",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 1.662928332919833,
+      "error_pp": -20.79332838869754
+    },
+    {
+      "source": "market_state/no_price_lag_results/backtest_folds.csv",
+      "model": "data_only_ar",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 4.8374095929215954,
+      "error_pp": -17.618847128695776
+    },
+    {
+      "source": "market_state/no_price_lag_results/backtest_folds.csv",
+      "model": "data_only_noar",
+      "year": 2025,
+      "actual_growth_pct": 22.456256721617372,
+      "forecast_growth_pct": 5.139278105057915,
+      "error_pp": -17.316978616559457
     }
   ],
   "duplicates": [

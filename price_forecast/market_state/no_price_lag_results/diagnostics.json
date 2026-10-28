@@ -1,0 +1,10 @@
+{
+  "checks_passed": true,
+  "n": 57,
+  "change": "Only lagged real price growth removed (phi=0); lagged inventory retained.",
+  "noar_fit": "Full-rank ordinary least squares; AR references retain original nonlinear latent-AR estimation.",
+  "market_partial_r2": "1-SSE(full sales+stock model)/SSE(same event and AR specification without sales and stock); descriptive incremental fit, not causal attribution.",
+  "forecast": "Same as direct-sales experiment: unknown future sales held at six-month mean known at origin; stock held at origin; actual future CPI; future policy events not supplied.",
+  "limits": "Current sales endogenous; short revised history and retrospective events; overlapping horizons, all annual windows include events.",
+  "production_model_changed": false
+}

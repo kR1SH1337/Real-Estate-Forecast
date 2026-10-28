@@ -1,0 +1,5 @@
+model,n,rmse
+all_events_ar,18,0.9895303605901935
+all_events_noar,18,1.0130513101238214
+data_only_ar,18,1.1461821926915554
+data_only_noar,18,1.159633804794746
