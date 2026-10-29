@@ -1,0 +1,3 @@
+scenario,iterations,max_price_log_residual,alternative_start_deviation
+unconstrained,24,6.298961352314903e-11,
+target10,29,6.585476608695145e-11,6.22781826090138e-11

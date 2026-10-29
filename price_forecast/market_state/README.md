@@ -2,20 +2,21 @@
 
 ## Актуальный расчет
 
-**Окончательная функция:** N54 / growth54. **Ценовая привязка:** факт сентября 2026. **Сценарий в сравнительных файлах:** growth54_september_2026.
+**Окончательная функция:** N54 / growth54. **Ценовая привязка:** факт сентября 2026. **Экспертный ориентир:** 10% декабрь к декабрю в 2026, поправка только к IV кварталу. **Сценарий в сравнительных файлах:** target10.
 
-- [Методика и итог](REANCHORED_PRICE_EQUILIBRIUM.md).
-- [Годовая таблица](reanchored_price_results/annual_equilibrium.csv).
-- [Месячные траектории](reanchored_price_results/monthly_paths.csv).
-- [Согласованный портфельный снимок](reanchored_price_results/portfolio_snapshot_equilibrium.json).
-- [Проверки сходимости](reanchored_price_results/convergence_checks.csv).
+- [Методика и итог](TARGET_2026_EQUILIBRIUM.md).
+- [Годовая таблица](target_2026_results/annual_equilibrium.csv).
+- [Месячные траектории](target_2026_results/monthly_paths.csv).
+- [Согласованный портфельный снимок](target_2026_results/portfolio_snapshot_equilibrium.json).
+- [Проверки сходимости](target_2026_results/convergence_checks.csv).
 - [Инструкция запуска](../../docs/REPRODUCE.md).
 
 ## Расчетные файлы
 
 | Файл | Роль |
 |---|---|
-| [reanchored_price_equilibrium.py](reanchored_price_equilibrium.py) | Запуск выбранного совместного расчета и сохранение сравнительных вариантов |
+| [target_2026_equilibrium.py](target_2026_equilibrium.py) | Текущий расчёт с экспертным ориентиром 10% на 2026 |
+| [reanchored_price_equilibrium.py](reanchored_price_equilibrium.py) | Предыдущий расчёт без экспертного ориентира 2026 |
 | [coupled_forecast.py](coupled_forecast.py) | Базовая логика согласования |
 | [linked_forecast.py](linked_forecast.py) | Перевод годовых продаж и остатков в месячные факторы и ценовую траекторию |
 | [portfolio_engine.py](portfolio_engine.py) | Баланс классов, запуски, вводы и проданные площади |

@@ -1,0 +1,11 @@
+{
+  "checks_passed": true,
+  "user_selected_target_nominal2026": 0.1,
+  "monthly_Q4_shift_log_pp": -0.5489965901759971,
+  "actual_JanSep2026_unchanged": true,
+  "price_coefficients_unchanged": true,
+  "future_expert_shifts": 0,
+  "recurrence": "Equal shift to three unadjusted Q4 real log growth rates at each market iteration. Corrected December state feeds unmodified AR equation January2027 onward.",
+  "fixed": "Latest workbook v3 mortgage nominal, cash/oneoff area, CPI, September2026 price anchor, alpha75 omega50 and sold95/unsold50 completion rule unchanged.",
+  "caveat": "Expert forecast constraint for 2026, not improved statistical fit or revised observed history."
+}

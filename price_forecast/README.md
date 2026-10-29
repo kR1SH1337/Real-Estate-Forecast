@@ -2,11 +2,13 @@
 
 Окончательная выбранная функция — **N54 / growth54**, модель месячных реальных приростов цен. Рублевая цена привязана к фактической средней цене сделок сентября 2026 года.
 
+**Обновление 29.10.2026:** по решению пользователя номинальный рост 2026 года задан на уровне **10% декабрь к декабрю**. Факт января–сентября сохранён; экспертная поправка применяется только к IV кварталу. С 2027 года используется исходное уравнение с обновлённым декабрьским состоянием.
+
 ## Куда идти
 
 - [Объяснение модели простым языком](../docs/METHODOLOGY.md#цены).
-- [Актуальная методика и результат](market_state/REANCHORED_PRICE_EQUILIBRIUM.md).
-- [Итоговая годовая таблица](market_state/reanchored_price_results/annual_equilibrium.csv).
+- [Актуальная методика и результат](market_state/TARGET_2026_EQUILIBRIUM.md).
+- [Итоговая годовая таблица](market_state/target_2026_results/annual_equilibrium.csv).
 - [Воспроизведение](../docs/REPRODUCE.md).
 - [Исторические проверки N54](market_state/results/backtest_metrics.csv).
 
@@ -21,10 +23,10 @@
 Срез входов — 28.10.2026. Скорость подстройки запусков 75%, вес продаж следующего года 50%, исполнение ввода с 2027 — 95% проданной и 50% непроданной плановой площади.
 
 ```bash
-python price_forecast/market_state/reanchored_price_equilibrium.py
+python price_forecast/market_state/target_2026_equilibrium.py
 ```
 
-Скрипт сохраняет несколько вариантов для сравнения. **Выбранный результат:** growth54_september_2026, файл annual_equilibrium.csv в папке market_state/reanchored_price_results/.
+Скрипт сохраняет решение без ориентира и с экспертным ориентиром 10%. **Выбранный результат:** target10, файл annual_equilibrium.csv в папке market_state/target_2026_results/.
 
 ## Исследования и прошлые версии
 
