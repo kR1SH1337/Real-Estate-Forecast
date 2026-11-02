@@ -1,0 +1,48 @@
+{
+  "calculated_on": "2026-11-02",
+  "scenario_version_label": "2026-11-06",
+  "last_sales_actual": "2026-09-01",
+  "coefficient_alpha": -4.163516894009227,
+  "coefficient_beta": 2.830075324593157,
+  "usable_sales_observations": 44,
+  "scope": "Cash/installments only, excluding mortgage and separate expert deposit inflow.",
+  "base_price_rub_m2": 282700,
+  "source_file_original": "Сравнение КС (ФК 25.09 и 06.11)(1).xlsx",
+  "source_sha256": "d2f8b45aebded3d4796e63022959c5efb48f8608875b8db2904beed21d25dbea",
+  "source_sheet": "КС_на дату и среднее",
+  "source_column": "D: сред. за период",
+  "source_value_mode": "Saved cached values; external links were not refreshed.",
+  "history_policy": "Preserve old KS through September 2026, sales, index and coefficients; replace monthly KS only from October 2026.",
+  "baseline_policy": "Previous published cash-model scenario, not the 25.09 summary-only scenario in the uploaded comparison sheet.",
+  "source_inconsistencies": [
+    {
+      "year": 2029,
+      "summary_year_end": 10.0,
+      "monthly_year_end": 10.0,
+      "summary_year_average": 10.278767123287672,
+      "monthly_day_weighted_average": 10.27820894347347,
+      "material": false,
+      "resolution": "Use detailed monthly column D; do not invent a monthly path from annual endpoints."
+    },
+    {
+      "year": 2030,
+      "summary_year_end": 9.0,
+      "monthly_year_end": 10.0,
+      "summary_year_average": 9.98082191780822,
+      "monthly_day_weighted_average": 10.0,
+      "material": true,
+      "resolution": "Use detailed monthly column D; do not invent a monthly path from annual endpoints."
+    }
+  ],
+  "source_history_month_end_vs_average_max_difference_pp": 1.870967741935484,
+  "checks": [
+    "Published baseline forecast reproduced",
+    "Historical KS unchanged",
+    "Annual forecast changes equal beta times changes in lagged KS sums"
+  ],
+  "baseline_sources_sha256": {
+    "cash_sales.csv": "22b96a2ba220c4fff96533c0b83831193a7ea1a814c711535638f186ee800e5e",
+    "macro_scenario.xlsx": "f0957117ca2bf8a4e3c19ab985c99b62836edebc705d54794b02cc0a38cec277",
+    "price_index.xlsx": "f2e534766fdaa9995c3b16789da853d7e95f41dfe2b1070c113e54246dfe35ec"
+  }
+}
