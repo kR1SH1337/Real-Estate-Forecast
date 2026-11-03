@@ -1,0 +1,18 @@
+{
+  "model": "Regression with stationary AR(1) errors, exact Gaussian ML, cleaned data",
+  "parameters": {
+    "alpha": 1174.520086400945,
+    "beta": 26.394396791640748,
+    "phi": 0.9029332683855666
+  },
+  "last_observation": "2026-09-30",
+  "end": "2030-12-31",
+  "key_rate_source": "https://github.com/kR1SH1337/Real-Estate-Forecast/blob/main/cash_installments/scenarios/ks_2026-11-06/ks_monthly_audit.csv",
+  "key_rate_2030_provisional": true,
+  "monthly_rate_aggregation": "calendar-day weighted quarterly mean",
+  "forecast_formula": "MA5_h = alpha + beta * KS_h + phi**h * last_regression_error",
+  "MA5_inversion": "cash_t = 5 * MA5_t - sum(cash_(t-1) through cash_(t-4))",
+  "units": "thousand square meters quarterly; million square meters annually",
+  "scope": "RF cash and installments combined, excluding mortgage",
+  "annual_2026": "Actual Q1-Q3 plus forecast Q4"
+}

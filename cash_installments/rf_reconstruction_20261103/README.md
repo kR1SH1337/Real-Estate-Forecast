@@ -49,3 +49,7 @@ python cash_installments/rf_reconstruction_20261103/run.py
 - [Отказ от AR-компоненты: простая регрессия и сравнение](without_ar_report.md).
 
 - [Лаг зависимой переменной: проверка на сопоставимых выборках](lagged_sales_report.md).
+
+## Сравнение прогнозов на 2026–2030
+
+[ARIMAX с MA5 и простая регрессия на КС: сценарный прогноз и исторические ошибки](forecast_comparison_report.md). [Годовая таблица](forecast_comparison_annual.csv). Сценарий КС одинаковый, 2026 включает девять месяцев факта. Запуск: `python forecast.py`, затем `python compare_forecasts.py`.
