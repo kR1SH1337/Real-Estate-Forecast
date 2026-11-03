@@ -47,3 +47,5 @@ python cash_installments/rf_reconstruction_20261103/run.py
 
 - [Отказ от MA5: оценки и проверка прогноза](unsmoothed_report.md).
 - [Отказ от AR-компоненты: простая регрессия и сравнение](without_ar_report.md).
+
+- [Лаг зависимой переменной: проверка на сопоставимых выборках](lagged_sales_report.md).
